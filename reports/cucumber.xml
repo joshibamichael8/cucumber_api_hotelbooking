@@ -1,9 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.17">
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with valid credentials" time="3.98">
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="25.806">
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with valid credentials" time="22.702">
 <system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
 Then API response status code should be 200.................................passed
 And Response should contain a valid authentication token....................passed
 And Token should not be empty...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials" time="0.598">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "wrongpassword".passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 2" time="0.63">
+<system-out><![CDATA[When User authenticates as user with username "invaliduser" and password "password".passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 3" time="0.532">
+<system-out><![CDATA[When User authenticates as user with username "" and password "password"....passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 4" time="0.4">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "".......passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 5" time="0.597">
+<system-out><![CDATA[When User authenticates as user with username "" and password ""............passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

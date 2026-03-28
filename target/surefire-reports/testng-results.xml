@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-28T19:51:40 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-28T19:51:46 IST" duration-ms="6302">
+  <suite started-at="2026-03-28T20:29:25 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-28T20:29:54 IST" duration-ms="28581">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@7ed7259e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-28T19:51:40 IST" name="API Booking Tests" finished-at="2026-03-28T19:51:46 IST" duration-ms="6302">
+    <test started-at="2026-03-28T20:29:25 IST" name="API Booking Tests" finished-at="2026-03-28T20:29:54 IST" duration-ms="28581">
       <class name="com.booking.runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@7ed7259e]" started-at="2026-03-28T19:51:40 IST" name="setUpClass" finished-at="2026-03-28T19:51:40 IST" duration-ms="486" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:25 IST" name="setUpClass" finished-at="2026-03-28T20:29:26 IST" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@7ed7259e]" started-at="2026-03-28T19:51:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T19:51:44 IST" duration-ms="4123" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:29:49 IST" duration-ms="22938" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,87 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.booking.runners.TestRunner@7ed7259e]" started-at="2026-03-28T19:51:44 IST" name="shouldAnswerWithTrue" finished-at="2026-03-28T19:51:44 IST" duration-ms="3" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:29:49 IST" duration-ms="605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User authentication with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to the Hotel Booking API -Shady Meadows B&B API]"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@7ed7259e]" started-at="2026-03-28T19:51:44 IST" name="tearDownClass" finished-at="2026-03-28T19:51:46 IST" duration-ms="1667" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:29:50 IST" duration-ms="636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User authentication with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to the Hotel Booking API -Shady Meadows B&B API]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:29:51 IST" duration-ms="537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User authentication with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to the Hotel Booking API -Shady Meadows B&B API]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:29:51 IST" duration-ms="404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User authentication with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to the Hotel Booking API -Shady Meadows B&B API]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:29:52 IST" duration-ms="601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User authentication with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to the Hotel Booking API -Shady Meadows B&B API]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-28T20:29:52 IST" name="tearDownClass" finished-at="2026-03-28T20:29:54 IST" duration-ms="2209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -34,12 +34,11 @@ public class TestRunner extends AbstractTestNGCucumberTests{
     public Object[][] scenarios() {
         return super.scenarios();
     }
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+
+    // @Test(dataProvider = "scenarios")
+    // public void runScenario(Object[] scenario) {
+    //     // This method will be called for each scenario
+    //     // You can add any additional setup or teardown logic here if needed
+    // }
+    
 }
