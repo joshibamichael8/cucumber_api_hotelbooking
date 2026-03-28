@@ -1,5 +1,4 @@
 @Login
-
 Feature: Login to the Hotel Booking API -Shady Meadows B&B API
 
 As a user of the Hotel Booking API, 
@@ -9,8 +8,8 @@ So that I can access protected resources and perform authorized actions.
 Description: Test suite for the user authentication functionality of the Hotel Booking API.
 
 Scenario Outline: User authentication with valid credentials
-  When User authenticates as admin with username "<username>" and password "<password>"
-  Then API response status code should be 200
+  When User authenticates as user with username "<username>" and password "<password>"
+  Then API response status code should be <statusCode>
   And Response should contain a valid authentication token
   And Token should not be empty
 
