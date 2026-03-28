@@ -62,6 +62,51 @@ public class APIUtility {
         return spec;
     }
 
+     /**
+     * Perform GET request
+     */
+    public Response get(String endpoint) {
+        LOGGER.info("Performing GET request to endpoint: " + endpoint);
+        try {  
+            Response response = buildRequestSpec()
+                .when()
+                .get(endpoint)
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("GET request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing GET request: " + e.getMessage());
+            throw e;
+        }
+    }
+
+     /**
+     * Perform GET request with proxy or additional headers
+     */
+    public Response getWithHeader(String endpoint, String headerName, String headerValue) {
+        LOGGER.info("Performing GET request with custom header: " + headerName);
+        try {
+            Response response = buildRequestSpec()
+                .header(headerName, headerValue)
+                .when()
+                .get(endpoint)
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("GET request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing GET request with header: " + e.getMessage());
+            throw e;
+        }
+    }
+
     /**
      * Perform POST request
      */
@@ -84,6 +129,7 @@ public class APIUtility {
             throw e;
         }
     }
+
 
     public void setAuthToken(String token) {
         LOGGER.info("Setting authentication token for future requests");

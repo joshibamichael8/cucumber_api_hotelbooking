@@ -7,3 +7,4 @@ com\booking\utilities\ConfigReader.class
 com\booking\runners\TestRunner.class
 com\booking\hooks\Hooks.class
 com\booking\utilities\TokenManager.class
+com\booking\runners\DirectTestRunner.class

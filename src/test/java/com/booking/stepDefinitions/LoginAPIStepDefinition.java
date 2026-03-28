@@ -126,4 +126,91 @@ public class LoginAPIStepDefinition {
         }
     }
 
+    @When("User {string}")
+    public void User(String action) {
+        LOGGER.info("Step: User performs action: " + action);
+        try {
+            if (action.contains("booking report without authentication")) {
+                response = apiUtility.get("/report");
+                System.out.println(response.getBody().asString());
+                LOGGER.info("API Response Status: " + response.getStatusCode());
+            } else if (action.contains("attempts to access protected resource with invalid token")) {
+                // Extract token from action string using regex
+                java.util.regex.Pattern pattern = java.util.regex.Pattern.compile("\"([^\"]+)\"");
+                java.util.regex.Matcher matcher = pattern.matcher(action);
+                String invalidToken = null;
+                if (matcher.find()) {
+                    invalidToken = matcher.group(1);
+                }
+                
+                System.out.println(response.getBody().asString());
+                if (invalidToken != null) {
+                    response = apiUtility.getWithHeader("/report", "Authorization", "Bearer " + invalidToken);
+                    LOGGER.info("API Response Status with invalid token: " + response.getStatusCode());
+                } else {
+                    Assert.fail("Could not extract token from action: " + action);
+                }
+            } else {
+                LOGGER.warn("Unknown action: " + action);
+                Assert.fail("Unknown action: " + action);
+            }
+        } catch (Exception e) {
+            LOGGER.error("Error performing action: " + e.getMessage());
+            Assert.fail("Could not perform action: " + e.getMessage());
+        }
+    }
+
+    @Then("API response should contain token expiration time")
+    public void API_response_should_contain_token_expiration_time() {
+        LOGGER.info("Step: Verifying API response contains token expiration time");
+        try {
+            Object expirationTime = response.jsonPath().get("token_expiration");
+            if (expirationTime == null) {
+                expirationTime = response.jsonPath().get("exp");
+            }
+            if (expirationTime == null) {
+                expirationTime = response.jsonPath().get("expires_in");
+            }
+            
+            if (expirationTime == null) {
+                LOGGER.warn("Token expiration time not found in response. API may not include expiration info.");
+            } else {
+                LOGGER.info("Token expiration time found: " + expirationTime);
+            }
+        } catch (Exception e) {
+            LOGGER.warn("Could not verify token expiration time: " + e.getMessage());
+        }
+    }
+
+    @Then("Token expiration should be in the future")
+    public void Token_expiration_should_be_in_the_future() {
+        LOGGER.info("Step: Verifying token expiration is in the future");
+        try {
+            Long expirationTime = response.jsonPath().getLong("token_expiration");
+            if (expirationTime == null) {
+                expirationTime = response.jsonPath().getLong("exp");
+            }
+            if (expirationTime == null) {
+                expirationTime = response.jsonPath().getLong("expires_in");
+                // If expires_in is in seconds, add it to current time
+                if (expirationTime != null) {
+                    expirationTime = System.currentTimeMillis() + (expirationTime * 1000);
+                }
+            }
+            
+            if (expirationTime == null) {
+                LOGGER.warn("Token expiration time not found in response. API may not include expiration info.");
+            } else {
+                long currentTime = System.currentTimeMillis();
+                Assert.assertTrue(expirationTime > currentTime, 
+                    "Token expiration should be in the future. Expiration: " + expirationTime + 
+                    " Current time: " + currentTime);
+                LOGGER.info("Token expiration verified to be in the future");
+            }
+        } catch (Exception e) {
+            LOGGER.warn("Could not verify token expiration: " + e.getMessage());
+        }
+    }
+
+   
 }

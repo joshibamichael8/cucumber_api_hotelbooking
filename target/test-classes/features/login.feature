@@ -40,3 +40,22 @@ Examples:
       | admin              | ' OR '1'='1     | 401        | Invalid credentials  |#SQL injection
       | admin              | PASSWORD        | 401        | Invalid credentials  |#case sensitivity
 
+@api @negative @authReg3
+  Scenario Outline: Access protected resources without valid authentication
+    When User "<action>"
+    Then API response status code should be <statusCode>
+    And Response should indicate "<errorMessage>"
+
+   Examples:
+      | action                                              | statusCode | errorMessage              |
+       | requests booking report without authentication token | 401        | Authentication required   |
+     
+    @api @negative @authReg4
+      Scenario Outline: Verify token expiration time is set correctly
+        When User authenticates as user with username "<username>" and password "<password>"
+        Then API response should contain token expiration time
+        And Token expiration should be in the future
+
+        Examples:
+          | username | password |
+          | admin    | password |

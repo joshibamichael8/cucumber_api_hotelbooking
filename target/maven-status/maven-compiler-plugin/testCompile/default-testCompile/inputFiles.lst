@@ -1,5 +1,6 @@
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\utilities\TestDataUtility.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\base\BaseClass.java
+D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\runners\DirectTestRunner.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\utilities\TokenManager.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\utilities\CommonUtilities.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\stepDefinitions\LoginAPIStepDefinition.java
