@@ -1,10 +1,10 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2026-03-28T12:11:09.207Z",
-        "line": 19,
+        "start_timestamp": "2026-03-28T14:21:40.845Z",
+        "line": 18,
         "name": "User authentication with valid credentials",
         "description": "",
         "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-valid-credentials;;2",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4221626000,
+              "duration": 3564811000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "User authenticates as user with username \"admin\" and password \"password\"",
             "match": {
               "arguments": [
@@ -35,10 +35,10 @@
           },
           {
             "result": {
-              "duration": 6924900,
+              "duration": 3203200,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "API response status code should be 200",
             "match": {
               "arguments": [
@@ -53,10 +53,10 @@
           },
           {
             "result": {
-              "duration": 570346500,
+              "duration": 390183000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 13,
             "name": "Response should contain a valid authentication token",
             "match": {
               "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_contain_a_valid_authentication_token()"
@@ -65,10 +65,10 @@
           },
           {
             "result": {
-              "duration": 12814700,
+              "duration": 8592700,
               "status": "passed"
             },
-            "line": 15,
+            "line": 14,
             "name": "Token should not be empty",
             "match": {
               "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Token_should_not_be_empty()"

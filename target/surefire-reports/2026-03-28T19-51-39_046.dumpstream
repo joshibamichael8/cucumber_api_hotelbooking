@@ -1,4 +1,4 @@
-# Created at 2026-03-28T17:41:07.468
+# Created at 2026-03-28T19:51:39.510
 Boot Manifest-JAR contains absolute paths in classpath 'D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

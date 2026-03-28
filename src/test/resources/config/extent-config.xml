@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- Report Theme -->
+        <!-- standard, dark -->
+        <theme>standard</theme>
+        
+        <!-- Document Title -->
+        <documentTitle>Cucumber Automation Test Report</documentTitle>
+        
+        <!-- Document Name -->
+        <documentName>Automation Test Report</documentName>
+        
+        <!-- Report Name -->
+        <reportName>Cucumber Automation Framework - Test Execution Report</reportName>
+        
+        <!-- Report Path -->
+        <reportPath>reports</reportPath>
+        
+        <!-- Server URL - for server based execution -->
+        <serverUrl></serverUrl>
+        
+        <!-- Timestamp Format -->
+        <timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+        
+        <!-- Snapshot Path -->
+        <screenshotPath>reports/screenshots</screenshotPath>
+        
+        <!-- Enable screenshots on failure -->
+        <enableScreenshots>true</enableScreenshots>
+        
+        <!-- Protocol -->
+        <protocol>https</protocol>
+    </configuration>
+</extentreports>
