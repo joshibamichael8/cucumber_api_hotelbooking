@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="5.968">
+<testcase classname="Get Room Details API" name="Validate room details response structure against schema" time="4.922">
+<system-out><![CDATA[When User requests to get room details for roomid "1".......................passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain room information................................passed
+And Room details should conform to the room schema..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Room Details API" name="Validate room details response structure against schema 2" time="0.562">
+<system-out><![CDATA[When User requests to get room details for roomid "2".......................passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain room information................................passed
+And Room details should conform to the room schema..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

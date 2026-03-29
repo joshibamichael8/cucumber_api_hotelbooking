@@ -18,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@get-booking-detail",
+        tags = "@SchemaValidation",
         dryRun = false,
         monochrome = true,
         publish = true

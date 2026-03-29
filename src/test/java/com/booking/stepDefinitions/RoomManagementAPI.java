@@ -4,10 +4,14 @@ import com.booking.utilities.APIUtility;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
+import io.restassured.module.jsv.JsonSchemaValidator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class RoomManagementAPI {
 
@@ -154,5 +158,29 @@ public class RoomManagementAPI {
         }
     }
 
+    @Then("Room details should conform to the room schema")
+    public void room_details_should_conform_to_the_room_schema() {
+        LOGGER.info("Step: Validating room details against roomDetails schema");
+        try {
+            // Construct the path to the schema file
+            String schemaPath = "src/test/resources/jsonSchema/roomDetails.json";
+            
+            LOGGER.info("Loading schema from: " + schemaPath);
+            
+            // Read the schema file
+            String schemaContent = new String(Files.readAllBytes(Paths.get(schemaPath)));
+            
+            LOGGER.info("Schema loaded successfully");
+            
+            // Validate response against the schema
+            response.then().assertThat()
+                .body(JsonSchemaValidator.matchesJsonSchema(schemaContent));
+            
+            LOGGER.info("Room details successfully validated against roomDetails schema");
+        } catch (Exception e) {
+            LOGGER.error("Schema validation failed: " + e.getMessage());
+            Assert.fail("Room details do not conform to roomDetails schema. Error: " + e.getMessage());
+        }
+    }
 
 }

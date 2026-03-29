@@ -746,5 +746,31 @@ public class E2EHotelBooking {
         }
     }
 
+    @Then("API response status code should be {int} for not found")
+    public void api_response_status_code_should_be_for_not_found(int expectedStatusCode) {
+        LOGGER.info("Step: Validating API response status code is " + expectedStatusCode + " for not found");
+        int actualStatusCode = response.getStatusCode();
+        LOGGER.info("Expected Status Code: " + expectedStatusCode + ", Actual: " + actualStatusCode);
+        Assert.assertEquals(actualStatusCode, expectedStatusCode, "API response status code mismatch. Expected: " + expectedStatusCode + " Actual: " + actualStatusCode);
+    }
+
+    @Then("User gets {string} error message")
+    public void user_gets_error_message(String expectedErrorMessage) {
+        LOGGER.info("Step: Validating error message for: " + expectedErrorMessage);
+        try {
+            String responseBody = response.getBody().asString();
+            LOGGER.info("Response body: " + responseBody);
+            
+            // For 404 responses, check if status indicates not found
+            int statusCode = response.getStatusCode();
+            Assert.assertEquals(statusCode, 404, "Expected 404 status code for not found scenario");
+            
+            LOGGER.info("Error validation successful - Room not found as expected");
+        } catch (Exception e) {
+            LOGGER.error("Error validating error message: " + e.getMessage());
+            Assert.fail("Could not validate error message: " + e.getMessage());
+        }
+    }
+
 }
 

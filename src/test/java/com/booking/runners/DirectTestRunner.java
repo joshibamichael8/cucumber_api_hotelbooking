@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@getBookingDetail",
+        tags = "@RM_4",
         dryRun = false,
         monochrome = true,
         publish = true

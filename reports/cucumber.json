@@ -1,0 +1,224 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2026-03-29T18:34:32.214Z",
+        "line": 66,
+        "name": "Validate room details response structure against schema",
+        "description": "",
+        "id": "get-room-details-api;validate-room-details-response-structure-against-schema;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4213001400,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "User requests to get room details for roomid \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_get_room_details_for_roomid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4366300,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "API response status code of RM should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Response should contain room information",
+            "match": {
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_room_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684162600,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Room details should conform to the room schema",
+            "match": {
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.room_details_should_conform_to_the_room_schema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RoomManagement"
+          },
+          {
+            "name": "@getRoomDetails"
+          },
+          {
+            "name": "@HotelBookingAPI"
+          },
+          {
+            "name": "@SchemaValidation"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@RM_4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-03-29T18:34:37.175Z",
+        "line": 67,
+        "name": "Validate room details response structure against schema",
+        "description": "",
+        "id": "get-room-details-api;validate-room-details-response-structure-against-schema;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 548106600,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "User requests to get room details for roomid \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_get_room_details_for_roomid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "API response status code of RM should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Response should contain room information",
+            "match": {
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_room_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11795200,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Room details should conform to the room schema",
+            "match": {
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.room_details_should_conform_to_the_room_schema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RoomManagement"
+          },
+          {
+            "name": "@getRoomDetails"
+          },
+          {
+            "name": "@HotelBookingAPI"
+          },
+          {
+            "name": "@SchemaValidation"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@RM_4"
+          }
+        ]
+      }
+    ],
+    "name": "Get Room Details API",
+    "description": "  As an user of the Hotel Booking API,\n  I want to retrieve details of rooms\n  So that I can manage room information effectively \n\n  Description:\n    This feature tests the Get Room Details API which allows users to retrieve information about rooms. \n    The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.  ",
+    "id": "get-room-details-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/getRoomDetails.feature",
+    "tags": [
+      {
+        "name": "@RoomManagement",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@getRoomDetails",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      },
+      {
+        "name": "@HotelBookingAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 33
+        }
+      }
+    ]
+  }
+]
