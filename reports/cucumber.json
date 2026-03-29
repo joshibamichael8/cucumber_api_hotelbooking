@@ -3,84 +3,29 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2026-03-29T08:57:47.531Z",
-        "line": 55,
-        "name": "Complete happy path - Search, Book, and Receive Confirmation",
+        "start_timestamp": "2026-03-29T14:32:21.510Z",
+        "line": 63,
+        "name": "Attempt to create a booking with missing/invalid required fields",
         "description": "",
-        "id": "end-to-end-booking-system-flow---shady-meadows-b\u0026b;complete-happy-path---search--book--and-receive-confirmation;;2",
+        "id": "create-booking;attempt-to-create-a-booking-with-missing/invalid-required-fields;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3363107000,
+              "duration": 1020023400,
               "status": "passed"
             },
-            "line": 17,
-            "name": "User authenticates as admin credentials:",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ]
-              },
-              {
-                "cells": [
-                  "admin",
-                  "password"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 387694000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User stores the authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3277200,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "API response status code for E2E should be 200",
+            "line": 49,
+            "name": "User enters search criteria with checkin \"2025-08-01\" and checkout \"2025-08-05\"",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User enters search criteria with checkin \"2025-12-15\" and checkout \"2025-12-18\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2025-12-15\"",
+                  "val": "\"2025-08-01\"",
                   "offset": 41
                 },
                 {
-                  "val": "\"2025-12-18\"",
+                  "val": "\"2025-08-05\"",
                   "offset": 67
                 }
               ],
@@ -90,13 +35,13 @@
           },
           {
             "result": {
-              "duration": 1118279300,
+              "duration": 2664578000,
               "status": "passed"
             },
-            "line": 25,
-            "name": "User creates a new booking with following details and submits the booking:",
+            "line": 50,
+            "name": "User attempts to create a new booking with missing required fields:",
             "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_create_a_new_booking_with_missing_required_fields(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
@@ -114,25 +59,25 @@
               {
                 "cells": [
                   "email",
-                  "john@example.com"
+                  "john.doe@example.com"
                 ]
               },
               {
                 "cells": [
                   "phone",
-                  "07358480685"
+                  "+232323"
                 ]
               },
               {
                 "cells": [
                   "checkin",
-                  "2025-12-15"
+                  "2025-08-01"
                 ]
               },
               {
                 "cells": [
                   "checkout",
-                  "2025-12-18"
+                  "2025-08-05"
                 ]
               },
               {
@@ -146,19 +91,19 @@
           },
           {
             "result": {
-              "duration": 1000400,
+              "duration": 3428900,
               "status": "passed"
             },
-            "line": 33,
-            "name": "API response status code should be 201 for booking creation",
+            "line": 58,
+            "name": "API response status code should be 400 for bad request",
             "match": {
               "arguments": [
                 {
-                  "val": "201",
+                  "val": "400",
                   "offset": 35
                 }
               ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(int)"
             },
             "keyword": "Then "
           },
@@ -166,175 +111,29 @@
             "result": {
               "status": "passed"
             },
-            "line": 34,
-            "name": "User should see booking confirmation page with booking ID displayed",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 802414400,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "User attempts to update booking ID with following details:",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_update_booking_ID_with_following_details(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "roomid",
-                  "firstname",
-                  "lastname",
-                  "depositpaid",
-                  "checkin",
-                  "checkout"
-                ]
-              },
-              {
-                "cells": [
-                  "6",
-                  "Josh",
-                  "Mick",
-                  "false",
-                  "2026-03-11",
-                  "2026-03-12"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1214200,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Booking update should be successful with status 200",
+            "line": 59,
+            "name": "User gets \"size must be between 11 and 21\" error message for missing or invalid input fields",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 48
+                  "val": "\"size must be between 11 and 21\"",
+                  "offset": 10
                 }
               ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "Updated booking details should be reflected in system",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 540072100,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "User retrieves booking details using stored booking ID via API",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_retrieves_booking_details_using_stored_booking_ID_via_API()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "API response should contain updated booking details with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 69
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_should_contain_updated_booking_details_with_status_code(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 591115600,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "User attempts to cancel booking with ID via API",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_cancel_booking_with_ID_via_API()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1214900,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "Booking cancellation should be successful with status 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 54
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Booking_cancellation_should_be_successful_with_status(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 333272800,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "API response should return 404 when retrieving cancelled booking details",
-            "match": {
-              "arguments": [
-                {
-                  "val": "404",
-                  "offset": 27
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_should_return_when_retrieving_cancelled_booking_details(int)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_gets_error_message_for_missing_or_invalid_input_fields(java.lang.String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@E2E"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@e2e"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
             "name": "@regression"
           },
           {
-            "name": "@positive"
+            "name": "@negative"
           },
           {
-            "name": "@E2E_1"
+            "name": "@CreateBooking_2"
           },
           {
             "name": "@api"
@@ -342,83 +141,28 @@
         ]
       },
       {
-        "start_timestamp": "2026-03-29T08:57:54.711Z",
-        "line": 56,
-        "name": "Complete happy path - Search, Book, and Receive Confirmation",
+        "start_timestamp": "2026-03-29T14:32:25.238Z",
+        "line": 64,
+        "name": "Attempt to create a booking with missing/invalid required fields",
         "description": "",
-        "id": "end-to-end-booking-system-flow---shady-meadows-b\u0026b;complete-happy-path---search--book--and-receive-confirmation;;3",
+        "id": "create-booking;attempt-to-create-a-booking-with-missing/invalid-required-fields;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 488237900,
               "status": "passed"
             },
-            "line": 17,
-            "name": "User authenticates as admin credentials:",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ]
-              },
-              {
-                "cells": [
-                  "admin",
-                  "password"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6998400,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User stores the authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "API response status code for E2E should be 200",
+            "line": 49,
+            "name": "User enters search criteria with checkin \"2025-08-01\" and checkout \"2025-08-05\"",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User enters search criteria with checkin \"2025-12-20\" and checkout \"2025-12-25\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2025-12-20\"",
+                  "val": "\"2025-08-01\"",
                   "offset": 41
                 },
                 {
-                  "val": "\"2025-12-25\"",
+                  "val": "\"2025-08-05\"",
                   "offset": 67
                 }
               ],
@@ -428,49 +172,49 @@
           },
           {
             "result": {
-              "duration": 340423700,
+              "duration": 684472000,
               "status": "passed"
             },
-            "line": 25,
-            "name": "User creates a new booking with following details and submits the booking:",
+            "line": 50,
+            "name": "User attempts to create a new booking with missing required fields:",
             "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_create_a_new_booking_with_missing_required_fields(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
                 "cells": [
                   "firstname",
-                  "Jane"
+                  "John"
                 ]
               },
               {
                 "cells": [
                   "lastname",
-                  "Smith"
+                  "Doe"
                 ]
               },
               {
                 "cells": [
                   "email",
-                  "jane@example.com"
+                  "invalid-email"
                 ]
               },
               {
                 "cells": [
                   "phone",
-                  "07358480686"
+                  "+44123456789"
                 ]
               },
               {
                 "cells": [
                   "checkin",
-                  "2025-12-20"
+                  "2025-08-01"
                 ]
               },
               {
                 "cells": [
                   "checkout",
-                  "2025-12-25"
+                  "2025-08-05"
                 ]
               },
               {
@@ -486,16 +230,16 @@
             "result": {
               "status": "passed"
             },
-            "line": 33,
-            "name": "API response status code should be 201 for booking creation",
+            "line": 58,
+            "name": "API response status code should be 400 for bad request",
             "match": {
               "arguments": [
                 {
-                  "val": "201",
+                  "val": "400",
                   "offset": 35
                 }
               ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(int)"
             },
             "keyword": "Then "
           },
@@ -503,510 +247,29 @@
             "result": {
               "status": "passed"
             },
-            "line": 34,
-            "name": "User should see booking confirmation page with booking ID displayed",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 353565700,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "User attempts to update booking ID with following details:",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_update_booking_ID_with_following_details(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "roomid",
-                  "firstname",
-                  "lastname",
-                  "depositpaid",
-                  "checkin",
-                  "checkout"
-                ]
-              },
-              {
-                "cells": [
-                  "6",
-                  "Josh",
-                  "Mick",
-                  "false",
-                  "2026-03-11",
-                  "2026-03-12"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1097100,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Booking update should be successful with status 200",
+            "line": 59,
+            "name": "User gets \"must be a well-formed email address\" error message for missing or invalid input fields",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 48
+                  "val": "\"must be a well-formed email address\"",
+                  "offset": 10
                 }
               ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "Updated booking details should be reflected in system",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 483114900,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "User retrieves booking details using stored booking ID via API",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_retrieves_booking_details_using_stored_booking_ID_via_API()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "API response should contain updated booking details with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 69
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_should_contain_updated_booking_details_with_status_code(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 581517300,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "User attempts to cancel booking with ID via API",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_cancel_booking_with_ID_via_API()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "Booking cancellation should be successful with status 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 54
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Booking_cancellation_should_be_successful_with_status(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 494972500,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "API response should return 404 when retrieving cancelled booking details",
-            "match": {
-              "arguments": [
-                {
-                  "val": "404",
-                  "offset": 27
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_should_return_when_retrieving_cancelled_booking_details(int)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_gets_error_message_for_missing_or_invalid_input_fields(java.lang.String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@E2E"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@e2e"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
             "name": "@regression"
           },
           {
-            "name": "@positive"
+            "name": "@negative"
           },
           {
-            "name": "@E2E_1"
-          },
-          {
-            "name": "@api"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T08:57:57.477Z",
-        "line": 57,
-        "name": "Complete happy path - Search, Book, and Receive Confirmation",
-        "description": "",
-        "id": "end-to-end-booking-system-flow---shady-meadows-b\u0026b;complete-happy-path---search--book--and-receive-confirmation;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 547818800,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User authenticates as admin credentials:",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ]
-              },
-              {
-                "cells": [
-                  "admin",
-                  "password"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8150500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User stores the authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 998800,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "API response status code for E2E should be 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User enters search criteria with checkin \"2025-12-10\" and checkout \"2025-12-12\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2025-12-10\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"2025-12-12\"",
-                  "offset": 67
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_enters_search_criteria_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 489207200,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User creates a new booking with following details and submits the booking:",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "firstname",
-                  "Bob"
-                ]
-              },
-              {
-                "cells": [
-                  "lastname",
-                  "Johnson"
-                ]
-              },
-              {
-                "cells": [
-                  "email",
-                  "bob@example.com"
-                ]
-              },
-              {
-                "cells": [
-                  "phone",
-                  "07358480687"
-                ]
-              },
-              {
-                "cells": [
-                  "checkin",
-                  "2025-12-10"
-                ]
-              },
-              {
-                "cells": [
-                  "checkout",
-                  "2025-12-12"
-                ]
-              },
-              {
-                "cells": [
-                  "depositpaid",
-                  "false"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "API response status code should be 201 for booking creation",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "User should see booking confirmation page with booking ID displayed",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 372724700,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "User attempts to update booking ID with following details:",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_update_booking_ID_with_following_details(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "roomid",
-                  "firstname",
-                  "lastname",
-                  "depositpaid",
-                  "checkin",
-                  "checkout"
-                ]
-              },
-              {
-                "cells": [
-                  "6",
-                  "Josh",
-                  "Mick",
-                  "false",
-                  "2026-03-11",
-                  "2026-03-12"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Booking update should be successful with status 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 48
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "Updated booking details should be reflected in system",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 490211800,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "User retrieves booking details using stored booking ID via API",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_retrieves_booking_details_using_stored_booking_ID_via_API()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "API response should contain updated booking details with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 69
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_should_contain_updated_booking_details_with_status_code(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 570087900,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "User attempts to cancel booking with ID via API",
-            "match": {
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_cancel_booking_with_ID_via_API()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "Booking cancellation should be successful with status 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 54
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.Booking_cancellation_should_be_successful_with_status(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 326963100,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "API response should return 404 when retrieving cancelled booking details",
-            "match": {
-              "arguments": [
-                {
-                  "val": "404",
-                  "offset": 27
-                }
-              ],
-              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_should_return_when_retrieving_cancelled_booking_details(int)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@E2E"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@e2e"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@positive"
-          },
-          {
-            "name": "@E2E_1"
+            "name": "@CreateBooking_2"
           },
           {
             "name": "@api"
@@ -1014,28 +277,11 @@
         ]
       }
     ],
-    "name": "End-to-End Booking System Flow - Shady Meadows B\u0026B",
-    "description": "    As a user of the Hotel Booking API,\n    I want to experience a complete end-to-end flow for booking, updating it, and verifying the changes\n    So that I can ensure the entire booking process works seamlessly from start to finish\n  \n  Description: Comprehensive end-to-end test creating a booking, updating it, and verifying the changes. \n    This scenario simulates a real user journey through the hotel booking process, ensuring that all components of the system work together seamlessly. \n    The test covers authentication, room search, booking creation, booking update, and verification of updated details.",
-    "id": "end-to-end-booking-system-flow---shady-meadows-b\u0026b",
+    "name": "Create Booking",
+    "description": "    As a user of the Hotel Booking API,\n    I want to create a new booking with valid details\n    So that I can reserve a room at the hotel for my desired dates\n    \n    Description: This scenario tests the creation of a new booking using the Hotel Booking API. \n        It verifies that a booking can be successfully created with valid input data and that the API returns the expected response.",
+    "id": "create-booking",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/e2eHotelBooking.feature",
-    "tags": [
-      {
-        "name": "@E2E",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@HotelBookingAPI",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 6
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/createBooking.feature",
+    "tags": []
   }
 ]

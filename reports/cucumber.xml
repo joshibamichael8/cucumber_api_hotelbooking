@@ -1,56 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="12.997">
-<testcase classname="End-to-End Booking System Flow - Shady Meadows B&amp;B" name="Complete happy path - Search, Book, and Receive Confirmation" time="7.165">
-<system-out><![CDATA[When User authenticates as admin credentials:...............................passed
-And User stores the authentication token....................................passed
-Then API response status code for E2E should be 200.........................passed
-When User enters search criteria with checkin "2025-12-15" and checkout "2025-12-18".passed
-And User creates a new booking with following details and submits the booking:.passed
-Then API response status code should be 201 for booking creation............passed
-And User should see booking confirmation page with booking ID displayed.....passed
-When User attempts to update booking ID with following details:.............passed
-Then Booking update should be successful with status 200....................passed
-And Updated booking details should be reflected in system...................passed
-When User retrieves booking details using stored booking ID via API.........passed
-Then API response should contain updated booking details with status code 200.passed
-When User attempts to cancel booking with ID via API........................passed
-Then Booking cancellation should be successful with status 200..............passed
-And API response should return 404 when retrieving cancelled booking details.passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="4.615">
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields" time="3.702">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................passed
+And User gets "size must be between 11 and 21" error message for missing or invalid input fields.passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-End Booking System Flow - Shady Meadows B&amp;B" name="Complete happy path - Search, Book, and Receive Confirmation 2" time="2.753">
-<system-out><![CDATA[When User authenticates as admin credentials:...............................passed
-And User stores the authentication token....................................passed
-Then API response status code for E2E should be 200.........................passed
-When User enters search criteria with checkin "2025-12-20" and checkout "2025-12-25".passed
-And User creates a new booking with following details and submits the booking:.passed
-Then API response status code should be 201 for booking creation............passed
-And User should see booking confirmation page with booking ID displayed.....passed
-When User attempts to update booking ID with following details:.............passed
-Then Booking update should be successful with status 200....................passed
-And Updated booking details should be reflected in system...................passed
-When User retrieves booking details using stored booking ID via API.........passed
-Then API response should contain updated booking details with status code 200.passed
-When User attempts to cancel booking with ID via API........................passed
-Then Booking cancellation should be successful with status 200..............passed
-And API response should return 404 when retrieving cancelled booking details.passed
-]]></system-out>
-</testcase>
-<testcase classname="End-to-End Booking System Flow - Shady Meadows B&amp;B" name="Complete happy path - Search, Book, and Receive Confirmation 3" time="2.812">
-<system-out><![CDATA[When User authenticates as admin credentials:...............................passed
-And User stores the authentication token....................................passed
-Then API response status code for E2E should be 200.........................passed
-When User enters search criteria with checkin "2025-12-10" and checkout "2025-12-12".passed
-And User creates a new booking with following details and submits the booking:.passed
-Then API response status code should be 201 for booking creation............passed
-And User should see booking confirmation page with booking ID displayed.....passed
-When User attempts to update booking ID with following details:.............passed
-Then Booking update should be successful with status 200....................passed
-And Updated booking details should be reflected in system...................passed
-When User retrieves booking details using stored booking ID via API.........passed
-Then API response should contain updated booking details with status code 200.passed
-When User attempts to cancel booking with ID via API........................passed
-Then Booking cancellation should be successful with status 200..............passed
-And API response should return 404 when retrieving cancelled booking details.passed
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields 2" time="0.686">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................passed
+And User gets "must be a well-formed email address" error message for missing or invalid input fields.passed
 ]]></system-out>
 </testcase>
 </testsuite>

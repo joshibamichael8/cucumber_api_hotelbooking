@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@e2e",
+        tags = "@bookingBackground or @CreateBooking_1",
         dryRun = false,
         monochrome = true,
         publish = true

@@ -17,20 +17,12 @@ import io.restassured.specification.RequestSpecification;
 public class APIUtility {
 
     private static final Logger LOGGER = LogManager.getLogger(APIUtility.class);
-    private int connectionTimeout;
-    private int responseTimeout;
     private String authToken;
     private String baseURL;
-    private RequestSpecification requestSpec;
-    private CommonUtilities commonUtilities;
-
+    private Response response;
 
     public APIUtility() {
-        this.commonUtilities = new CommonUtilities();
-
         this.baseURL = ConfigReader.getProperty("api.base.url", "https://automationintesting.online/api");
-        this.connectionTimeout = Integer.parseInt(ConfigReader.getProperty("api.connection.timeout", "5000"));
-        this.responseTimeout = Integer.parseInt(ConfigReader.getProperty("api.timeout", "5000"));
         this.authToken = null;
         setupRestAssured();
     }
@@ -191,6 +183,37 @@ public class APIUtility {
     }
 
     /**
+     * Perform POST request with Content type and authorization set up
+     */
+    public Response postWithContentTypeAuthSetUp(Object body, String headerName, String headerValue,String headerName1, String headerValue1) {
+        LOGGER.info("Performing POST request with multiple custom headers to booking endpoint");
+        try {
+                   
+            RequestSpecification spec = RestAssured.given()
+            .contentType(ContentType.JSON)
+            .accept(ContentType.JSON)
+            .log().all();
+                    System.out.println("Spec: " + spec);
+            Response response = spec
+                .header(headerName, headerValue)
+                .header(headerName1, headerValue1)
+                .body(body)
+                .when()
+                .post("https://automationintesting.online/api/booking")
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("PUT request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing PUT request with multiple headers: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
      * Perform PUT request with Content type and authorization set up
      */
     public Response putWithContentTypeAuthSetUp(String endpoint, Object body, String headerName, String headerValue,String headerName1, String headerValue1) {
@@ -222,31 +245,7 @@ public class APIUtility {
         }
     }
 
-
-    public void setAuthToken(String token) {
-        LOGGER.info("Setting authentication token for future requests");
-        if (token == null || token.isEmpty()) {
-            LOGGER.warn("Empty or null token provided to setAuthToken");
-        }
-        this.authToken = token;
-        LOGGER.info("Authentication token stored successfully");
-    }
-
-    public void clearAuthToken() {
-        LOGGER.info("Clearing authentication token");
-        this.authToken = null;
-    }
-
-    private static int actualStatusCode;
-    public void setStatusCode(int actualStatus) {
-        LOGGER.info("Storing actual status code: " + actualStatus);
-        actualStatusCode = actualStatus;
-    }
-    public int getStatusCode() {
-        LOGGER.info("Returning actual status code: " + actualStatusCode);
-        return actualStatusCode;
-    }
-
+    
     /**
      * Perform DELETE request with custom headers
      */
@@ -268,7 +267,62 @@ public class APIUtility {
             LOGGER.error("Error performing DELETE request with header: " + e.getMessage());
             throw e;
         }
-    
+    }
+
+    /**
+     * Status code management for assertions in step definitions
+     */
+    private static int actualStatusCode;
+    public void setStatusCode(int actualStatus) {
+        LOGGER.info("Storing actual status code: " + actualStatus);
+        actualStatusCode = actualStatus;
+    }
+    public int getStatusCode() {
+        LOGGER.info("Returning actual status code: " + actualStatusCode);
+        return actualStatusCode;
+    }
+
+    /**
+     * Store the API response for later retrieval in step definitions
+     * This allows step definitions to access the response body, headers, etc. for assertions and further processing
+     */
+    public void setResponse(Response response) {
+        LOGGER.info("Storing API response for later retrieval");
+        if (response == null) {
+            LOGGER.warn("Null response provided to setResponse");
+        }
+        this.response = response;
+    }
+
+    /**
+     * Retrieve the stored API response
+     * This can be used in step definitions to access the response body, headers, status code, etc. for assertions and further processing
+     */
+    public Response getResponse() {
+        LOGGER.info("Returning stored API response");
+        return this.response;
+    }
+
+    public void setAuthToken(String token) {
+        LOGGER.info("Setting authentication token for future requests");
+        if (token == null || token.isEmpty()) {
+            LOGGER.warn("Empty or null token provided to setAuthToken");
+        }
+        this.authToken = token;
+        LOGGER.info("Authentication token stored successfully");
+    }
+
+    public void clearAuthToken() {
+        LOGGER.info("Clearing authentication token");
+        this.authToken = null;
+    }
+
+    public String getAuthToken() {
+        LOGGER.info("Retrieving stored authentication token");
+        if (this.authToken == null || this.authToken.isEmpty()) {
+            LOGGER.warn("No authentication token is currently stored");
+        }
+        return this.authToken;
     }
 
 }

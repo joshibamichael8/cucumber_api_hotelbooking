@@ -9,10 +9,78 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">CucumberSuite</th></tr>
-<tr><td><a href="#t0">CucumberTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">44,378</td><td></td><td></td></tr>
+<tr><td><a href="#t0">CucumberTests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">3,804</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CucumberSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CucumberTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.booking.runners.DirectTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1774774464414</td><td rowspan="1">41278</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CucumberSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CucumberTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.booking.runners.DirectTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1774785917933</td><td rowspan="2">18</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
 </table>
-<h2>CucumberTests</h2><h3 id="m0">com.booking.runners.DirectTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;</td><td>&quot;Optional[End-to-End Booking System Flow - Shady Meadows B&amp;B]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CucumberTests</h2><h3 id="m0">com.booking.runners.DirectTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search for available rooms with specific date range and Create a booking with valid details&quot;</td><td>&quot;Optional[Create Booking]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;User enters search criteria with checkin &quot;2023-10-01&quot; and checkout &quot;2023-10-05&quot;&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User enters search criteria with checkin {string} and checkout {string}&quot;)
+public void user_enters_search_criteria_with_checkin_and_checkout(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User creates a new booking with following details and submits the booking:&quot;)
+public void user_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API response status code should be {int} for booking creation&quot;)
+public void api_response_status_code_should_be_for_booking_creation(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User should see booking confirmation page with booking ID displayed&quot;)
+public void user_should_see_booking_confirmation_page_with_booking_id_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at com.booking.runners.DirectTestRunner.runScenario(DirectTestRunner.java:39)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at com.booking.runners.DirectTestRunner.main(DirectTestRunner.java:47)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.booking.runners.DirectTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User authentication with valid credentials&quot;</td><td>&quot;Optional[Create Booking]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;User authenticates as user with username &quot;admin&quot; and password &quot;password&quot;&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;User authenticates as user with username {string} and password {string}&quot;)
+public void user_authenticates_as_user_with_username_and_password(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API response status code should be {int}&quot;)
+public void api_response_status_code_should_be(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;Response should contain a valid authentication token&quot;)
+public void response_should_contain_a_valid_authentication_token() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at com.booking.runners.DirectTestRunner.runScenario(DirectTestRunner.java:39)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at com.booking.runners.DirectTestRunner.main(DirectTestRunner.java:47)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

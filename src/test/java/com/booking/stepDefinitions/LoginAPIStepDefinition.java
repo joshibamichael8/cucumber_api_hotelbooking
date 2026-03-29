@@ -5,7 +5,6 @@ import org.apache.logging.log4j.LogManager;
 import org.testng.Assert;
 
 import com.booking.utilities.APIUtility;
-import com.booking.utilities.CommonUtilities;
 import com.booking.utilities.TokenManager;
 
 import io.cucumber.java.en.Then;
@@ -22,14 +21,12 @@ public class LoginAPIStepDefinition {
     private static final Logger LOGGER = LogManager.getLogger(LoginAPIStepDefinition.class);
 
     private APIUtility apiUtility;
-    private CommonUtilities commonUtilities;
 
     // private Map<String, String> bookingData;
     private Response response;
 
     public LoginAPIStepDefinition() {
         this.apiUtility = new APIUtility();
-        this.commonUtilities = new CommonUtilities();
         // this.bookingData = new HashMap<>();
     }
 
@@ -40,8 +37,10 @@ public class LoginAPIStepDefinition {
         Map<String, Object> loginBody = new HashMap<>();
         loginBody.put("username", username);
         loginBody.put("password", password);
-        System.out.println(loginBody);
+        
         response = apiUtility.post("/auth/login", loginBody);
+        apiUtility.setResponse(response);
+        apiUtility.setStatusCode(response.getStatusCode());
         LOGGER.info("API Response Status: " + response.getStatusCode());
     }
 
@@ -67,6 +66,8 @@ public class LoginAPIStepDefinition {
             TokenManager.setAuthToken(token);
             // Also set token in APIUtility for subsequent requests
             apiUtility.setAuthToken(token);
+            System.out.println("Authentication Token: " + TokenManager.getAuthToken());
+            System.out.println("Authentication Token: " + apiUtility.getAuthToken());
             
             int int_status = response.getStatusCode();
             System.out.println("Response Status Code: " + int_status);
@@ -186,15 +187,41 @@ public class LoginAPIStepDefinition {
     public void Token_expiration_should_be_in_the_future() {
         LOGGER.info("Step: Verifying token expiration is in the future");
         try {
-            Long expirationTime = response.jsonPath().getLong("token_expiration");
-            if (expirationTime == null) {
-                expirationTime = response.jsonPath().getLong("exp");
+            Long expirationTime = null;
+            
+            // Try to get token_expiration
+            try {
+                Object exp = response.jsonPath().get("token_expiration");
+                if (exp instanceof Number) {
+                    expirationTime = ((Number) exp).longValue();
+                }
+            } catch (Exception e) {
+                LOGGER.debug("token_expiration not found");
             }
+            
+            // Try to get exp
             if (expirationTime == null) {
-                expirationTime = response.jsonPath().getLong("expires_in");
-                // If expires_in is in seconds, add it to current time
-                if (expirationTime != null) {
-                    expirationTime = System.currentTimeMillis() + (expirationTime * 1000);
+                try {
+                    Object exp = response.jsonPath().get("exp");
+                    if (exp instanceof Number) {
+                        expirationTime = ((Number) exp).longValue();
+                    }
+                } catch (Exception e) {
+                    LOGGER.debug("exp not found");
+                }
+            }
+            
+            // Try to get expires_in
+            if (expirationTime == null) {
+                try {
+                    Object exp = response.jsonPath().get("expires_in");
+                    if (exp instanceof Number) {
+                        expirationTime = ((Number) exp).longValue();
+                        // If expires_in is in seconds, add it to current time
+                        expirationTime = System.currentTimeMillis() + (expirationTime * 1000);
+                    }
+                } catch (Exception e) {
+                    LOGGER.debug("expires_in not found");
                 }
             }
             

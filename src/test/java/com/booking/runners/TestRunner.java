@@ -1,8 +1,6 @@
 package com.booking.runners;
 
-import static org.junit.Assert.assertTrue;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 // import org.junit.Test;
 import io.cucumber.testng.CucumberOptions;
@@ -12,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
  * TestRunner: Cucumber test runner for TestNG
  */
 @CucumberOptions(
-        features = "src/test/resources/features/e2eHotelBooking.feature",
+        features = "src/test/resources/features/createBooking.feature",
         glue = {"com.booking.stepDefinitions", "com.booking.hooks"},
         plugin = {
                 "pretty",
@@ -20,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@e2e",
+        tags = "@CreateBooking_2",
         dryRun = false,
         monochrome = true,
         publish = true

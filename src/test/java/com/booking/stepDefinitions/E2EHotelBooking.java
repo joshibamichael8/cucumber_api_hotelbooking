@@ -7,7 +7,6 @@ import com.booking.utilities.TokenManager;
 
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +16,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 import io.cucumber.datatable.DataTable;
-import org.json.JSONObject;
 
     
 public class E2EHotelBooking {
@@ -25,6 +23,7 @@ public class E2EHotelBooking {
     private static final Logger LOGGER = LogManager.getLogger(RoomManagementAPI.class);
     private APIUtility apiUtility;
     private Response response;
+    private int booking_statusCode;
     private Response bookingResponse;
     private Response updateResponse;
     private CommonUtilities commonUtilities;
@@ -39,8 +38,7 @@ public class E2EHotelBooking {
         this.bookingData = new HashMap<>();
     }
 
-
-    @When("User authenticates as admin credentials:")
+    @When("User authenticates as user credentials:")
     public void User_authenticates_as_admin_credentials(DataTable dataTable) {
         List<Map<String, String>> credentials = dataTable.asMaps(String.class, String.class);
         String username = credentials.get(0).get("username");
@@ -49,6 +47,8 @@ public class E2EHotelBooking {
         authBody.put("username", username);
         authBody.put("password", password);
         response = apiUtility.post("/auth/login", authBody);
+        apiUtility.setResponse(response);
+        apiUtility.setStatusCode(response.getStatusCode());
         LOGGER.info("API Response Status: " + response.getStatusCode());
     }
 
@@ -144,19 +144,26 @@ public class E2EHotelBooking {
         // Prepare the request body
         Map<String, Object> requestBody = prepareBookingRequestBody(bookingDetailsList);
         
-        bookingResponse = apiUtility.postWithHeader("/booking", requestBody, "Cookie", "token=" + TokenManager.getAuthToken());
-       // response = apiUtility.post("/booking", requestBody);
+        System.out.println("Authentication Token: Cookie , token=" + TokenManager.getAuthToken());
+        System.out.println("requestBody: " + requestBody);
+        System.out.println("Endpoint: reservation/" + roomid + "?checkin=" + checkin + "&checkout=" + checkout);
+
+        bookingResponse = apiUtility.postWithContentTypeAuthSetUp(requestBody, "Cookie", "token=" + TokenManager.getAuthToken(), "Authorization", "automationintesting.online");
+       
+
         LOGGER.info("API Response Status: " + bookingResponse.getStatusCode());
         
         // Extract and store booking ID if available
-        int book_statusCode = bookingResponse.getStatusCode();
-        if (book_statusCode == 201) {
+        booking_statusCode = bookingResponse.getStatusCode();
+        if (booking_statusCode == 201) {
             try {
                 this.bookingId = bookingResponse.jsonPath().getString("bookingid");
                 LOGGER.info("Booking ID extracted: " + bookingId);
             } catch (Exception e) {
                 LOGGER.warn("Could not extract booking ID from response");
             }
+        }else {
+            LOGGER.warn("Booking creation failed with status code: " + booking_statusCode);
         }
     }
 
@@ -184,7 +191,7 @@ public class E2EHotelBooking {
     @Then("API response status code should be {int} for booking creation")
     public void API_response_status_code_should_be_for_booking_creation(int expectedStatus) {
         LOGGER.info("Step: Verifying response status code is " + expectedStatus);
-         int actualStatus = bookingResponse.getStatusCode();
+         int actualStatus = booking_statusCode;
          apiUtility.setStatusCode(actualStatus);
         
         Assert.assertEquals(actualStatus, expectedStatus, 
@@ -311,6 +318,160 @@ public class E2EHotelBooking {
         } catch (Exception e) {
             LOGGER.error("Error verifying retrieval of cancelled booking details: " + e.getMessage());
             Assert.fail("Could not verify retrieval of cancelled booking details: " + e.getMessage());
+        }
+    }
+
+    @Then("Booking should contain all submitted details")
+    public void Booking_should_contain_all_submitted_details() {
+        LOGGER.info("Step: Verifying booking contains all submitted details");
+        try {
+            String responseBody = bookingResponse.getBody().asString();
+            
+            // Verify all submitted booking details are present in response
+            // API returns: bookingid, roomid, firstname, lastname, depositpaid, bookingdates
+            Assert.assertTrue(responseBody.contains(bookingData.get("firstname")), 
+                "Response should contain firstname: " + bookingData.get("firstname"));
+            Assert.assertTrue(responseBody.contains(bookingData.get("lastname")), 
+                "Response should contain lastname: " + bookingData.get("lastname"));
+            Assert.assertTrue(responseBody.contains(bookingData.get("checkin")), 
+                "Response should contain checkin date: " + bookingData.get("checkin"));
+            Assert.assertTrue(responseBody.contains(bookingData.get("checkout")), 
+                "Response should contain checkout date: " + bookingData.get("checkout"));
+            
+            // Verify depositpaid field
+            String depositpaid = bookingData.get("depositpaid");
+            Assert.assertTrue(responseBody.contains("\"depositpaid\":" + depositpaid.toLowerCase()), 
+                "Response should contain depositpaid: " + depositpaid);
+            
+            // Note: API does not return email and phone fields in booking response
+            // so we only verify the fields that are present in the response
+            
+            LOGGER.info("All booking details verified successfully in response");
+        } catch (Exception e) {
+            LOGGER.error("Error verifying booking details in response: " + e.getMessage());
+            Assert.fail("Could not verify booking details in response: " + e.getMessage());
+        }
+    }
+
+    @When("User attempts to create a new booking with missing required fields:")
+    public void User_attempts_to_create_a_new_booking_with_missing_required_fields(DataTable dataTable) {
+        LOGGER.info("Step: Attempting to create a new booking with missing required fields");
+        try {
+            Map<String, String> bookingDetailsList = new HashMap<>(dataTable.asMap(String.class, String.class));
+            LOGGER.info("Step: Creating new booking with details: " + bookingDetailsList);
+            
+            // Extract booking details
+            String firstname = bookingDetailsList.get("firstname");
+            String lastname = bookingDetailsList.get("lastname");
+            String email = bookingDetailsList.get("email");
+            String phone = bookingDetailsList.get("phone");
+            String checkin = bookingDetailsList.get("checkin");
+            String checkout = bookingDetailsList.get("checkout");
+            String depositpaid = bookingDetailsList.get("depositpaid");
+            String roomid = commonUtilities.generateRandomRoomId();
+            
+            // Store booking data for later verification
+            this.bookingData.put("firstname", firstname != null ? firstname : "");
+            this.bookingData.put("lastname", lastname != null ? lastname : "");
+            this.bookingData.put("email", email != null ? email : "");
+            this.bookingData.put("phone", phone != null ? phone : "");
+            this.bookingData.put("roomid", roomid);
+            this.bookingData.put("checkin", checkin);
+            this.bookingData.put("checkout", checkout);
+            this.bookingData.put("depositpaid", depositpaid);
+
+            // Prepare the request body with nested bookingdates
+            Map<String, Object> requestBody = new HashMap<>();
+            if (roomid != null && !roomid.isEmpty()) {
+                requestBody.put("roomid", Integer.parseInt(roomid));
+            }
+            if (firstname != null && !firstname.isEmpty()) {
+                requestBody.put("firstname", firstname);
+            }
+            if (lastname != null && !lastname.isEmpty()) {
+                requestBody.put("lastname", lastname);
+            }
+            if (email != null && !email.isEmpty()) {
+                requestBody.put("email", email);
+            }
+            if (phone != null && !phone.isEmpty()) {
+                requestBody.put("phone", phone);
+            }
+            if (depositpaid != null && !depositpaid.isEmpty()) {
+                requestBody.put("depositpaid", Boolean.parseBoolean(depositpaid));
+            }
+
+            // Create nested bookingdates object
+            Map<String, String> bookingdates = new HashMap<>();
+            bookingdates.put("checkin", checkin);
+            bookingdates.put("checkout", checkout);
+            requestBody.put("bookingdates", bookingdates);
+
+            LOGGER.info("Request body: " + requestBody.toString());
+            LOGGER.info("Endpoint: /booking");
+
+            try {
+                // Make POST request to create booking with missing/invalid fields
+                bookingResponse = apiUtility.postWithContentTypeAuthSetUp(requestBody, "Cookie", "token=" + TokenManager.getAuthToken(), "Authorization", "automationintesting.online");
+                booking_statusCode = bookingResponse.getStatusCode();
+                
+                LOGGER.info("API Response Status: " + booking_statusCode);
+                LOGGER.info("API Response Body: " + bookingResponse.getBody().asString());
+            } catch (Exception e) {
+                LOGGER.error("Error creating booking: " + e.getMessage());
+                Assert.fail("Failed to create booking: " + e.getMessage());
+            }
+        } catch (Exception e) {
+            LOGGER.error("Error attempting to create booking with missing fields: " + e.getMessage());
+            Assert.fail("Could not attempt to create booking with missing fields: " + e.getMessage());
+        }
+    }
+
+    @Then("API response status code should be {int} for bad request")
+    public void API_response_status_code_should_be_for_bad_request(int expStatusCode) {
+        LOGGER.info("Step: Verifying response status code for bad request is " + expStatusCode);
+        int actualStatus = bookingResponse.getStatusCode();
+        Assert.assertEquals(actualStatus, expStatusCode, 
+            "Expected status code " + expStatusCode + " for bad request, but got: " + actualStatus + 
+            " Body: " + bookingResponse.getBody().asString());
+        LOGGER.info("Verified that API returns correct status code for bad request");
+    }
+
+    @Then("User gets {string} error message for missing or invalid input fields")
+    public void User_gets_error_message_for_missing_or_invalid_input_fields(String expectedErrorMessage) {
+        LOGGER.info("Step: Verifying response contains expected error message: " + expectedErrorMessage);
+        try {
+            String responseBody = bookingResponse.getBody().asString();
+            LOGGER.info("Response Body: " + responseBody);
+            
+            // Check if error message is in the response (case-insensitive)
+            boolean errorFound = responseBody.toLowerCase().contains(expectedErrorMessage.toLowerCase());
+            
+            // If not found in main response, check if 'errors' array exists and contains the message
+            if (!errorFound) {
+                try {
+                    Object errorsObj = bookingResponse.jsonPath().get("errors");
+                    if (errorsObj instanceof java.util.List) {
+                        java.util.List<?> errors = (java.util.List<?>) errorsObj;
+                        for (Object error : errors) {
+                            String errorMsg = error.toString().toLowerCase();
+                            if (errorMsg.contains(expectedErrorMessage.toLowerCase())) {
+                                errorFound = true;
+                                break;
+                            }
+                        }
+                    }
+                } catch (Exception e) {
+                    LOGGER.debug("Could not extract errors array from response");
+                }
+            }
+            
+            Assert.assertTrue(errorFound, 
+                "Response should contain error message '" + expectedErrorMessage + "'. Actual response: " + responseBody);
+            LOGGER.info("Verified that response contains error message for bad request");
+        } catch (Exception e) {
+            LOGGER.error("Error verifying error message in response: " + e.getMessage());
+            Assert.fail("Could not verify error message in response: " + e.getMessage());
         }
     }
 
