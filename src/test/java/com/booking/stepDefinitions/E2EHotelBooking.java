@@ -16,6 +16,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 import io.cucumber.datatable.DataTable;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import io.restassured.module.jsv.JsonSchemaValidator;
 
     
 public class E2EHotelBooking {
@@ -475,5 +478,273 @@ public class E2EHotelBooking {
         }
     }
 
+    @Given("the user wants to check the booking details")
+    public void the_user_wants_to_check_the_booking_details() {
+        LOGGER.info("Step: User wants to check the booking details");
+        // Initialize or reset booking details for this scenario
+        bookingData = new HashMap<>();
+        LOGGER.info("Booking details ready for retrieval");
+    }
+
+    @When("the user retrieves the details of the created booking")
+    public void the_user_retrieves_the_details_of_the_created_booking() {
+        LOGGER.info("Step: User retrieves the details of the created booking");
+        try {
+            // Retrieve the bookingId that was stored after creating the booking
+            String bookingId = null;
+            if (bookingResponse != null && bookingResponse.getStatusCode() == 201) {
+                bookingId = bookingResponse.jsonPath().getString("bookingid");
+                this.bookingId = bookingId;
+                LOGGER.info("Booking ID retrieved from creation response: " + bookingId);
+            } else {
+                Assert.fail("No valid booking ID found. Ensure booking creation was successful.");
+            }
+            
+            // Make GET request to retrieve booking details with authentication
+            response = apiUtility.getWithHeader("/booking/" + bookingId, "Authorization", "automationintesting.online");
+            apiUtility.setResponse(response);
+            apiUtility.setStatusCode(response.getStatusCode());
+            
+            LOGGER.info("API Response Status: " + response.getStatusCode());
+            LOGGER.info("API Response Body: " + response.getBody().asString());
+        } catch (Exception e) {
+            LOGGER.error("Error retrieving booking details: " + e.getMessage());
+            Assert.fail("Failed to retrieve booking details: " + e.getMessage());
+        }
+    }
+
+    @Then("details of the booking is available:")
+    public void details_of_the_booking_is_available(DataTable dataTable) {
+        LOGGER.info("Step: Validating that booking details are available");
+        try {
+            List<String> expectedFields = dataTable.asList();
+            String responseBody = response.getBody().asString();
+            int statusCode = response.getStatusCode();
+            
+            LOGGER.info("Response Status Code: " + statusCode);
+            LOGGER.info("Expected fields: " + expectedFields);
+            LOGGER.info("Response Body: " + responseBody);
+            
+            // Check if response is successful
+            if (statusCode == 401) {
+                LOGGER.error("Authentication failed. Response: " + responseBody);
+                Assert.fail("Booking retrieval failed with 401 Unauthorized. API requires proper authentication.");
+            }
+            
+            if (statusCode != 200) {
+                LOGGER.error("Unexpected status code: " + statusCode);
+                Assert.fail("Expected 200 OK but got: " + statusCode + ". Response: " + responseBody);
+            }
+            
+            // Validate that all expected fields are present in the response
+            for (String field : expectedFields) {
+                try {
+                    Object fieldValue;
+                    
+                    // Special handling for nested bookingdates object
+                    if (field.equalsIgnoreCase("bookingdates")) {
+                        fieldValue = response.jsonPath().getObject("bookingdates", Map.class);
+                        Assert.assertNotNull(fieldValue, "Field 'bookingdates' should not be null in response");
+                        Map<String, String> bookingdates = (Map<String, String>) fieldValue;
+                        Assert.assertTrue(bookingdates.containsKey("checkin"), "bookingdates should contain 'checkin'");
+                        Assert.assertTrue(bookingdates.containsKey("checkout"), "bookingdates should contain 'checkout'");
+                        LOGGER.info("Field '" + field + "' is present with checkin and checkout dates");
+                    } else {
+                        fieldValue = response.jsonPath().get(field);
+                        Assert.assertNotNull(fieldValue, "Field '" + field + "' should not be null in response");
+                        LOGGER.info("Field '" + field + "' found with value: " + fieldValue);
+                    }
+                } catch (Exception e) {
+                    Assert.fail("Field '" + field + "' is missing or null in response. Error: " + e.getMessage());
+                }
+            }
+            
+            LOGGER.info("All expected booking details are available in the response");
+        } catch (Exception e) {
+            LOGGER.error("Error validating booking details availability: " + e.getMessage());
+            Assert.fail("Could not validate booking details: " + e.getMessage());
+        }
+    }
+
+    @Then("the response matches with json schema {string}")
+    public void the_response_matches_with_json_schema(String schemaFileName) {
+        LOGGER.info("Step: Validating response against JSON schema: " + schemaFileName);
+        try {
+            // Construct the path to the schema file
+            String schemaPath = "src/test/resources/jsonSchema/" + schemaFileName;
+            
+            LOGGER.info("Loading schema from: " + schemaPath);
+            
+            // Read the schema file
+            String schemaContent = new String(Files.readAllBytes(Paths.get(schemaPath)));
+            
+            LOGGER.info("Schema content: " + schemaContent);
+            
+            // Validate response against the schema
+            response.then().assertThat()
+                .body(JsonSchemaValidator.matchesJsonSchema(schemaContent));
+            
+            LOGGER.info("Response successfully validated against JSON schema: " + schemaFileName);
+        } catch (Exception e) {
+            LOGGER.error("Error validating response against JSON schema: " + e.getMessage());
+            Assert.fail("Response does not match JSON schema '" + schemaFileName + "'. Error: " + e.getMessage());
+        }
+    }
+
+    @Given("the user wants to check the room details")
+    public void the_user_wants_to_check_the_room_details() {
+        LOGGER.info("Step: User wants to check the room details");
+        bookingData = new HashMap<>();
+        LOGGER.info("Room details context initialized");
+    }
+
+    @When("the user asks the details of the room by:")
+    public void the_user_asks_the_details_of_the_room_by(DataTable dataTable) {
+        LOGGER.info("Step: User asks for room details");
+        try {
+            List<String> roomIds = dataTable.asList();
+            String roomId = roomIds.get(0);
+            
+            LOGGER.info("Retrieving room details for roomid: " + roomId);
+            
+            // Make GET request to retrieve room details
+            response = apiUtility.get("/room/" + roomId);
+            apiUtility.setResponse(response);
+            apiUtility.setStatusCode(response.getStatusCode());
+            
+            LOGGER.info("API Response Status: " + response.getStatusCode());
+            LOGGER.info("API Response Body: " + response.getBody().asString());
+        } catch (Exception e) {
+            LOGGER.error("Error retrieving room details: " + e.getMessage());
+            Assert.fail("Failed to retrieve room details: " + e.getMessage());
+        }
+    }
+
+    @Then("details of the room is available:")
+    public void details_of_the_room_is_available(DataTable dataTable) {
+        LOGGER.info("Step: Validating that room details are available");
+        try {
+            List<String> expectedFields = dataTable.asList();
+            String responseBody = response.getBody().asString();
+            int statusCode = response.getStatusCode();
+            
+            LOGGER.info("Response Status Code: " + statusCode);
+            LOGGER.info("Expected fields: " + expectedFields);
+            LOGGER.info("Response Body: " + responseBody);
+            
+            // Check if response is successful
+            if (statusCode != 200) {
+                LOGGER.error("Unexpected status code: " + statusCode);
+                Assert.fail("Expected 200 OK but got: " + statusCode + ". Response: " + responseBody);
+            }
+            
+            // Validate that all expected fields are present in the response
+            for (String field : expectedFields) {
+                try {
+                    Object fieldValue = response.jsonPath().get(field);
+                    Assert.assertNotNull(fieldValue, "Field '" + field + "' should not be null in response");
+                    LOGGER.info("Field '" + field + "' found with value: " + fieldValue);
+                } catch (Exception e) {
+                    Assert.fail("Field '" + field + "' is missing or null in response. Error: " + e.getMessage());
+                }
+            }
+            
+            LOGGER.info("All expected room details are available in the response");
+        } catch (Exception e) {
+            LOGGER.error("Error validating room details availability: " + e.getMessage());
+            Assert.fail("Could not validate room details: " + e.getMessage());
+        }
+    }
+
+    @Given("user want to retrieve room information for a specific room ID")
+    public void i_want_to_retrieve_room_information() {
+        LOGGER.info("Step: Initializing room information retrieval workflow");
+        bookingData = new HashMap<>();
+        LOGGER.info("Room information retrieval context prepared");
+    }
+
+    @When("user request room details for the following ID:")
+    public void i_request_room_details_for_the_following_id(DataTable dataTable) {
+        LOGGER.info("Step: Requesting room details");
+        try {
+            List<String> roomIds = dataTable.asList();
+            String roomId = roomIds.get(0);
+            
+            LOGGER.info("Fetching room information for roomid: " + roomId);
+            
+            // Make GET request to retrieve room details
+            response = apiUtility.get("/room/" + roomId);
+            apiUtility.setResponse(response);
+            apiUtility.setStatusCode(response.getStatusCode());
+            
+            LOGGER.info("Room details request completed with status: " + response.getStatusCode());
+            LOGGER.info("Response received: " + response.getBody().asString());
+        } catch (Exception e) {
+            LOGGER.error("Error fetching room details: " + e.getMessage());
+            Assert.fail("Unable to fetch room details: " + e.getMessage());
+        }
+    }
+
+    @Then("the room information should contain:")
+    public void the_room_information_should_contain(DataTable dataTable) {
+        LOGGER.info("Step: Validating room information fields");
+        try {
+            List<String> requiredFields = dataTable.asList();
+            String responseBody = response.getBody().asString();
+            int statusCode = response.getStatusCode();
+            
+            LOGGER.info("Validating status code: " + statusCode);
+            LOGGER.info("Required fields: " + requiredFields);
+            LOGGER.info("Response payload: " + responseBody);
+            
+            // Verify successful response
+            if (statusCode != 200) {
+                LOGGER.error("Unexpected response status: " + statusCode);
+                Assert.fail("Expected HTTP 200 but received: " + statusCode + "\nResponse: " + responseBody);
+            }
+            
+            // Validate presence of required fields
+            for (String field : requiredFields) {
+                try {
+                    Object fieldData = response.jsonPath().get(field);
+                    Assert.assertNotNull(fieldData, "Required field '" + field + "' is missing from response");
+                    LOGGER.info("Validated field '" + field + "' with value: " + fieldData);
+                } catch (Exception e) {
+                    Assert.fail("Field '" + field + "' validation failed. Error: " + e.getMessage());
+                }
+            }
+            
+            LOGGER.info("Successfully validated all required room information fields");
+        } catch (Exception e) {
+            LOGGER.error("Room information validation failed: " + e.getMessage());
+            Assert.fail("Failed to validate room information: " + e.getMessage());
+        }
+    }
+
+    @Then("the API response conforms to {string} schema")
+    public void the_api_response_conforms_to_schema(String schemaFileName) {
+        LOGGER.info("Step: Validating API response against schema: " + schemaFileName);
+        try {
+            // Construct the path to the schema file
+            String schemaPath = "src/test/resources/jsonSchema/" + schemaFileName;
+            
+            LOGGER.info("Loading schema from: " + schemaPath);
+            
+            // Read the schema file
+            String schemaContent = new String(Files.readAllBytes(Paths.get(schemaPath)));
+            
+            LOGGER.info("Schema loaded successfully");
+            
+            // Validate response against the schema
+            response.then().assertThat()
+                .body(JsonSchemaValidator.matchesJsonSchema(schemaContent));
+            
+            LOGGER.info("API response successfully conforms to schema: " + schemaFileName);
+        } catch (Exception e) {
+            LOGGER.error("Schema validation failed: " + e.getMessage());
+            Assert.fail("API response does not conform to schema '" + schemaFileName + "'. Error: " + e.getMessage());
+        }
+    }
 
 }
+
