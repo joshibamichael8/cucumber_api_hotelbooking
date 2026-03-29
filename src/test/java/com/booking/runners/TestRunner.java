@@ -20,7 +20,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@RM_5",
+        tags = "@checkRoomAvailability",
         dryRun = false,
         monochrome = true,
         publish = true

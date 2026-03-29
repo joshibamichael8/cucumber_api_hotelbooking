@@ -136,7 +136,7 @@ public class RoomManagementAPI {
         }
     }
 
-    @Then("Response should indicate invalid date range")
+    @Then("Response should indicate invalid date range / date format")
     public void Response_should_indicate_invalid_date_range() {
         LOGGER.info("Step: Verifying response indicates invalid date range");
         try {

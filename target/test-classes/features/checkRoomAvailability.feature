@@ -41,15 +41,19 @@ Feature: Check Room Availability API
   # ==================== NEGATIVE SCENARIOS ====================
 
   @api @negative @regression @RM_5
-  Scenario Outline: Check room availability with checkout before checkin date
+  Scenario Outline: Check room availability with invalid date formats and ranges
     When User requests to check room availability with checkin "<checkin>" and checkout "<checkout>"
-    Then API response status code should be <statuscode>
-    And Response should indicate invalid date range
+    Then API response status code of RM should be <statuscode>
+    And Response should indicate invalid date range / date format
 
     Examples:
-      | checkin    | checkout   | statuscode |
-      | 2025-07-25 | 2025-07-20 | 400        |
+      | checkin      | checkout   | statuscode |
+      | 2025-07-25   | 2025-07-20 | 400        |#checkout before checkin date
+      | invalid-date | 2025-07-21 | 503        |#invalid date format
+      | 2020-01-01   | 2020-01-02 | 400        |#past dates
 
 #checkout before checkin date - 
 #       This scenario is getting failed because the API is accepting checkout date 
 #       before checkin date, which is not a valid case.
+
+
