@@ -1,7 +1,6 @@
 package com.booking.runners;
 
 import static org.junit.Assert.assertTrue;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -13,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
  * TestRunner: Cucumber test runner for TestNG
  */
 @CucumberOptions(
-        features = "src/test/resources/features/login.feature",
+        features = "src/test/resources/features/checkRoomAvailability.feature",
         glue = {"com.booking.stepDefinitions", "com.booking.hooks"},
         plugin = {
                 "pretty",
@@ -21,7 +20,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@Login",
+        tags = "@RM_4",
         dryRun = false,
         monochrome = true,
         publish = true

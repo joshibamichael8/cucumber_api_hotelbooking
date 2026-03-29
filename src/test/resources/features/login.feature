@@ -1,4 +1,4 @@
-@Login
+@Login @HotelBookingAPI
 Feature: Login to the Hotel Booking API -Shady Meadows B&B API
 
 As a user of the Hotel Booking API, 

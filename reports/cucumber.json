@@ -3,1039 +3,132 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2026-03-28T17:20:26.077Z",
-        "line": 21,
-        "name": "User authentication with valid credentials",
+        "start_timestamp": "2026-03-29T00:12:08.648Z",
+        "line": 34,
+        "name": "Check room availability for specific dates",
         "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-valid-credentials;;2",
+        "id": "check-room-availability-api;check-room-availability-for-specific-dates;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3605589000,
+              "duration": 3601923900,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User authenticates as user with username \"admin\" and password \"password\"",
+            "line": 27,
+            "name": "User requests to check room availability with checkin \"2025-07-17\" and checkout \"2025-07-18\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"admin\"",
-                  "offset": 41
+                  "val": "\"2025-07-17\"",
+                  "offset": 54
                 },
                 {
-                  "val": "\"password\"",
-                  "offset": 62
+                  "val": "\"2025-07-18\"",
+                  "offset": 80
                 }
               ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4048800,
+              "duration": 4063700,
               "status": "passed"
             },
-            "line": 15,
-            "name": "API response status code should be 200",
+            "line": 28,
+            "name": "API response status code of RM should be 200",
             "match": {
               "arguments": [
                 {
                   "val": "200",
-                  "offset": 35
+                  "offset": 41
                 }
               ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 613756200,
+              "duration": 103669700,
               "status": "passed"
             },
-            "line": 16,
-            "name": "Response should contain a valid authentication token",
+            "line": 29,
+            "name": "Response should contain available rooms",
             "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_contain_a_valid_authentication_token()"
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10369000,
+              "duration": 309567500,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Token should not be empty",
+            "line": 30,
+            "name": "Available rooms list should not be empty",
             "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Token_should_not_be_empty()"
+              "location": "com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
+            "name": "@RoomManagement"
+          },
+          {
+            "name": "@checkRoomAvailability"
+          },
+          {
+            "name": "@HotelBookingAPI"
           },
           {
             "name": "@api"
+          },
+          {
+            "name": "@regression"
           },
           {
             "name": "@positive"
           },
           {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg1"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:30.342Z",
-        "line": 34,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 869765900,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"admin\" and password \"wrongpassword\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"wrongpassword\"",
-                  "offset": 62
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1108500,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 16851000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14787000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:31.260Z",
-        "line": 35,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 460300200,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"invaliduser\" and password \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"invaliduser\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 68
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1042200,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 14330800,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 17777900,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:31.769Z",
-        "line": 36,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 564221800,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"\" and password \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 57
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 20581800,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15473300,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:32.382Z",
-        "line": 37,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 551312100,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"admin\" and password \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 62
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 998200,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15582200,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13756900,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:32.974Z",
-        "line": 38,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 592060300,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"\" and password \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 57
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 19555600,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16892900,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:33.621Z",
-        "line": 39,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;7",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 658332300,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"admin\u0027 OR \u00271\u0027\u003d\u00271\" and password \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\u0027 OR \u00271\u0027\u003d\u00271\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 73
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 12957900,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14833000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:34.326Z",
-        "line": 40,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;8",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 669078000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"admin\" and password \"\u0027 OR \u00271\u0027\u003d\u00271\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"\u0027 OR \u00271\u0027\u003d\u00271\"",
-                  "offset": 62
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7995600,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7498500,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:35.021Z",
-        "line": 41,
-        "name": "User authentication with invalid credentials",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;user-authentication-with-invalid-credentials;;9",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 589425200,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User authenticates as user with username \"admin\" and password \"PASSWORD\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"PASSWORD\"",
-                  "offset": 62
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1464600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 16873900,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should indicate \"Invalid credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid credentials\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13571700,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Response should not contain authentication token",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_not_contain_authentication_token()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@authReg2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:35.656Z",
-        "line": 51,
-        "name": "Access protected resources without valid authentication",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;access-protected-resources-without-valid-authentication;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 792164400,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "User \"requests booking report without authentication token\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"requests booking report without authentication token\"",
-                  "offset": 5
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.User(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "API response status code should be 401",
-            "match": {
-              "arguments": [
-                {
-                  "val": "401",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 11291500,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "Response should indicate \"Authentication required\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Authentication required\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_indicate(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@authReg3"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-28T17:20:36.467Z",
-        "line": 62,
-        "name": "Verify token expiration time is set correctly",
-        "description": "",
-        "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api;verify-token-expiration-time-is-set-correctly;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 578146800,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "User authenticates as user with username \"admin\" and password \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 62
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 37935900,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "API response should contain token expiration time",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_should_contain_token_expiration_time()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5999000,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "Token expiration should be in the future",
-            "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Token_expiration_should_be_in_the_future()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@authReg4"
+            "name": "@RM_4"
           }
         ]
       }
     ],
-    "name": "Login to the Hotel Booking API -Shady Meadows B\u0026B API",
-    "description": "As a user of the Hotel Booking API, \nI want to be able to log in with valid credentials\nSo that I can access protected resources and perform authorized actions.\n\nDescription: Test suite for the user authentication functionality of the Hotel Booking API.",
-    "id": "login-to-the-hotel-booking-api--shady-meadows-b\u0026b-api",
+    "name": "Check Room Availability API",
+    "description": "  As an user of the Hotel Booking API,\n  I want to check the availability of rooms\n  So that I can manage bookings effectively \n\n  Description:\n    This feature tests the Check Room Availability API which allows users to check if rooms are available for booking. \n    The scenarios cover both positive and negative cases to ensure the API functions correctly\n    under various conditions.",
+    "id": "check-room-availability-api",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/checkRoomAvailability.feature",
     "tags": [
       {
-        "name": "@Login",
+        "name": "@RoomManagement",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@checkRoomAvailability",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      },
+      {
+        "name": "@HotelBookingAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 40
         }
       }
     ]

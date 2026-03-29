@@ -1,77 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="11.367">
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with valid credentials" time="4.252">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
-Then API response status code should be 200.................................passed
-And Response should contain a valid authentication token....................passed
-And Token should not be empty...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials" time="0.907">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "wrongpassword".passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 2" time="0.501">
-<system-out><![CDATA[When User authenticates as user with username "invaliduser" and password "password".passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 3" time="0.605">
-<system-out><![CDATA[When User authenticates as user with username "" and password "password"....passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 4" time="0.583">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "".......passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 5" time="0.632">
-<system-out><![CDATA[When User authenticates as user with username "" and password ""............passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 6" time="0.691">
-<system-out><![CDATA[When User authenticates as user with username "admin' OR '1'='1" and password "password".passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 7" time="0.688">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "' OR '1'='1".passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 8" time="0.625">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "PASSWORD".passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Invalid credentials"..........................passed
-And Response should not contain authentication token........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="Access protected resources without valid authentication" time="0.805">
-<system-out><![CDATA[When User "requests booking report without authentication token"............passed
-Then API response status code should be 401.................................passed
-And Response should indicate "Authentication required"......................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="Verify token expiration time is set correctly" time="0.624">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
-Then API response should contain token expiration time......................passed
-And Token expiration should be in the future................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.218">
+<testcase classname="Check Room Availability API" name="Check room availability for specific dates" time="4.038">
+<system-out><![CDATA[When User requests to check room availability with checkin "2025-07-17" and checkout "2025-07-18".passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain available rooms.................................passed
+And Available rooms list should not be empty................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

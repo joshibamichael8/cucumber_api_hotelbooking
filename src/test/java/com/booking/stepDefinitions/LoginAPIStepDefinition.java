@@ -24,13 +24,13 @@ public class LoginAPIStepDefinition {
     private APIUtility apiUtility;
     private CommonUtilities commonUtilities;
 
-    private Map<String, String> bookingData;
+    // private Map<String, String> bookingData;
     private Response response;
 
     public LoginAPIStepDefinition() {
         this.apiUtility = new APIUtility();
         this.commonUtilities = new CommonUtilities();
-        this.bookingData = new HashMap<>();
+        // this.bookingData = new HashMap<>();
     }
 
     @When("User authenticates as user with username {string} and password {string}")

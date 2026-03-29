@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@authReg3",
+        tags = "@RM_3",
         dryRun = false,
         monochrome = true,
         publish = true

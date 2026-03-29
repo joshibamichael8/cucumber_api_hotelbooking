@@ -108,6 +108,38 @@ public class APIUtility {
     }
 
     /**
+     * Perform GET request with query parameters
+     */
+    public Response getWithQueryParams(String endpoint, String... params) {
+        LOGGER.info("Performing GET request to endpoint: " + endpoint + " with query parameters");
+        try {
+            RequestSpecification spec = buildRequestSpec();
+            
+            // Add query parameters in pairs
+            for (int i = 0; i < params.length; i += 2) {
+                String key = params[i];
+                String value = params[i + 1];
+                spec = spec.queryParam(key, value);
+                LOGGER.info("Added query parameter: " + key + " = " + value);
+            }
+            
+            Response response = spec
+                .when()
+                .get(endpoint)
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("GET request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing GET request with query params: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
      * Perform POST request
      */
     public Response post(String endpoint, Object body) {
