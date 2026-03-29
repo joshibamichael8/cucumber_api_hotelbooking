@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="56.67" tests="9" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.59" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26\bin"/>
-    <property name="sun.java.command" value="C:\Users\Juanita\AppData\Local\Temp\surefire3748752747313820549\surefirebooter-20260329074602002_3.jar C:\Users\Juanita\AppData\Local\Temp\surefire3748752747313820549 2026-03-29T07-46-01_575-jvmRun1 surefire-20260329074602002_1tmp surefire_0-20260329074602002_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Juanita\AppData\Local\Temp\surefire9358278151416586970\surefirebooter-20260329134516260_3.jar C:\Users\Juanita\AppData\Local\Temp\surefire9358278151416586970 2026-03-29T13-45-15_821-jvmRun1 surefire-20260329134516260_1tmp surefire_0-20260329134516260_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\target\test-classes;D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\target\classes;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-testng\6.10.4\cucumber-testng-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-picocontainer\6.10.4\cucumber-picocontainer-6.10.4.jar;C:\Users\Juanita\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Juanita\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Juanita\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Juanita\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Juanita\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Juanita\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Juanita\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.17.1\log4j-slf4j-impl-2.17.1.jar;C:\Users\Juanita\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Juanita\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Juanita\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0\selenium-java-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0\selenium-api-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0\selenium-chrome-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\Juanita\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\Juanita\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0\selenium-chromium-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0\selenium-json-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0\selenium-devtools-v85-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0\selenium-devtools-v93-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0\selenium-devtools-v94-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.0.0\selenium-devtools-v95-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0\selenium-edge-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0\selenium-firefox-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0\selenium-firefox-xpi-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0\selenium-ie-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0\selenium-opera-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0\selenium-remote-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-buffer\4.1.68.Final\netty-buffer-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-common\4.1.68.Final\netty-common-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport\4.1.68.Final\netty-transport-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-resolver\4.1.68.Final\netty-resolver-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-api\1.6.0\opentelemetry-api-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-context\1.6.0\opentelemetry-context-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.6.0\opentelemetry-exporter-logging-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.6.0-alpha\opentelemetry-sdk-metrics-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.6.0\opentelemetry-sdk-common-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.6.0\opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.6.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.6.0\opentelemetry-sdk-trace-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.6.0-alpha\opentelemetry-api-metrics-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.6.0\opentelemetry-sdk-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.6.0-alpha\opentelemetry-semconv-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Juanita\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Juanita\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Juanita\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Juanita\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Juanita\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0\selenium-http-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0\selenium-safari-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0\selenium-support-4.0.0.jar;C:\Users\Juanita\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\Juanita\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\Juanita\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Juanita\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Juanita\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\Juanita\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Juanita\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Juanita\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Juanita\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\Juanita\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\Juanita\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Juanita\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\Juanita\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\Juanita\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Juanita\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Juanita\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Juanita\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\Juanita\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\Juanita\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\Juanita\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\Juanita\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\Juanita\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\Juanita\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\Juanita\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\Juanita\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\Juanita\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\Juanita\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\Juanita\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\Juanita\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\Juanita\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\Juanita\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\Juanita\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\Juanita\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\Juanita\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\Juanita\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\Juanita\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Juanita\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\Juanita\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Juanita\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Juanita\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Juanita\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\Juanita\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Juanita\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Juanita\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\Juanita\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\Juanita\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\Juanita\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\Juanita\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\Juanita\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\Juanita\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\Juanita\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\Juanita\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Juanita\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\Juanita\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\Juanita\.m2\repository\org\json\json\20210307\json-20210307.jar;C:\Users\Juanita\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Juanita\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Juanita\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Juanita\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Juanita\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Juanita\AppData\Local\Temp\surefire3748752747313820549\surefirebooter-20260329074602002_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Juanita\AppData\Local\Temp\surefire9358278151416586970\surefirebooter-20260329134516260_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26+35-2893"/>
@@ -59,11 +59,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="runScenario[&quot;User authentication with valid credentials&quot;, &quot;Optional[Check Room Availability API]&quot;](1)" classname="com.booking.runners.TestRunner" time="13.61">
+  <testcase name="runScenario[&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;, &quot;Optional[End-to-End Booking System Flow - Shady Meadows B&amp;B]&quot;](1)" classname="com.booking.runners.TestRunner" time="6.031">
     <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @Background
-Scenario Outline: User authentication with valid credentials                    # src/test/resources/features/checkRoomAvailability.feature:21
-07:46:03.929 [TestNG-tests-1] ERROR com.booking.utilities.ConfigReader - Error loading properties file: src\test\resources\config\application.properties (The system cannot find the file specified)
+@E2E @HotelBookingAPI @e2e @smoke @regression @positive @E2E_1 @api
+Scenario Outline: Complete happy path - Search, Book, and Receive Confirmation         # src/test/resources/features/e2eHotelBooking.feature:43
+13:45:21.066 [TestNG-tests-1] ERROR com.booking.utilities.ConfigReader - Error loading properties file: src\test\resources\config\application.properties (The system cannot find the file specified)
 java.io.FileNotFoundException: src\test\resources\config\application.properties (The system cannot find the file specified)
 	at java.io.FileInputStream.open0(Native Method) ~[?:?]
 	at java.io.FileInputStream.open(FileInputStream.java:185) ~[?:?]
@@ -72,7 +72,7 @@ java.io.FileNotFoundException: src\test\resources\config\application.properties 
 	at com.booking.utilities.ConfigReader.loadProperties(ConfigReader.java:26) [test-classes/:?]
 	at com.booking.utilities.ConfigReader.<clinit>(ConfigReader.java:17) [test-classes/:?]
 	at com.booking.utilities.APIUtility.<init>(APIUtility.java:31) [test-classes/:?]
-	at com.booking.stepDefinitions.LoginAPIStepDefinition.<init>(LoginAPIStepDefinition.java:31) [test-classes/:?]
+	at com.booking.stepDefinitions.E2EHotelBooking.<init>(E2EHotelBooking.java:37) [test-classes/:?]
 	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
 	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
@@ -122,7 +122,6 @@ java.io.FileNotFoundException: src\test\resources\config\application.properties 
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) [?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) [?:?]
 	at java.lang.Thread.run(Thread.java:1516) [?:?]
-{password=password, username=admin}
 Request method:	POST
 Request URI:	https://automationintesting.online/api/auth/login
 Proxy:			<none>
@@ -140,752 +139,148 @@ Body:
     "username": "admin"
 }
 HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:15 GMT
+Date: Sun, 29 Mar 2026 08:15:23 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
 x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: 17usOnlbRWmsLcIhmrpb1w
-x-railway-cdn-edge: fastly/cache-sin-wsat1880038-SIN
+x-railway-request-id: Bn443R7HS9GpwSEb0ubPiw
+x-railway-cdn-edge: fastly/cache-sin-wsap440020-SIN
 x-cache: MISS
 x-cache-hits: 0
-x-served-by: cache-sin-wsat1880038-SIN
+x-served-by: cache-sin-wsap440020-SIN
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=E9dCjNLESywMynqqFTu1dp4NnALOiSBqQH9pEm4B0HRnaX2OOORxkZJaNDqQaV2xWkulyBWkGj0A5Y9YCSU%2Fh0QYzidsNAqzG6J%2FgAv8KxStdwgxSK2N%2FdN0jEebB7%2BjCuZl%2Bywpn2%2FPYc%2FhUA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kt8G7%2B%2B4FNDs4pCSI1B8hJmQEX7lPzhcpk3K3gfKKcrzjUE1nSRM5EEBGZ6PG6lnWadizZCTUwu99%2FjB%2BVHgI1lWAz2spORLOg9qMTmTy9ZD6xM6bRZzejUdRCJjBI3i7dwZkFD4AcX40P0IwQ%3D%3D"}]}
 Content-Encoding: gzip
-CF-RAY: 9e3b5edc4be435b2-SIN
+CF-RAY: 9e3d6d294894fd1e-SIN
 alt-svc: h3=":443"; ma=86400
 
 {
-    "token": "2vnRNU5fLLcMYTFa"
+    "token": "drQ7SeB45z1cMtCu"
 }
-  When User authenticates as user with username "admin" and password "password" # com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)
-  Then API response status code should be 200                                   # com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)
-Authentication Token: 2vnRNU5fLLcMYTFa
-Response Status Code: 200
-  And Response should contain a valid authentication token                      # com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_contain_a_valid_authentication_token()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability for specific dates&quot;, &quot;Optional[Check Room Availability API]&quot;](2)" classname="com.booking.runners.TestRunner" time="1.473">
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @regression @positive @RM_4
-Scenario Outline: Check room availability for specific dates                                        # src/test/resources/features/checkRoomAvailability.feature:34
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=2026-07-17&checkout=2026-07-18
+  When User authenticates as admin credentials:                                        # com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)
+  And User stores the authentication token                                             # com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()
+  Then API response status code for E2E should be 200                                  # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)
+  When User enters search criteria with checkin "2025-12-15" and checkout "2025-12-18" # com.booking.stepDefinitions.E2EHotelBooking.User_enters_search_criteria_with_checkin_and_checkout(java.lang.String,java.lang.String)
+POST request to endpoint: /booking
+Request body: {firstname=John, bookingdates={checkin=2025-12-15, checkout=2025-12-18}, phone=07358480685, depositpaid=false, roomid=2566, email=john@example.com, lastname=Doe}
+Header: Cookie: token=drQ7SeB45z1cMtCu
+Request method:	POST
+Request URI:	https://automationintesting.online/api/booking
 Proxy:			<none>
 Request params:	<none>
-Query params:	checkin=2026-07-17
-				checkout=2026-07-18
+Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer drQ7SeB45z1cMtCu
+				Cookie=token=drQ7SeB45z1cMtCu
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "firstname": "John",
+    "bookingdates": {
+        "checkin": "2025-12-15",
+        "checkout": "2025-12-18"
+    },
+    "phone": "07358480685",
+    "depositpaid": false,
+    "roomid": 2566,
+    "email": "john@example.com",
+    "lastname": "Doe"
+}
+HTTP/1.1 201 Created
+Date: Sun, 29 Mar 2026 08:15:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: YwfTS84GSiC6hGifacI7Nw
+x-railway-cdn-edge: fastly/cache-sin-wsat1880083-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880083-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Bevubj4JmhJb4vOo3F3VQTNWDmzJDtq07V8bMEjDg0ZkoprWUCAuKF9QR0vS2ADgTGjPmSKuvW5zCIwAMrvGyxQXuL91XlkgnQ7T38F0y6gys94gE8xdnGoR2f%2BzSHwH3ne5yNMG5sN2MXrFyw%3D%3D"}]}
+CF-RAY: 9e3d6d31ff1b4e66-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "bookingid": 6,
+    "roomid": 2566,
+    "firstname": "John",
+    "lastname": "Doe",
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-12-15",
+        "checkout": "2025-12-18"
+    }
+}
+  And User creates a new booking with following details and submits the booking:       # com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)
+  Then API response status code should be 201 for booking creation                     # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)
+  And User should see booking confirmation page with booking ID displayed              # com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()
+{firstname=Josh, depositpaid=false, bookingid=6, roomid=6, lastname=Mick}
+Spec: io.restassured.internal.RequestSpecificationImpl@cefa49e
+Request method:	PUT
+Request URI:	https://automationintesting.online/api/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Cookie=token=drQ7SeB45z1cMtCu
+				Authorization=automationintesting.online
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Josh",
+    "bookingdates": {
+        "checkin": "2026-03-11",
+        "checkout": "2026-03-12"
+    },
+    "depositpaid": false,
+    "bookingid": 6,
+    "roomid": 6,
+    "lastname": "Mick"
+}
 HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:17 GMT
+Date: Sun, 29 Mar 2026 08:15:26 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
 x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: TdzL0fEiRgKOHhXPacI7Nw
-x-railway-cdn-edge: fastly/cache-sin-wsap440058-SIN
+x-railway-request-id: 2HWHxGfhRdCVij5fJH0Vcg
+x-railway-cdn-edge: fastly/cache-sin-wsap440023-SIN
 x-cache: MISS
 x-cache-hits: 0
-x-served-by: cache-sin-wsap440058-SIN
+x-served-by: cache-sin-wsap440023-SIN
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YAzR4F42rQruMcxE0MMDVL1wakXKgf%2BBruPogIKv8rBz3Hw3AA7YcA5G%2F2%2BIt7L3MELOF5BChMn9wuytn10UO8kWlMw1wOV0yVHmP4Ps6FPhYGNz0HHNJ6v2YXVU4jj8YGdT%2Ba6lsE9P2Vbhlg%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=I8yDlGXeTIwiAjzf0ThXXxSE87EMyZTKTlGE%2BeegLvW%2BLHKV7gG6NgfA5xQvI7ucYZ%2FttoC3%2BHwJ9EYJrS3hLSglT1nkzt9UjzWXRHK%2B0VRPrz4qMbjVICDvYNFap8W7nVungY17PGabEE0vTA%3D%3D"}]}
 Content-Encoding: gzip
-CF-RAY: 9e3b5f209ab0fd7d-SIN
+CF-RAY: 9e3d6d38ebd15e3e-SIN
 alt-svc: h3=":443"; ma=86400
 
 {
-    "rooms": [
-        {
-            "roomid": 1,
-            "roomName": "101",
-            "type": "Single",
-            "accessible": true,
-            "image": "/images/room1.jpg",
-            "description": "Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.",
-            "features": [
-                "TV",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 100
-        },
-        {
-            "roomid": 2,
-            "roomName": "102",
-            "type": "Double",
-            "accessible": true,
-            "image": "/images/room2.jpg",
-            "description": "Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ",
-            "features": [
-                "TV",
-                "Radio",
-                "Safe"
-            ],
-            "roomPrice": 150
-        },
-        {
-            "roomid": 3,
-            "roomName": "103",
-            "type": "Suite",
-            "accessible": true,
-            "image": "/images/room3.jpg",
-            "description": "Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ",
-            "features": [
-                "Radio",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 225
-        }
-    ]
+    "success": true
 }
-  When User requests to check room availability with checkin "2026-07-17" and checkout "2026-07-18" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 200                                                 # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-  And Response should contain available rooms                                                       # com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()
-  And Available rooms list should not be empty                                                      # com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability for specific dates&quot;, &quot;Optional[Check Room Availability API]&quot;](3)" classname="com.booking.runners.TestRunner" time="0.513">
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @regression @positive @RM_4
-Scenario Outline: Check room availability for specific dates                                        # src/test/resources/features/checkRoomAvailability.feature:35
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=2026-07-20&checkout=2026-07-21
-Proxy:			<none>
-Request params:	<none>
-Query params:	checkin=2026-07-20
-				checkout=2026-07-21
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:18 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
-x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: PrNLCVLnQy-fxiC1JH0Vcg
-x-railway-cdn-edge: fastly/cache-sin-wsap440063-SIN
-x-cache: MISS
-x-cache-hits: 0
-x-served-by: cache-sin-wsap440063-SIN
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ml8X5XMmymsw%2FO%2F%2Bcv28B%2BrCTd6H78ug5r8aaSKvYQzRVgTJcHpLAWGyi1R9BzuyFYumhCx6MFKpVSmhXVGDmtUby3RdaWXvHSpeBvpNkzs802LkwLkHq4%2FOU5KxYtTQwTlPZ6rkjLszxXn0kg%3D%3D"}]}
-Content-Encoding: gzip
-CF-RAY: 9e3b5f292aa9c887-SIN
-alt-svc: h3=":443"; ma=86400
-
-{
-    "rooms": [
-        {
-            "roomid": 1,
-            "roomName": "101",
-            "type": "Single",
-            "accessible": true,
-            "image": "/images/room1.jpg",
-            "description": "Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.",
-            "features": [
-                "TV",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 100
-        },
-        {
-            "roomid": 2,
-            "roomName": "102",
-            "type": "Double",
-            "accessible": true,
-            "image": "/images/room2.jpg",
-            "description": "Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ",
-            "features": [
-                "TV",
-                "Radio",
-                "Safe"
-            ],
-            "roomPrice": 150
-        },
-        {
-            "roomid": 3,
-            "roomName": "103",
-            "type": "Suite",
-            "accessible": true,
-            "image": "/images/room3.jpg",
-            "description": "Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ",
-            "features": [
-                "Radio",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 225
-        }
-    ]
-}
-  When User requests to check room availability with checkin "2026-07-20" and checkout "2026-07-21" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 200                                                 # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-  And Response should contain available rooms                                                       # com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()
-  And Available rooms list should not be empty                                                      # com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability for specific dates&quot;, &quot;Optional[Check Room Availability API]&quot;](4)" classname="com.booking.runners.TestRunner" time="0.82">
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @regression @positive @RM_4
-Scenario Outline: Check room availability for specific dates                                        # src/test/resources/features/checkRoomAvailability.feature:36
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=2026-12-15&checkout=2026-12-20
-Proxy:			<none>
-Request params:	<none>
-Query params:	checkin=2026-12-15
-				checkout=2026-12-20
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:19 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
-x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: CGoDSOM4QOCF3iQlipRofQ
-x-railway-cdn-edge: fastly/cache-sin-wsat1880030-SIN
-x-cache: MISS
-x-cache-hits: 0
-x-served-by: cache-sin-wsat1880030-SIN
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4jXY9xKakZyCHvJEmVL%2B3EiE%2F9BzvLgmvz2C8BKDIPwlRasc1nk95%2BcEKATXpdmBLQJ8cW89CpXU4o0sn4tQ76kyFlPzSLxLsmbavcWTIqjQk68TpZjKkgDlCcWN2APXazUPPYwxzAOnI6aniA%3D%3D"}]}
-Content-Encoding: gzip
-CF-RAY: 9e3b5f2c9abdfd00-SIN
-alt-svc: h3=":443"; ma=86400
-
-{
-    "rooms": [
-        {
-            "roomid": 1,
-            "roomName": "101",
-            "type": "Single",
-            "accessible": true,
-            "image": "/images/room1.jpg",
-            "description": "Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.",
-            "features": [
-                "TV",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 100
-        },
-        {
-            "roomid": 2,
-            "roomName": "102",
-            "type": "Double",
-            "accessible": true,
-            "image": "/images/room2.jpg",
-            "description": "Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ",
-            "features": [
-                "TV",
-                "Radio",
-                "Safe"
-            ],
-            "roomPrice": 150
-        },
-        {
-            "roomid": 3,
-            "roomName": "103",
-            "type": "Suite",
-            "accessible": true,
-            "image": "/images/room3.jpg",
-            "description": "Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ",
-            "features": [
-                "Radio",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 225
-        }
-    ]
-}
-  When User requests to check room availability with checkin "2026-12-15" and checkout "2026-12-20" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 200                                                 # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-  And Response should contain available rooms                                                       # com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()
-  And Available rooms list should not be empty                                                      # com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability for specific dates&quot;, &quot;Optional[Check Room Availability API]&quot;](5)" classname="com.booking.runners.TestRunner" time="0.5">
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @regression @positive @RM_4
-Scenario Outline: Check room availability for specific dates                                        # src/test/resources/features/checkRoomAvailability.feature:37
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=2026-07-01&checkout=2026-08-05
-Proxy:			<none>
-Request params:	<none>
-Query params:	checkin=2026-07-01
-				checkout=2026-08-05
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:19 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
-x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: UCdubymiRAe3D1nqVOLIQQ
-x-railway-cdn-edge: fastly/cache-sin-wsap440031-SIN
-x-cache: MISS
-x-cache-hits: 0
-x-served-by: cache-sin-wsap440031-SIN
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dLJKZwDhChbIGcrvcMqVjG3Rd67GRLtq7p9k3e2Wn6dj8iJak1XEY31stwGOA6SIwpU36DRchr2jDCyPTO%2FhMYo%2BaCRmhnl4C%2BiiFt51xhvpE%2FZ7AEI7UMqawHdtnXq9jZEjQM%2BWSZ5yjQWnzg%3D%3D"}]}
-Content-Encoding: gzip
-CF-RAY: 9e3b5f3158c9895f-SIN
-alt-svc: h3=":443"; ma=86400
-
-{
-    "rooms": [
-        {
-            "roomid": 1,
-            "roomName": "101",
-            "type": "Single",
-            "accessible": true,
-            "image": "/images/room1.jpg",
-            "description": "Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.",
-            "features": [
-                "TV",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 100
-        },
-        {
-            "roomid": 2,
-            "roomName": "102",
-            "type": "Double",
-            "accessible": true,
-            "image": "/images/room2.jpg",
-            "description": "Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ",
-            "features": [
-                "TV",
-                "Radio",
-                "Safe"
-            ],
-            "roomPrice": 150
-        },
-        {
-            "roomid": 3,
-            "roomName": "103",
-            "type": "Suite",
-            "accessible": true,
-            "image": "/images/room3.jpg",
-            "description": "Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ",
-            "features": [
-                "Radio",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 225
-        }
-    ]
-}
-  When User requests to check room availability with checkin "2026-07-01" and checkout "2026-08-05" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 200                                                 # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-  And Response should contain available rooms                                                       # com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()
-  And Available rooms list should not be empty                                                      # com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability for specific dates&quot;, &quot;Optional[Check Room Availability API]&quot;](6)" classname="com.booking.runners.TestRunner" time="0.481">
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @regression @positive @RM_4
-Scenario Outline: Check room availability for specific dates                                        # src/test/resources/features/checkRoomAvailability.feature:38
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=2026-07-17&checkout=2026-07-17
-Proxy:			<none>
-Request params:	<none>
-Query params:	checkin=2026-07-17
-				checkout=2026-07-17
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:20 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
-x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: nGLUPn9JRqKPUarIoB_USg
-x-railway-cdn-edge: fastly/cache-sin-wsap440058-SIN
-x-cache: MISS
-x-cache-hits: 0
-x-served-by: cache-sin-wsap440058-SIN
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SsoCxbR%2F5Cb39zk8YHBBcvMoH79uW3pUbyPXcmhuigDqRMT10%2BBJcbm12Ii71hLV6twmq6hYlE23t6HGd%2F32w67GSum5UrTCmTlI%2BnoCRBMM0kpL7NsoQ4rDBqpE5EcPr0mgW5GD1TpUm5u0HA%3D%3D"}]}
-Content-Encoding: gzip
-CF-RAY: 9e3b5f348a5cfd8d-SIN
-alt-svc: h3=":443"; ma=86400
-
-{
-    "rooms": [
-        {
-            "roomid": 1,
-            "roomName": "101",
-            "type": "Single",
-            "accessible": true,
-            "image": "/images/room1.jpg",
-            "description": "Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.",
-            "features": [
-                "TV",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 100
-        },
-        {
-            "roomid": 2,
-            "roomName": "102",
-            "type": "Double",
-            "accessible": true,
-            "image": "/images/room2.jpg",
-            "description": "Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ",
-            "features": [
-                "TV",
-                "Radio",
-                "Safe"
-            ],
-            "roomPrice": 150
-        },
-        {
-            "roomid": 3,
-            "roomName": "103",
-            "type": "Suite",
-            "accessible": true,
-            "image": "/images/room3.jpg",
-            "description": "Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ",
-            "features": [
-                "Radio",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 225
-        }
-    ]
-}
-  When User requests to check room availability with checkin "2026-07-17" and checkout "2026-07-17" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 200                                                 # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-  And Response should contain available rooms                                                       # com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()
-  And Available rooms list should not be empty                                                      # com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability with invalid date formats and ranges&quot;, &quot;Optional[Check Room Availability API]&quot;](7)" classname="com.booking.runners.TestRunner" time="1.221">
-    <failure message="Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-]]></failure>
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @negative @regression @RM_5
-Scenario Outline: Check room availability with invalid date formats and ranges                      # src/test/resources/features/checkRoomAvailability.feature:51
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=2025-07-25&checkout=2025-07-20
-Proxy:			<none>
-Request params:	<none>
-Query params:	checkin=2025-07-25
-				checkout=2025-07-20
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:21 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
-x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: 4d-u4fXESx-i2oa6V7rehQ
-x-railway-cdn-edge: fastly/cache-sin-wsat1880030-SIN
-x-cache: MISS
-x-cache-hits: 0
-x-served-by: cache-sin-wsat1880030-SIN
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BlXRLJqzsixq2BHpgH2xCXunNE3nJi4HCqqFmWCriV8Il6g7oMmK%2BItW7%2BkPdUMdfvUbZIGXbuw7DVVwibJxhyzELcwS8EHBAYV5pjT5yyjHq3N%2B2ktL4o9JMeprR6Laf%2FPfYSIyQuXHb%2FAIUw%3D%3D"}]}
-Content-Encoding: gzip
-CF-RAY: 9e3b5f37ba91fd3f-SIN
-alt-svc: h3=":443"; ma=86400
-
-{
-    "rooms": [
-        {
-            "roomid": 1,
-            "roomName": "101",
-            "type": "Single",
-            "accessible": true,
-            "image": "/images/room1.jpg",
-            "description": "Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.",
-            "features": [
-                "TV",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 100
-        },
-        {
-            "roomid": 2,
-            "roomName": "102",
-            "type": "Double",
-            "accessible": true,
-            "image": "/images/room2.jpg",
-            "description": "Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ",
-            "features": [
-                "TV",
-                "Radio",
-                "Safe"
-            ],
-            "roomPrice": 150
-        },
-        {
-            "roomid": 3,
-            "roomName": "103",
-            "type": "Suite",
-            "accessible": true,
-            "image": "/images/room3.jpg",
-            "description": "Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ",
-            "features": [
-                "Radio",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 225
-        }
-    ]
-}
-  When User requests to check room availability with checkin "2025-07-25" and checkout "2025-07-20" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 400                                                 # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-      java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-
-  And Response should indicate invalid date range / date format                                     # com.booking.stepDefinitions.RoomManagementAPI.Response_should_indicate_invalid_date_range()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability with invalid date formats and ranges&quot;, &quot;Optional[Check Room Availability API]&quot;](8)" classname="com.booking.runners.TestRunner" time="33.423">
-    <failure message="Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-]]></failure>
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @negative @regression @RM_5
-Scenario Outline: Check room availability with invalid date formats and ranges                        # src/test/resources/features/checkRoomAvailability.feature:52
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=invalid-date&checkout=2025-07-21
-Proxy:			<none>
-Request params:	<none>
-Query params:	checkin=invalid-date
-				checkout=2025-07-21
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 500 Internal Server Error
-Date: Sun, 29 Mar 2026 02:16:54 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
-x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: uiCjAT0wS7WvfTkzJH0Vcg
-x-railway-cdn-edge: fastly/cache-hkg17929-HKG
-x-cache: MISS
-x-cache-hits: 0
-x-served-by: cache-hkg17929-HKG
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=XYj95mC3J7nDr66vhYFUCXAH%2FMscSkgVw5zr8Ns0ipaDRhwL5pC0Qt4J41dCEehK%2F6Lhbn4Ebxpnu1O5hn92N6riZx5iTcLuXTFCG6XBd%2B%2FDoB9R2F6%2F729s9CDCfx7AbKttqUMN0mykGaXjOg%3D%3D"}]}
-cf-cache-status: DYNAMIC
-CF-RAY: 9e3b5f3f3f9c61aa-SIN
-alt-svc: h3=":443"; ma=86400
-
-[
-    
-]
-  When User requests to check room availability with checkin "invalid-date" and checkout "2025-07-21" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 503                                                   # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-      java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-
-  And Response should indicate invalid date range / date format                                       # com.booking.stepDefinitions.RoomManagementAPI.Response_should_indicate_invalid_date_range()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Check room availability with invalid date formats and ranges&quot;, &quot;Optional[Check Room Availability API]&quot;](9)" classname="com.booking.runners.TestRunner" time="0.802">
-    <failure message="Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-]]></failure>
-    <system-out><![CDATA[
-@RoomManagement @checkRoomAvailability @HotelBookingAPI @api @negative @regression @RM_5
-Scenario Outline: Check room availability with invalid date formats and ranges                      # src/test/resources/features/checkRoomAvailability.feature:53
-Request method:	GET
-Request URI:	https://automationintesting.online/api/room?checkin=2020-01-01&checkout=2020-01-02
-Proxy:			<none>
-Request params:	<none>
-Query params:	checkin=2020-01-01
-				checkout=2020-01-02
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 02:16:55 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
-x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: qnwhZigKTXW3a7-_oB_USg
-x-railway-cdn-edge: fastly/cache-sin-wsat1880078-SIN
-x-cache: MISS
-x-cache-hits: 0
-x-served-by: cache-sin-wsat1880078-SIN
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3Usqnfg7EPUo%2F1MRTjRHmfdYHx57c5VYVd23ccUcgggMEj72Nl9WAxxd6ILexmSbVJ750DlN%2BYDiBL5Rm3Sa%2F%2Fh80OGG7dYFi0rAv1G7vvr5Wb65FnqqdyoJcldusIU%2FzumhKicnY06B5e8fUg%3D%3D"}]}
-Content-Encoding: gzip
-CF-RAY: 9e3b601058d68330-SIN
-alt-svc: h3=":443"; ma=86400
-
-{
-    "rooms": [
-        {
-            "roomid": 1,
-            "roomName": "101",
-            "type": "Single",
-            "accessible": true,
-            "image": "/images/room1.jpg",
-            "description": "Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.",
-            "features": [
-                "TV",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 100
-        },
-        {
-            "roomid": 2,
-            "roomName": "102",
-            "type": "Double",
-            "accessible": true,
-            "image": "/images/room2.jpg",
-            "description": "Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ",
-            "features": [
-                "TV",
-                "Radio",
-                "Safe"
-            ],
-            "roomPrice": 150
-        },
-        {
-            "roomid": 3,
-            "roomName": "103",
-            "type": "Suite",
-            "accessible": true,
-            "image": "/images/room3.jpg",
-            "description": "Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ",
-            "features": [
-                "Radio",
-                "WiFi",
-                "Safe"
-            ],
-            "roomPrice": 225
-        }
-    ]
-}
-  When User requests to check room availability with checkin "2020-01-01" and checkout "2020-01-02" # com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)
-  Then API response status code of RM should be 400                                                 # com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)
-      java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-
-  And Response should indicate invalid date range / date format                                     # com.booking.stepDefinitions.RoomManagementAPI.Response_should_indicate_invalid_date_range()
+  When User attempts to update booking ID with following details:                      # com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_update_booking_ID_with_following_details(io.cucumber.datatable.DataTable)
+  Then Booking update should be successful with status 200                             # com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)
+{"success":true}
+  And Updated booking details should be reflected in system                            # com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()
 ]]></system-out>
   </testcase>
 </testsuite>

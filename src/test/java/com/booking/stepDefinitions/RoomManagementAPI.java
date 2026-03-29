@@ -1,8 +1,6 @@
 package com.booking.stepDefinitions;
 
 import com.booking.utilities.APIUtility;
-import com.booking.utilities.CommonUtilities;
-
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
@@ -15,13 +13,12 @@ public class RoomManagementAPI {
 
     private static final Logger LOGGER = LogManager.getLogger(RoomManagementAPI.class);
     private APIUtility apiUtility;
-    private CommonUtilities commonUtilities;
     private Response response;
 
 
     public RoomManagementAPI() {
         this.apiUtility = new APIUtility();
-        this.commonUtilities = new CommonUtilities();
+        // this.commonUtilities = new CommonUtilities();
     }
 
     @When("User requests to get list of all rooms")
@@ -135,6 +132,7 @@ public class RoomManagementAPI {
             Assert.fail("Error verifying rooms list: " + e.getMessage());
         }
     }
+
 
     @Then("Response should indicate invalid date range / date format")
     public void Response_should_indicate_invalid_date_range() {

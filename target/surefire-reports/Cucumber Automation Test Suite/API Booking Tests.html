@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>API Booking Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 29 07:46:02 IST 2026</td>
+<td>Started on:</td><td>Sun Mar 29 13:45:20 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>56 seconds (56285 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8263 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,65 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"</td>
-<td><div><pre>java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314434400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1314434400'><pre>java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-</pre></div></td>
-<td>1</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"</td>
-<td><div><pre>java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1261490072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1261490072'><pre>java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-</pre></div></td>
-<td>33</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"</td>
-<td><div><pre>java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1034961529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1034961529'><pre>java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-</pre></div></td>
-<td>0</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -134,34 +75,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User authentication with valid credentials", "Optional[Check Room Availability API]"</td>
+<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complete happy path - Search, Book, and Receive Confirmation", "Optional[End-to-End Booking System Flow - Shady Meadows B&B]"</td>
 <td></td>
-<td>13</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability for specific dates", "Optional[Check Room Availability API]"</td>
-<td></td>
-<td>1</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability for specific dates", "Optional[Check Room Availability API]"</td>
-<td></td>
-<td>0</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability for specific dates", "Optional[Check Room Availability API]"</td>
-<td></td>
-<td>0</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability for specific dates", "Optional[Check Room Availability API]"</td>
-<td></td>
-<td>0</td>
-<td>com.booking.runners.TestRunner@2145b572</td></tr>
-<tr>
-<td title='com.booking.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check room availability for specific dates", "Optional[Check Room Availability API]"</td>
-<td></td>
-<td>0</td>
+<td>6</td>
 <td>com.booking.runners.TestRunner@2145b572</td></tr>
 </table><p>
 </body>

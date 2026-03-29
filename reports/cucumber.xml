@@ -1,91 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="52.942">
-<testcase classname="Check Room Availability API" name="User authentication with valid credentials" time="13.306">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
-Then API response status code should be 200.................................passed
-And Response should contain a valid authentication token....................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.074">
+<testcase classname="End-to-End Booking System Flow - Shady Meadows B&amp;B" name="Complete happy path - Search, Book, and Receive Confirmation" time="5.904">
+<system-out><![CDATA[When User authenticates as admin credentials:...............................passed
+And User stores the authentication token....................................passed
+Then API response status code for E2E should be 200.........................passed
+When User enters search criteria with checkin "2025-12-15" and checkout "2025-12-18".passed
+And User creates a new booking with following details and submits the booking:.passed
+Then API response status code should be 201 for booking creation............passed
+And User should see booking confirmation page with booking ID displayed.....passed
+When User attempts to update booking ID with following details:.............passed
+Then Booking update should be successful with status 200....................passed
+And Updated booking details should be reflected in system...................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability for specific dates" time="1.447">
-<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-17" and checkout "2026-07-18".passed
-Then API response status code of RM should be 200...........................passed
-And Response should contain available rooms.................................passed
-And Available rooms list should not be empty................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability for specific dates 2" time="0.506">
-<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-20" and checkout "2026-07-21".passed
-Then API response status code of RM should be 200...........................passed
-And Response should contain available rooms.................................passed
-And Available rooms list should not be empty................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability for specific dates 3" time="0.809">
-<system-out><![CDATA[When User requests to check room availability with checkin "2026-12-15" and checkout "2026-12-20".passed
-Then API response status code of RM should be 200...........................passed
-And Response should contain available rooms.................................passed
-And Available rooms list should not be empty................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability for specific dates 4" time="0.496">
-<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-01" and checkout "2026-08-05".passed
-Then API response status code of RM should be 200...........................passed
-And Response should contain available rooms.................................passed
-And Available rooms list should not be empty................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability for specific dates 5" time="0.476">
-<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-17" and checkout "2026-07-17".passed
-Then API response status code of RM should be 200...........................passed
-And Response should contain available rooms.................................passed
-And Available rooms list should not be empty................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability with invalid date formats and ranges" time="1.212">
-<failure message="Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]" type="java.lang.AssertionError"><![CDATA[When User requests to check room availability with checkin "2025-07-25" and checkout "2025-07-20".passed
-Then API response status code of RM should be 400...........................failed
-And Response should indicate invalid date range / date format...............skipped
-
-StackTrace:
-java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-]]></failure>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability with invalid date formats and ranges 2" time="33.417">
-<failure message="Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]" type="java.lang.AssertionError"><![CDATA[When User requests to check room availability with checkin "invalid-date" and checkout "2025-07-21".passed
-Then API response status code of RM should be 503...........................failed
-And Response should indicate invalid date range / date format...............skipped
-
-StackTrace:
-java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-]]></failure>
-</testcase>
-<testcase classname="Check Room Availability API" name="Check room availability with invalid date formats and ranges 3" time="0.795">
-<failure message="Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]" type="java.lang.AssertionError"><![CDATA[When User requests to check room availability with checkin "2020-01-01" and checkout "2020-01-02".passed
-Then API response status code of RM should be 400...........................failed
-And Response should indicate invalid date range / date format...............skipped
-
-StackTrace:
-java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
-]]></failure>
 </testcase>
 </testsuite>

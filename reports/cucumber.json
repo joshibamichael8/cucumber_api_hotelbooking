@@ -3,168 +3,252 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2026-03-29T02:16:03.569Z",
-        "line": 21,
-        "name": "User authentication with valid credentials",
+        "start_timestamp": "2026-03-29T08:15:20.758Z",
+        "line": 43,
+        "name": "Complete happy path - Search, Book, and Receive Confirmation",
         "description": "",
-        "id": "check-room-availability-api;user-authentication-with-valid-credentials;;2",
+        "id": "end-to-end-booking-system-flow---shady-meadows-b\u0026b;complete-happy-path---search--book--and-receive-confirmation;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 12844609500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User authenticates as user with username \"admin\" and password \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 62
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6000200,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "API response status code should be 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 35
-                }
-              ],
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 442708000,
+              "duration": 3423573600,
               "status": "passed"
             },
             "line": 17,
-            "name": "Response should contain a valid authentication token",
+            "name": "User authenticates as admin credentials:",
             "match": {
-              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_contain_a_valid_authentication_token()"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)"
             },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@Background"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:16.910Z",
-        "line": 34,
-        "name": "Check room availability for specific dates",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-for-specific-dates;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1429993900,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User requests to check room availability with checkin \"2026-07-17\" and checkout \"2026-07-18\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2026-07-17\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2026-07-18\"",
-                  "offset": 80
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "admin",
+                  "password"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000900,
+              "duration": 523944900,
               "status": "passed"
             },
-            "line": 28,
-            "name": "API response status code of RM should be 200",
+            "line": 20,
+            "name": "User stores the authentication token",
+            "match": {
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3998200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "API response status code for E2E should be 200",
             "match": {
               "arguments": [
                 {
                   "val": "200",
-                  "offset": 41
+                  "offset": 43
                 }
               ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2998700,
+              "duration": 1427000,
               "status": "passed"
             },
-            "line": 29,
-            "name": "Response should contain available rooms",
+            "line": 24,
+            "name": "User enters search criteria with checkin \"2025-12-15\" and checkout \"2025-12-18\"",
             "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()"
+              "arguments": [
+                {
+                  "val": "\"2025-12-15\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"2025-12-18\"",
+                  "offset": 67
+                }
+              ],
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_enters_search_criteria_with_checkin_and_checkout(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1106958200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User creates a new booking with following details and submits the booking:",
+            "match": {
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "John"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Doe"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "john@example.com"
+                ]
+              },
+              {
+                "cells": [
+                  "phone",
+                  "07358480685"
+                ]
+              },
+              {
+                "cells": [
+                  "checkin",
+                  "2025-12-15"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2025-12-18"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "API response status code should be 201 for booking creation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User should see booking confirmation page with booking ID displayed",
+            "match": {
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10385700,
+              "duration": 828955100,
               "status": "passed"
             },
-            "line": 30,
-            "name": "Available rooms list should not be empty",
+            "line": 35,
+            "name": "User attempts to update booking ID with following details:",
             "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_update_booking_ID_with_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "roomid",
+                  "firstname",
+                  "lastname",
+                  "depositpaid",
+                  "checkin",
+                  "checkout"
+                ]
+              },
+              {
+                "cells": [
+                  "6",
+                  "Josh",
+                  "Mick",
+                  "false",
+                  "2026-03-11",
+                  "2026-03-12"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Booking update should be successful with status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Updated booking details should be reflected in system",
+            "match": {
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
+            "name": "@E2E"
           },
           {
             "name": "@HotelBookingAPI"
           },
           {
-            "name": "@api"
+            "name": "@e2e"
+          },
+          {
+            "name": "@smoke"
           },
           {
             "name": "@regression"
@@ -173,665 +257,22 @@
             "name": "@positive"
           },
           {
-            "name": "@RM_4"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:18.366Z",
-        "line": 35,
-        "name": "Check room availability for specific dates",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-for-specific-dates;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 490999300,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User requests to check room availability with checkin \"2026-07-20\" and checkout \"2026-07-21\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2026-07-20\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2026-07-21\"",
-                  "offset": 80
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code of RM should be 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 41
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4321700,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should contain available rooms",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9496600,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Available rooms list should not be empty",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
+            "name": "@E2E_1"
           },
           {
             "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@positive"
-          },
-          {
-            "name": "@RM_4"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:18.883Z",
-        "line": 36,
-        "name": "Check room availability for specific dates",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-for-specific-dates;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 797643100,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User requests to check room availability with checkin \"2026-12-15\" and checkout \"2026-12-20\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2026-12-15\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2026-12-20\"",
-                  "offset": 80
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1017800,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code of RM should be 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 41
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2103500,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should contain available rooms",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7098700,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Available rooms list should not be empty",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@positive"
-          },
-          {
-            "name": "@RM_4"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:19.698Z",
-        "line": 37,
-        "name": "Check room availability for specific dates",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-for-specific-dates;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 487080400,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User requests to check room availability with checkin \"2026-07-01\" and checkout \"2026-08-05\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2026-07-01\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2026-08-05\"",
-                  "offset": 80
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code of RM should be 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 41
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 997400,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should contain available rooms",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6827900,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Available rooms list should not be empty",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@positive"
-          },
-          {
-            "name": "@RM_4"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:20.199Z",
-        "line": 38,
-        "name": "Check room availability for specific dates",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-for-specific-dates;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 465430700,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User requests to check room availability with checkin \"2026-07-17\" and checkout \"2026-07-17\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2026-07-17\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2026-07-17\"",
-                  "offset": 80
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "API response status code of RM should be 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 41
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1998900,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Response should contain available rooms",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_available_rooms()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5536100,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Available rooms list should not be empty",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Available_rooms_list_should_not_be_empty()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@positive"
-          },
-          {
-            "name": "@RM_4"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:20.681Z",
-        "line": 51,
-        "name": "Check room availability with invalid date formats and ranges",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-with-invalid-date-formats-and-ranges;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1204327800,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "User requests to check room availability with checkin \"2025-07-25\" and checkout \"2025-07-20\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2025-07-25\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2025-07-20\"",
-                  "offset": 80
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {\"rooms\":[{\"roomid\":1,\"roomName\":\"101\",\"type\":\"Single\",\"accessible\":true,\"image\":\"/images/room1.jpg\",\"description\":\"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.\",\"features\":[\"TV\",\"WiFi\",\"Safe\"],\"roomPrice\":100},{\"roomid\":2,\"roomName\":\"102\",\"type\":\"Double\",\"accessible\":true,\"image\":\"/images/room2.jpg\",\"description\":\"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. \",\"features\":[\"TV\",\"Radio\",\"Safe\"],\"roomPrice\":150},{\"roomid\":3,\"roomName\":\"103\",\"type\":\"Suite\",\"accessible\":true,\"image\":\"/images/room3.jpg\",\"description\":\"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. \",\"features\":[\"Radio\",\"WiFi\",\"Safe\"],\"roomPrice\":225}]} expected [400] but found [200]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:907)\r\n\tat com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)\r\n\tat ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)\r\n",
-              "duration": 2866300,
-              "status": "failed"
-            },
-            "line": 46,
-            "name": "API response status code of RM should be 400",
-            "match": {
-              "arguments": [
-                {
-                  "val": "400",
-                  "offset": 41
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "Response should indicate invalid date range / date format",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_indicate_invalid_date_range()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@RM_5"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:21.903Z",
-        "line": 52,
-        "name": "Check room availability with invalid date formats and ranges",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-with-invalid-date-formats-and-ranges;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 33414719000,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "User requests to check room availability with checkin \"invalid-date\" and checkout \"2025-07-21\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"invalid-date\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2025-07-21\"",
-                  "offset": 82
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:907)\r\n\tat com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)\r\n\tat ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)\r\n",
-              "duration": 999800,
-              "status": "failed"
-            },
-            "line": 46,
-            "name": "API response status code of RM should be 503",
-            "match": {
-              "arguments": [
-                {
-                  "val": "503",
-                  "offset": 41
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "Response should indicate invalid date range / date format",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_indicate_invalid_date_range()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@RM_5"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2026-03-29T02:16:55.327Z",
-        "line": 53,
-        "name": "Check room availability with invalid date formats and ranges",
-        "description": "",
-        "id": "check-room-availability-api;check-room-availability-with-invalid-date-formats-and-ranges;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 793342600,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "User requests to check room availability with checkin \"2020-01-01\" and checkout \"2020-01-02\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2020-01-01\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"2020-01-02\"",
-                  "offset": 80
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_check_room_availability_with_checkin_and_checkout(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {\"rooms\":[{\"roomid\":1,\"roomName\":\"101\",\"type\":\"Single\",\"accessible\":true,\"image\":\"/images/room1.jpg\",\"description\":\"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.\",\"features\":[\"TV\",\"WiFi\",\"Safe\"],\"roomPrice\":100},{\"roomid\":2,\"roomName\":\"102\",\"type\":\"Double\",\"accessible\":true,\"image\":\"/images/room2.jpg\",\"description\":\"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. \",\"features\":[\"TV\",\"Radio\",\"Safe\"],\"roomPrice\":150},{\"roomid\":3,\"roomName\":\"103\",\"type\":\"Suite\",\"accessible\":true,\"image\":\"/images/room3.jpg\",\"description\":\"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. \",\"features\":[\"Radio\",\"WiFi\",\"Safe\"],\"roomPrice\":225}]} expected [400] but found [200]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:907)\r\n\tat com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:89)\r\n\tat ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)\r\n",
-              "status": "failed"
-            },
-            "line": 46,
-            "name": "API response status code of RM should be 400",
-            "match": {
-              "arguments": [
-                {
-                  "val": "400",
-                  "offset": 41
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "Response should indicate invalid date range / date format",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_indicate_invalid_date_range()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@checkRoomAvailability"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@negative"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@RM_5"
           }
         ]
       }
     ],
-    "name": "Check Room Availability API",
-    "description": "  As an user of the Hotel Booking API,\n  I want to check the availability of rooms\n  So that I can manage bookings effectively \n\n  Description:\n    This feature tests the Check Room Availability API which allows users to check if rooms are available for booking. \n    The scenarios cover both positive and negative cases to ensure the API functions correctly\n    under various conditions.",
-    "id": "check-room-availability-api",
+    "name": "End-to-End Booking System Flow - Shady Meadows B\u0026B",
+    "description": "    As a user of the Hotel Booking API,\n    I want to experience a complete end-to-end flow for booking, updating it, and verifying the changes\n    So that I can ensure the entire booking process works seamlessly from start to finish\n  \n  Description: Comprehensive end-to-end test creating a booking, updating it, and verifying the changes. \n    This scenario simulates a real user journey through the hotel booking process, ensuring that all components of the system work together seamlessly. \n    The test covers authentication, room search, booking creation, booking update, and verification of updated details.",
+    "id": "end-to-end-booking-system-flow---shady-meadows-b\u0026b",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/checkRoomAvailability.feature",
+    "uri": "file:src/test/resources/features/e2eHotelBooking.feature",
     "tags": [
       {
-        "name": "@RoomManagement",
+        "name": "@E2E",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -839,19 +280,11 @@
         }
       },
       {
-        "name": "@checkRoomAvailability",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 17
-        }
-      },
-      {
         "name": "@HotelBookingAPI",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 40
+          "column": 6
         }
       }
     ]

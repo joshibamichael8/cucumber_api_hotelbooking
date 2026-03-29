@@ -162,6 +162,66 @@ public class APIUtility {
         }
     }
 
+    /**
+     * Perform POST request with custom headers
+     */
+    public Response postWithHeader(String endpoint, Object body, String headerName, String headerValue) {
+        LOGGER.info("Performing POST request with custom header to endpoint: " + endpoint);
+        try {
+            System.out.println("POST request to endpoint: " + endpoint);
+            System.out.println("Request body: " + body);
+            System.out.println("Header: " + headerName + ": " + headerValue);
+
+            Response response = buildRequestSpec()
+                .header(headerName, headerValue)
+                .body(body)
+                .when()
+                .post(endpoint)
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("POST request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing POST request with header: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Perform PUT request with Content type and authorization set up
+     */
+    public Response putWithContentTypeAuthSetUp(String endpoint, Object body, String headerName, String headerValue,String headerName1, String headerValue1) {
+        LOGGER.info("Performing PUT request with multiple custom headers to endpoint: " + endpoint);
+        try {
+            // RequestSpecification spec = commonUtilities.requestGetSetup();
+            
+            RequestSpecification spec = RestAssured.given()
+            .contentType(ContentType.JSON)
+            .accept(ContentType.JSON)
+            .log().all();
+                    System.out.println("Spec: " + spec);
+            Response response = spec
+                .header(headerName, headerValue)
+                .header(headerName1, headerValue1)
+                .body(body)
+                .when()
+                .put(endpoint)
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("PUT request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing PUT request with multiple headers: " + e.getMessage());
+            throw e;
+        }
+    }
+
 
     public void setAuthToken(String token) {
         LOGGER.info("Setting authentication token for future requests");

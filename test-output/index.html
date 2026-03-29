@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-CucumberSuite" class="navigator-link">
-              <span class="suite-name border-failed">CucumberSuite</span>
+              <span class="suite-name border-passed">CucumberSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-CucumberSuite" class="hide-methods failed suite-CucumberSuite"> (hide)</a> <!-- hide-methods failed suite-CucumberSuite -->
-                      <a href="#" panel-name="suite-CucumberSuite" class="show-methods failed suite-CucumberSuite"> (show)</a> <!-- show-methods failed suite-CucumberSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CucumberSuite" class="hide-methods passed suite-CucumberSuite"> (hide)</a> <!-- hide-methods passed suite-CucumberSuite -->
+                      <a href="#" panel-name="suite-CucumberSuite" class="show-methods passed suite-CucumberSuite"> (show)</a> <!-- show-methods passed suite-CucumberSuite -->
                     </span>
-                    <div class="method-list-content failed suite-CucumberSuite">
+                    <div class="method-list-content passed suite-CucumberSuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CucumberSuite" title="com.booking.runners.DirectTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Access protected resources without valid authentication&quot;, &quot;Optional[Login to the Hotel Booking API ...)">runScenario("Access protected resources without valid authentication", "Optional[Login to the Hotel Booking API ...)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.booking.runners.DirectTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;, &quot;Optional[End-to-End Booking System ...)">runScenario("Complete happy path - Search, Book, and Receive Confirmation", "Optional[End-to-End Booking System ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-CucumberSuite -->
+                    </div> <!-- method-list-content passed suite-CucumberSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,42 +119,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CucumberSuite" class="panel CucumberSuite">
-          <div class="suite-CucumberSuite-class-failed">
+          <div class="suite-CucumberSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.booking.runners.DirectTestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Access protected resources without valid authentication&quot;, &quot;Optional[Login to the Hotel Booking API ...)">
-                  </a> <!-- runScenario("Access protected resources without valid authentication", "Optional[Login to the Hotel Booking API ...) -->
+                  <a name="runScenario(&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;, &quot;Optional[End-to-End Booking System ...)">
+                  </a> <!-- runScenario("Complete happy path - Search, Book, and Receive Confirmation", "Optional[End-to-End Booking System ...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Access protected resources without valid authentication", "Optional[Login to the Hotel Booking API -Shady Meadows B&B API]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User &quot;attempts to access protected resource with invalid token &quot;invalid_token_12345&quot;&quot;&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@When(&quot;User \&quot;attempts to access protected resource with invalid token \&quot;invalid_token_{int}\&quot;\&quot;&quot;)
-public void user_attempts_to_access_protected_resource_with_invalid_token_invalid_token(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at com.booking.runners.DirectTestRunner.runScenario(DirectTestRunner.java:39)
-	at java.base/java.util.ArrayList.forEach(Unknown Source)
-	at com.booking.runners.DirectTestRunner.main(DirectTestRunner.java:47)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">("Complete happy path - Search, Book, and Receive Confirmation", "Optional[End-to-End Booking System Flow - Shady Meadows B&B]")</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CucumberSuite-class-failed -->
+          </div> <!-- suite-CucumberSuite-class-passed -->
         </div> <!-- panel CucumberSuite -->
         <div panel-name="test-xml-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -210,12 +190,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.booking.runners.DirectTestRunner')
-data.setCell(0, 3, 245);
+data.setCell(0, 3, 182720);
 window.suiteTableData['CucumberSuite']= { tableData: data, tableDiv: 'times-div-CucumberSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 245 ms</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-CucumberSuite">
               </div> <!-- times-div-CucumberSuite -->
             </div> <!-- times-div -->
@@ -247,14 +227,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Access protected resources without valid authentication", "Optional[Login to the Hotel Booking API ...)</span>
-                <span class="method-start">567 ms</span>
+                <span class="method-name">runScenario("Complete happy path - Search, Book, and Receive Confirmation", "Optional[End-to-End Booking System ...)</span>
+                <span class="method-start">492 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">820 ms</span>
+                <span class="method-start">183215 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

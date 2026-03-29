@@ -6,6 +6,7 @@ com\booking\base\BaseClass.class
 com\booking\utilities\ConfigReader.class
 com\booking\stepDefinitions\RoomManagementAPI.class
 com\booking\runners\TestRunner.class
+com\booking\stepDefinitions\E2EHotelBooking.class
 com\booking\hooks\Hooks.class
 com\booking\utilities\TokenManager.class
 com\booking\runners\DirectTestRunner.class

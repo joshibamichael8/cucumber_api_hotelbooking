@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@RM_3",
+        tags = "@e2e",
         dryRun = false,
         monochrome = true,
         publish = true

@@ -7,5 +7,6 @@ D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\uti
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\stepDefinitions\LoginAPIStepDefinition.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\runners\TestRunner.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\hooks\Hooks.java
+D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\stepDefinitions\E2EHotelBooking.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\utilities\APIUtility.java
 D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\src\test\java\com\booking\utilities\ConfigReader.java
