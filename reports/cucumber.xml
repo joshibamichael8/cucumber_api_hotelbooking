@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.218">
-<testcase classname="Check Room Availability API" name="Check room availability for specific dates" time="4.038">
-<system-out><![CDATA[When User requests to check room availability with checkin "2025-07-17" and checkout "2025-07-18".passed
-Then API response status code of RM should be 200...........................passed
-And Response should contain available rooms.................................passed
-And Available rooms list should not be empty................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.415">
+<testcase classname="Check Room Availability API" name="Check room availability with checkout before checkin date" time="4.164">
+<failure message="Cannot invoke &quot;io.restassured.response.Response.getStatusCode()&quot; because &quot;this.response&quot; is null" type="java.lang.NullPointerException"><![CDATA[When User requests to check room availability with checkin "2025-07-25" and checkout "2025-07-20".passed
+Then API response status code should be 400.................................failed
+And Response should indicate invalid date range.............................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getStatusCode()" because "this.response" is null
+	at com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(LoginAPIStepDefinition.java:51)
+	at ✽.API response status code should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/checkRoomAvailability.feature:46)
+]]></failure>
 </testcase>
 </testsuite>

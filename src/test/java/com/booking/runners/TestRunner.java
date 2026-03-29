@@ -20,7 +20,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@RM_4",
+        tags = "@RM_5",
         dryRun = false,
         monochrome = true,
         publish = true

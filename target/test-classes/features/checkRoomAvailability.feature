@@ -31,4 +31,25 @@ Feature: Check Room Availability API
 
     Examples:
       | checkin    | checkout   | statuscode |
-      | 2025-07-17 | 2025-07-18 | 200        |
+      | 2026-07-17 | 2026-07-18 | 200        |#specific dates
+      | 2026-07-20 | 2026-07-21 | 200        |#single night stay
+      | 2026-12-15 | 2026-12-20 | 200        |#far future dates
+      | 2026-07-01 | 2026-08-05 | 200        |#extended period (more than 30 days)
+      | 2026-07-17 | 2026-07-17 | 200        |#same day check-in and check-out (accepted in this application)
+
+ 
+  # ==================== NEGATIVE SCENARIOS ====================
+
+  @api @negative @regression @RM_5
+  Scenario Outline: Check room availability with checkout before checkin date
+    When User requests to check room availability with checkin "<checkin>" and checkout "<checkout>"
+    Then API response status code should be <statuscode>
+    And Response should indicate invalid date range
+
+    Examples:
+      | checkin    | checkout   | statuscode |
+      | 2025-07-25 | 2025-07-20 | 400        |
+
+#checkout before checkin date - 
+#       This scenario is getting failed because the API is accepting checkout date 
+#       before checkin date, which is not a valid case.

@@ -136,4 +136,25 @@ public class RoomManagementAPI {
         }
     }
 
+    @Then("Response should indicate invalid date range")
+    public void Response_should_indicate_invalid_date_range() {
+        LOGGER.info("Step: Verifying response indicates invalid date range");
+        try {
+            String errorMessage = response.jsonPath().getString("error");
+            if (errorMessage == null || errorMessage.isEmpty()) {
+                errorMessage = response.jsonPath().getString("message");
+            }
+            
+            Assert.assertNotNull(errorMessage, "Response should contain error information");
+            Assert.assertTrue(
+                errorMessage.toLowerCase().contains("checkout") && errorMessage.toLowerCase().contains("checkin"),
+                "Response should indicate invalid date range but was: " + errorMessage
+            );
+            LOGGER.info("Invalid date range error verified: " + errorMessage);
+        } catch (Exception e) {
+            Assert.fail("Could not verify invalid date range error: " + e.getMessage());
+        }
+    }
+
+
 }
