@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-29T13:45:20 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-29T13:45:28 IST" duration-ms="8263">
+  <suite started-at="2026-03-29T14:27:46 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-29T14:28:02 IST" duration-ms="15907">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-29T13:45:20 IST" name="API Booking Tests" finished-at="2026-03-29T13:45:28 IST" duration-ms="8263">
+    <test started-at="2026-03-29T14:27:46 IST" name="API Booking Tests" finished-at="2026-03-29T14:28:02 IST" duration-ms="15907">
       <class name="com.booking.runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T13:45:20 IST" name="setUpClass" finished-at="2026-03-29T13:45:20 IST" duration-ms="541" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T14:27:46 IST" name="setUpClass" finished-at="2026-03-29T14:27:47 IST" duration-ms="487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T13:45:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-29T13:45:26 IST" duration-ms="6029" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T14:27:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-29T14:27:54 IST" duration-ms="7336" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T13:45:26 IST" name="tearDownClass" finished-at="2026-03-29T13:45:28 IST" duration-ms="1665" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T14:27:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-29T14:27:57 IST" duration-ms="2763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete happy path - Search, Book, and Receive Confirmation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[End-to-End Booking System Flow - Shady Meadows B&B]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T14:27:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-29T14:28:00 IST" duration-ms="2825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete happy path - Search, Book, and Receive Confirmation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[End-to-End Booking System Flow - Shady Meadows B&B]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-29T14:28:00 IST" name="tearDownClass" finished-at="2026-03-29T14:28:02 IST" duration-ms="2468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

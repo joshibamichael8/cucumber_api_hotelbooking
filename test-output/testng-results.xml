@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-29T13:41:39 IST" name="CucumberSuite" finished-at="2026-03-29T13:44:45 IST" duration-ms="185993">
+  <suite started-at="2026-03-29T14:24:23 IST" name="CucumberSuite" finished-at="2026-03-29T14:25:08 IST" duration-ms="44378">
     <groups>
     </groups>
-    <test started-at="2026-03-29T13:41:39 IST" name="CucumberTests" finished-at="2026-03-29T13:44:45 IST" duration-ms="185993">
+    <test started-at="2026-03-29T14:24:23 IST" name="CucumberTests" finished-at="2026-03-29T14:25:08 IST" duration-ms="44378">
       <class name="com.booking.runners.DirectTestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T13:41:39 IST" name="setUpClass" finished-at="2026-03-29T13:41:40 IST" duration-ms="477" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T14:24:23 IST" name="setUpClass" finished-at="2026-03-29T14:24:24 IST" duration-ms="590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T13:41:40 IST" name="runScenario" data-provider="scenarios" finished-at="2026-03-29T13:44:42 IST" duration-ms="182720" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T14:24:24 IST" name="runScenario" data-provider="scenarios" finished-at="2026-03-29T14:25:05 IST" duration-ms="41278" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T13:44:42 IST" name="tearDownClass" finished-at="2026-03-29T13:44:45 IST" duration-ms="2749" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T14:25:05 IST" name="tearDownClass" finished-at="2026-03-29T14:25:08 IST" duration-ms="2462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

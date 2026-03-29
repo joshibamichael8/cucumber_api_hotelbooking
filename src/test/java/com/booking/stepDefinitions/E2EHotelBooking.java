@@ -240,6 +240,79 @@ public class E2EHotelBooking {
 
     }
 
+    @When("User retrieves booking details using stored booking ID via API")
+    public void User_retrieves_booking_details_using_stored_booking_ID_via_API() {
+        LOGGER.info("Step: Retrieving booking details using stored booking ID: " + bookingId);
+        try {
+            response = apiUtility.getWithHeader("/booking/" + bookingId, "Cookie", "token=" + TokenManager.getAuthToken());
+            LOGGER.info("Retrieve booking response status: " + response.getStatusCode());
+        } catch (Exception e) {
+            LOGGER.error("Error retrieving booking details: " + e.getMessage());
+            Assert.fail("Could not retrieve booking details: " + e.getMessage());
+        }
+    }
+
+    @Then("API response should contain updated booking details with status code {int}")
+    public void API_response_should_contain_updated_booking_details_with_status_code(int statusCode) {
+        LOGGER.info("Step: Verifying API response contains updated booking details with status code " + statusCode);
+        int actualStatus = response.getStatusCode();
+        Assert.assertEquals(actualStatus, statusCode, 
+            "Response status code mismatch. Expected: " + statusCode + 
+            " Actual: " + actualStatus + 
+            " Body: " + response.getBody().asString());
+        
+        // Additional assertions to verify updated details in response body
+        try {
+            String responseBody = response.getBody().asString();
+            Assert.assertTrue(responseBody.contains("firstname"), "Response should contain firstname");
+            Assert.assertTrue(responseBody.contains("lastname"), "Response should contain lastname");
+            Assert.assertTrue(responseBody.contains("bookingdates"), "Response should contain bookingdates");
+            LOGGER.info("Updated booking details verified in response body");
+        } catch (Exception e) {
+            LOGGER.error("Error verifying updated booking details in response: " + e.getMessage());
+            Assert.fail("Could not verify updated booking details in response: " + e.getMessage());
+        }
+    }
+
+    @When("User attempts to cancel booking with ID via API")
+    public void User_attempts_to_cancel_booking_with_ID_via_API() {
+        LOGGER.info("Step: Attempting to cancel booking with ID: " + bookingId);
+        try {
+            response = apiUtility.deleteWithHeader("/booking/" + bookingId, "Cookie", "token=" + TokenManager.getAuthToken());
+            LOGGER.info("Cancel booking response status: " + response.getStatusCode());
+        } catch (Exception e) {
+            LOGGER.error("Error attempting to cancel booking: " + e.getMessage());
+            Assert.fail("Could not attempt to cancel booking: " + e.getMessage());
+        }
+    }
+
+
+    @Then("Booking cancellation should be successful with status {int}")
+    public void Booking_cancellation_should_be_successful_with_status(int statusCode) {
+         LOGGER.info("Step: Verifying booking cancellation response status code is " + statusCode);
+        int actualStatus = response.getStatusCode();
+        Assert.assertEquals(actualStatus, statusCode, 
+            "Booking cancellation failed. Expected status: " + statusCode + 
+            " Actual status: " + actualStatus + 
+            " Body: " + response.getBody().asString());
+        LOGGER.info("Booking cancellation verified successfully");
+    }
+
+    @Then("API response should return {int} when retrieving cancelled booking details")
+    public void API_response_should_return_when_retrieving_cancelled_booking_details(int expCode) {
+        LOGGER.info("Step: Verifying API response when retrieving cancelled booking details");
+        try {
+            response = apiUtility.getWithHeader("/booking/" + bookingId, "Cookie", "token=" + TokenManager.getAuthToken());
+            int actualStatus = response.getStatusCode();
+            Assert.assertEquals(actualStatus, expCode, 
+                "Expected status code " + expCode + " for cancelled booking, but got: " + actualStatus + 
+                " Body: " + response.getBody().asString());
+            LOGGER.info("Verified that cancelled booking cannot be retrieved");
+        } catch (Exception e) {
+            LOGGER.error("Error verifying retrieval of cancelled booking details: " + e.getMessage());
+            Assert.fail("Could not verify retrieval of cancelled booking details: " + e.getMessage());
+        }
+    }
 
 
 }

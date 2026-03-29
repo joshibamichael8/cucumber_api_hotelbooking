@@ -32,22 +32,26 @@ Feature: End-to-End Booking System Flow - Shady Meadows B&B
       | depositpaid | <depositpaid> |
     Then API response status code should be 201 for booking creation
     And User should see booking confirmation page with booking ID displayed
+
+    #Update the booking with new details and verify the update
     When User attempts to update booking ID with following details:
      | roomid | firstname | lastname | depositpaid | checkin    | checkout   |
      | 6      | Josh      | Mick     | false       | 2026-03-11 | 2026-03-12 |
     Then Booking update should be successful with status 200
     And Updated booking details should be reflected in system
+
+    # Retrieve the updated booking details and verify the changes
     When User retrieves booking details using stored booking ID via API
+    Then API response should contain updated booking details with status code 200
+
+    # Cancel the booking and verify cancellation
+    When User attempts to cancel booking with ID via API
+    Then Booking cancellation should be successful with status 200
+    And API response should return 404 when retrieving cancelled booking details
+
 
 Examples:
       | firstname | lastname | email              | phone       | roomId | checkin    | checkout   |depositpaid|
       | John      | Doe      | john@example.com   | 07358480685 | 1      | 2025-12-15 | 2025-12-18 |false      |
-    #   | Jane      | Smith    | jane@example.com   | 07358480686 | 2      | 2025-12-20 | 2025-12-25 |false      |
-    #   | Bob       | Johnson  | bob@example.com    | 07358480687 | 3      | 2025-12-10 | 2025-12-12 |false      |
-
-    
-    # 
-    # Then API response status code should be 200
-    # When User attempts to cancel booking with ID
-    # Then Booking cancellation should be successful with status 200
-    # And User should not be able to retrieve cancelled booking details via API
+      | Jane      | Smith    | jane@example.com   | 07358480686 | 2      | 2025-12-20 | 2025-12-25 |false      |
+      | Bob       | Johnson  | bob@example.com    | 07358480687 | 3      | 2025-12-10 | 2025-12-12 |false      |

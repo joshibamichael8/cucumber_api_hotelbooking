@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.59" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="16.315" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26\bin"/>
-    <property name="sun.java.command" value="C:\Users\Juanita\AppData\Local\Temp\surefire9358278151416586970\surefirebooter-20260329134516260_3.jar C:\Users\Juanita\AppData\Local\Temp\surefire9358278151416586970 2026-03-29T13-45-15_821-jvmRun1 surefire-20260329134516260_1tmp surefire_0-20260329134516260_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Juanita\AppData\Local\Temp\surefire17415697730750764262\surefirebooter-20260329142746072_3.jar C:\Users\Juanita\AppData\Local\Temp\surefire17415697730750764262 2026-03-29T14-27-45_646-jvmRun1 surefire-20260329142746072_1tmp surefire_0-20260329142746072_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\target\test-classes;D:\Joshiba\Kata_Cucumber_Project\api_hotel_booking\target\classes;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\Juanita\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-testng\6.10.4\cucumber-testng-6.10.4.jar;C:\Users\Juanita\.m2\repository\io\cucumber\cucumber-picocontainer\6.10.4\cucumber-picocontainer-6.10.4.jar;C:\Users\Juanita\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Juanita\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Juanita\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Juanita\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Juanita\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Juanita\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Juanita\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.17.1\log4j-slf4j-impl-2.17.1.jar;C:\Users\Juanita\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Juanita\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Juanita\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0\selenium-java-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0\selenium-api-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0\selenium-chrome-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\Juanita\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\Juanita\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0\selenium-chromium-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0\selenium-json-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0\selenium-devtools-v85-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0\selenium-devtools-v93-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0\selenium-devtools-v94-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.0.0\selenium-devtools-v95-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0\selenium-edge-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0\selenium-firefox-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0\selenium-firefox-xpi-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0\selenium-ie-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0\selenium-opera-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0\selenium-remote-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-buffer\4.1.68.Final\netty-buffer-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-common\4.1.68.Final\netty-common-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport\4.1.68.Final\netty-transport-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-resolver\4.1.68.Final\netty-resolver-4.1.68.Final.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-api\1.6.0\opentelemetry-api-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-context\1.6.0\opentelemetry-context-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.6.0\opentelemetry-exporter-logging-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.6.0-alpha\opentelemetry-sdk-metrics-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.6.0\opentelemetry-sdk-common-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.6.0\opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.6.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.6.0\opentelemetry-sdk-trace-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.6.0-alpha\opentelemetry-api-metrics-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.6.0\opentelemetry-sdk-1.6.0.jar;C:\Users\Juanita\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.6.0-alpha\opentelemetry-semconv-1.6.0-alpha.jar;C:\Users\Juanita\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Juanita\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Juanita\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Juanita\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Juanita\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Juanita\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Juanita\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0\selenium-http-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0\selenium-safari-driver-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0\selenium-support-4.0.0.jar;C:\Users\Juanita\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\Juanita\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\Juanita\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\Juanita\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Juanita\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Juanita\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\Juanita\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Juanita\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Juanita\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Juanita\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\Juanita\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\Juanita\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Juanita\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\Juanita\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\Juanita\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Juanita\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Juanita\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Juanita\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Juanita\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\Juanita\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\Juanita\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\Juanita\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\Juanita\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\Juanita\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\Juanita\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Juanita\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\Juanita\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\Juanita\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\Juanita\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\Juanita\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\Juanita\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\Juanita\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\Juanita\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\Juanita\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\Juanita\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\Juanita\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\Juanita\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\Juanita\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\Juanita\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Juanita\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\Juanita\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Juanita\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Juanita\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Juanita\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\Juanita\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\Juanita\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Juanita\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Juanita\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\Juanita\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\Juanita\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\Juanita\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\Juanita\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\Juanita\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\Juanita\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\Juanita\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\Juanita\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\Juanita\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\Juanita\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Juanita\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\Juanita\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\Juanita\.m2\repository\org\json\json\20210307\json-20210307.jar;C:\Users\Juanita\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Juanita\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Juanita\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Juanita\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Juanita\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Juanita\AppData\Local\Temp\surefire9358278151416586970\surefirebooter-20260329134516260_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Juanita\AppData\Local\Temp\surefire17415697730750764262\surefirebooter-20260329142746072_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26+35-2893"/>
@@ -59,11 +59,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;, &quot;Optional[End-to-End Booking System Flow - Shady Meadows B&amp;B]&quot;](1)" classname="com.booking.runners.TestRunner" time="6.031">
+  <testcase name="runScenario[&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;, &quot;Optional[End-to-End Booking System Flow - Shady Meadows B&amp;B]&quot;](1)" classname="com.booking.runners.TestRunner" time="7.335">
     <system-out><![CDATA[
 @E2E @HotelBookingAPI @e2e @smoke @regression @positive @E2E_1 @api
-Scenario Outline: Complete happy path - Search, Book, and Receive Confirmation         # src/test/resources/features/e2eHotelBooking.feature:43
-13:45:21.066 [TestNG-tests-1] ERROR com.booking.utilities.ConfigReader - Error loading properties file: src\test\resources\config\application.properties (The system cannot find the file specified)
+Scenario Outline: Complete happy path - Search, Book, and Receive Confirmation         # src/test/resources/features/e2eHotelBooking.feature:55
+14:27:47.955 [TestNG-tests-1] ERROR com.booking.utilities.ConfigReader - Error loading properties file: src\test\resources\config\application.properties (The system cannot find the file specified)
 java.io.FileNotFoundException: src\test\resources\config\application.properties (The system cannot find the file specified)
 	at java.io.FileInputStream.open0(Native Method) ~[?:?]
 	at java.io.FileInputStream.open(FileInputStream.java:185) ~[?:?]
@@ -139,35 +139,35 @@ Body:
     "username": "admin"
 }
 HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 08:15:23 GMT
+Date: Sun, 29 Mar 2026 08:57:50 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
 x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: Bn443R7HS9GpwSEb0ubPiw
-x-railway-cdn-edge: fastly/cache-sin-wsap440020-SIN
+x-railway-request-id: Ljt3vcT-RBqnEa0qoB_USg
+x-railway-cdn-edge: fastly/cache-sin-wsap440027-SIN
 x-cache: MISS
 x-cache-hits: 0
-x-served-by: cache-sin-wsap440020-SIN
+x-served-by: cache-sin-wsap440027-SIN
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kt8G7%2B%2B4FNDs4pCSI1B8hJmQEX7lPzhcpk3K3gfKKcrzjUE1nSRM5EEBGZ6PG6lnWadizZCTUwu99%2FjB%2BVHgI1lWAz2spORLOg9qMTmTy9ZD6xM6bRZzejUdRCJjBI3i7dwZkFD4AcX40P0IwQ%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aozE16NCI%2BYUvz1zub%2B01S7BaBk9pxocAjvlwwgBm4DfpnGncN6IQ%2FOAtvSCLCw1rAIdhd5dW3m9T6fK8wk1pi4K93NErvCVG2uJJ2Prt178aRqs%2Bv2LTx%2Ffj0UYq0v2Zl1hLLq4MXIhY5%2FC4g%3D%3D"}]}
 Content-Encoding: gzip
-CF-RAY: 9e3d6d294894fd1e-SIN
+CF-RAY: 9e3dab56efd8b403-SIN
 alt-svc: h3=":443"; ma=86400
 
 {
-    "token": "drQ7SeB45z1cMtCu"
+    "token": "BAosptuFk9DyC4Pk"
 }
   When User authenticates as admin credentials:                                        # com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)
   And User stores the authentication token                                             # com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()
   Then API response status code for E2E should be 200                                  # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)
   When User enters search criteria with checkin "2025-12-15" and checkout "2025-12-18" # com.booking.stepDefinitions.E2EHotelBooking.User_enters_search_criteria_with_checkin_and_checkout(java.lang.String,java.lang.String)
 POST request to endpoint: /booking
-Request body: {firstname=John, bookingdates={checkin=2025-12-15, checkout=2025-12-18}, phone=07358480685, depositpaid=false, roomid=2566, email=john@example.com, lastname=Doe}
-Header: Cookie: token=drQ7SeB45z1cMtCu
+Request body: {firstname=John, bookingdates={checkin=2025-12-15, checkout=2025-12-18}, phone=07358480685, depositpaid=false, roomid=2389, email=john@example.com, lastname=Doe}
+Header: Cookie: token=BAosptuFk9DyC4Pk
 Request method:	POST
 Request URI:	https://automationintesting.online/api/booking
 Proxy:			<none>
@@ -176,8 +176,8 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer drQ7SeB45z1cMtCu
-				Cookie=token=drQ7SeB45z1cMtCu
+				Authorization=Bearer BAosptuFk9DyC4Pk
+				Cookie=token=BAosptuFk9DyC4Pk
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
@@ -190,32 +190,32 @@ Body:
     },
     "phone": "07358480685",
     "depositpaid": false,
-    "roomid": 2566,
+    "roomid": 2389,
     "email": "john@example.com",
     "lastname": "Doe"
 }
 HTTP/1.1 201 Created
-Date: Sun, 29 Mar 2026 08:15:25 GMT
+Date: Sun, 29 Mar 2026 08:57:52 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
 x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: YwfTS84GSiC6hGifacI7Nw
-x-railway-cdn-edge: fastly/cache-sin-wsat1880083-SIN
+x-railway-request-id: V_H-mdksR5SyVNgZV7rehQ
+x-railway-cdn-edge: fastly/cache-sin-wsat1880096-SIN
 x-cache: MISS
 x-cache-hits: 0
-x-served-by: cache-sin-wsat1880083-SIN
+x-served-by: cache-sin-wsat1880096-SIN
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Bevubj4JmhJb4vOo3F3VQTNWDmzJDtq07V8bMEjDg0ZkoprWUCAuKF9QR0vS2ADgTGjPmSKuvW5zCIwAMrvGyxQXuL91XlkgnQ7T38F0y6gys94gE8xdnGoR2f%2BzSHwH3ne5yNMG5sN2MXrFyw%3D%3D"}]}
-CF-RAY: 9e3d6d31ff1b4e66-SIN
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QYKYYQgy7mehVvg51r9ahHpyMPoyLnZ0pVnY%2BgLUbjcr28WbbbFANu3ElkUXnxpUKUnn7OtnF4R%2FKNcsy%2FDAq6dhitQPwDJFwGK2BScX2ntmbOU6prc1q4FTelg1HKgs4dfbhQmWh8TZJu7hRQ%3D%3D"}]}
+CF-RAY: 9e3dab5f19005fdf-SIN
 alt-svc: h3=":443"; ma=86400
 
 {
-    "bookingid": 6,
-    "roomid": 2566,
+    "bookingid": 8,
+    "roomid": 2389,
     "firstname": "John",
     "lastname": "Doe",
     "depositpaid": false,
@@ -227,17 +227,17 @@ alt-svc: h3=":443"; ma=86400
   And User creates a new booking with following details and submits the booking:       # com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)
   Then API response status code should be 201 for booking creation                     # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)
   And User should see booking confirmation page with booking ID displayed              # com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()
-{firstname=Josh, depositpaid=false, bookingid=6, roomid=6, lastname=Mick}
-Spec: io.restassured.internal.RequestSpecificationImpl@cefa49e
+{firstname=Josh, depositpaid=false, bookingid=8, roomid=6, lastname=Mick}
+Spec: io.restassured.internal.RequestSpecificationImpl@7f0044f1
 Request method:	PUT
-Request URI:	https://automationintesting.online/api/booking/6
+Request URI:	https://automationintesting.online/api/booking/8
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Cookie=token=drQ7SeB45z1cMtCu
+				Cookie=token=BAosptuFk9DyC4Pk
 				Authorization=automationintesting.online
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
@@ -250,28 +250,28 @@ Body:
         "checkout": "2026-03-12"
     },
     "depositpaid": false,
-    "bookingid": 6,
+    "bookingid": 8,
     "roomid": 6,
     "lastname": "Mick"
 }
 HTTP/1.1 200 OK
-Date: Sun, 29 Mar 2026 08:15:26 GMT
+Date: Sun, 29 Mar 2026 08:57:52 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
 x-railway-edge: railway/asia-southeast1-eqsg3a
-x-railway-request-id: 2HWHxGfhRdCVij5fJH0Vcg
-x-railway-cdn-edge: fastly/cache-sin-wsap440023-SIN
+x-railway-request-id: W_ijbCLuT3-ib48Amrpb1w
+x-railway-cdn-edge: fastly/cache-sin-wsat1880028-SIN
 x-cache: MISS
 x-cache-hits: 0
-x-served-by: cache-sin-wsap440023-SIN
+x-served-by: cache-sin-wsat1880028-SIN
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=I8yDlGXeTIwiAjzf0ThXXxSE87EMyZTKTlGE%2BeegLvW%2BLHKV7gG6NgfA5xQvI7ucYZ%2FttoC3%2BHwJ9EYJrS3hLSglT1nkzt9UjzWXRHK%2B0VRPrz4qMbjVICDvYNFap8W7nVungY17PGabEE0vTA%3D%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HRT9gmkBRc468Cnst0%2FuKG8lO6VTZTraTLPt1Db1md9y8D6RaIOKbVX9ekPgKBPpCjvuh2INw3G%2FA8pqKFpx2KtD6Zi26N3izMaKs9wRGtf9f%2FeQYi%2BiZnPBMGAguSOhIzmhqukiiwiV32jM8A%3D%3D"}]}
 Content-Encoding: gzip
-CF-RAY: 9e3d6d38ebd15e3e-SIN
+CF-RAY: 9e3dab66083dfde2-SIN
 alt-svc: h3=":443"; ma=86400
 
 {
@@ -281,6 +281,708 @@ alt-svc: h3=":443"; ma=86400
   Then Booking update should be successful with status 200                             # com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)
 {"success":true}
   And Updated booking details should be reflected in system                            # com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()
+Request method:	GET
+Request URI:	https://automationintesting.online/api/booking/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer BAosptuFk9DyC4Pk
+				Cookie=token=BAosptuFk9DyC4Pk
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:53 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: 0c-qQS3QRoeh5OkL0ubPiw
+x-railway-cdn-edge: fastly/cache-sin-wsap440027-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsap440027-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lc8sr%2BQ09zIE7t7DnzMSCBG66D1tEDa%2B3lmXohHXSouZEzXyKXRgh1oqtpzAlh2PmPRAX5lrj8OutwphghwJACy%2Frb91Z9OQKOvJE31ENTYzK%2FuYS0plqotMHaKzJwg%2Fr2cE66hcJh5jKqHJyA%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab6b38be5f59-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "bookingid": 8,
+    "roomid": 2389,
+    "firstname": "Josh",
+    "lastname": "Mick",
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2026-03-11",
+        "checkout": "2026-03-12"
+    }
+}
+  When User retrieves booking details using stored booking ID via API                  # com.booking.stepDefinitions.E2EHotelBooking.User_retrieves_booking_details_using_stored_booking_ID_via_API()
+  Then API response should contain updated booking details with status code 200        # com.booking.stepDefinitions.E2EHotelBooking.API_response_should_contain_updated_booking_details_with_status_code(int)
+Request method:	DELETE
+Request URI:	https://automationintesting.online/api/booking/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer BAosptuFk9DyC4Pk
+				Cookie=token=BAosptuFk9DyC4Pk
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:54 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: LKseK_HbQy6-nqDDmrpb1w
+x-railway-cdn-edge: fastly/cache-sin-wsap440085-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsap440085-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9Kg7JN%2B2PmaHKn4t26o4AKVpFQhCs9Tiq1NYN9LUaNQZE3s1F%2FQYSg3IE32v0rbLe8r5yhbLrWoVM%2FfSeqsRrhYqWHckGIw7X3QPL5VYAD1%2B3%2B0jQFk4sLYFmUzDeWmEu98bRYQN0ESPm1ESMQ%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab6e6d8a2f0a-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true
+}
+  When User attempts to cancel booking with ID via API                                 # com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_cancel_booking_with_ID_via_API()
+  Then Booking cancellation should be successful with status 200                       # com.booking.stepDefinitions.E2EHotelBooking.Booking_cancellation_should_be_successful_with_status(int)
+Request method:	GET
+Request URI:	https://automationintesting.online/api/booking/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer BAosptuFk9DyC4Pk
+				Cookie=token=BAosptuFk9DyC4Pk
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Sun, 29 Mar 2026 08:57:54 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: TOB4cOTWTOKAZ3cuV7rehQ
+x-railway-cdn-edge: fastly/cache-sin-wsap440027-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsap440027-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dGc2A4WFPRGw2D70MBsaa%2Bicx%2FA7%2BzcXquEGt8Vg6JUheJOJ3zubI7KpeuwDXa7pTQQ%2FDU3ch3M3cKXYtHwMVdgYukuI0EIL45%2BzKdwla0fays0%2FZa9MP0c7a4uKnxV%2BIcBvYFcpU3hx%2BahxuQ%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab721b1d5f93-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Failed to fetch booking: 404"
+}
+  And API response should return 404 when retrieving cancelled booking details         # com.booking.stepDefinitions.E2EHotelBooking.API_response_should_return_when_retrieving_cancelled_booking_details(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;, &quot;Optional[End-to-End Booking System Flow - Shady Meadows B&amp;B]&quot;](2)" classname="com.booking.runners.TestRunner" time="2.762">
+    <system-out><![CDATA[
+@E2E @HotelBookingAPI @e2e @smoke @regression @positive @E2E_1 @api
+Scenario Outline: Complete happy path - Search, Book, and Receive Confirmation         # src/test/resources/features/e2eHotelBooking.feature:56
+Request method:	POST
+Request URI:	https://automationintesting.online/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "password",
+    "username": "admin"
+}
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:54 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: zoFbrORvRdOtFyoroB_USg
+x-railway-cdn-edge: fastly/cache-sin-wsat1880032-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880032-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=jeHv4pDyHrqH4ZOMzpb9YDItnD3K2ONQJFem5g4%2Bpbo2BfU2HFTFO4%2BypoF4wXs9iPMsL3TV9HAZdI2kaXQYl4EqRkbohCsOGt0BUoZN0ZcM%2BkOjCqVuzY1g8ZnHbxnre%2FCR%2FpZLs3P9yrCwRg%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab743feaaa1c-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "token": "vjuLmjXJWet7l9LX"
+}
+  When User authenticates as admin credentials:                                        # com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)
+  And User stores the authentication token                                             # com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()
+  Then API response status code for E2E should be 200                                  # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)
+  When User enters search criteria with checkin "2025-12-20" and checkout "2025-12-25" # com.booking.stepDefinitions.E2EHotelBooking.User_enters_search_criteria_with_checkin_and_checkout(java.lang.String,java.lang.String)
+POST request to endpoint: /booking
+Request body: {firstname=Jane, bookingdates={checkin=2025-12-20, checkout=2025-12-25}, phone=07358480686, depositpaid=false, roomid=2155, email=jane@example.com, lastname=Smith}
+Header: Cookie: token=vjuLmjXJWet7l9LX
+Request method:	POST
+Request URI:	https://automationintesting.online/api/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer vjuLmjXJWet7l9LX
+				Cookie=token=vjuLmjXJWet7l9LX
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Jane",
+    "bookingdates": {
+        "checkin": "2025-12-20",
+        "checkout": "2025-12-25"
+    },
+    "phone": "07358480686",
+    "depositpaid": false,
+    "roomid": 2155,
+    "email": "jane@example.com",
+    "lastname": "Smith"
+}
+HTTP/1.1 201 Created
+Date: Sun, 29 Mar 2026 08:57:55 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: pzxaUWklRFG3RtdFmrpb1w
+x-railway-cdn-edge: fastly/cache-sin-wsat1880028-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880028-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5Mle%2FeSD42mE3ySOWGAIzGqfOd1Tt7gZHiLKlC06eb%2F%2B1aqrBnpkt0x6oEuG3Ykw3aC8xVr%2BVz%2Bq%2FCpg2L7JzrqZ6GdpT9XeO2ckHwz5Wsfwc0FUVdAeWeVJ35QboBge8NO4CxexwGK9UABaSg%3D%3D"}]}
+CF-RAY: 9e3dab775f09c3c2-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "bookingid": 9,
+    "roomid": 2155,
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-12-20",
+        "checkout": "2025-12-25"
+    }
+}
+  And User creates a new booking with following details and submits the booking:       # com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)
+  Then API response status code should be 201 for booking creation                     # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)
+  And User should see booking confirmation page with booking ID displayed              # com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()
+{firstname=Josh, depositpaid=false, bookingid=9, roomid=6, lastname=Mick}
+Spec: io.restassured.internal.RequestSpecificationImpl@104b6a31
+Request method:	PUT
+Request URI:	https://automationintesting.online/api/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Cookie=token=vjuLmjXJWet7l9LX
+				Authorization=automationintesting.online
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Josh",
+    "bookingdates": {
+        "checkin": "2026-03-11",
+        "checkout": "2026-03-12"
+    },
+    "depositpaid": false,
+    "bookingid": 9,
+    "roomid": 6,
+    "lastname": "Mick"
+}
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:55 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: CwJwQ6djQ-iI99YyoB_USg
+x-railway-cdn-edge: fastly/cache-sin-wsat1880076-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880076-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=69nkHtuvKLHLCIrIkoGhDLT%2BaujQPSCJZGkjQdLcIypgsarJHkpFGZdVgPS23RYcBgv0e3ZvImqaIiDSUi9Vw2F%2BGdEknpIsWg%2FyoAyLhqwumWpkQablxPkSz3B0vTzpSM6BjqNT2QOa1g5NfQ%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab797db13de1-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true
+}
+  When User attempts to update booking ID with following details:                      # com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_update_booking_ID_with_following_details(io.cucumber.datatable.DataTable)
+  Then Booking update should be successful with status 200                             # com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)
+{"success":true}
+  And Updated booking details should be reflected in system                            # com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()
+Request method:	GET
+Request URI:	https://automationintesting.online/api/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer vjuLmjXJWet7l9LX
+				Cookie=token=vjuLmjXJWet7l9LX
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:56 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: enLuuWuIQ3q_W3aA-8Y8hA
+x-railway-cdn-edge: fastly/cache-sin-wsap440031-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsap440031-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BCtWdVrg94sFaQ32iLlu4zlR9N%2Fa%2F1PLQtBbENIndP08FpoyhLAKQKGijcU7nPpNbk6QHRbwb6MITH%2FKDHaZynFEGrlLR0EkVlCd3RYYU5PcxGX1WdhVggGN5dHr%2FZues%2BOKOEykpaiPFt%2Fj%2BA%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab7b9ec6cdd1-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "bookingid": 9,
+    "roomid": 2155,
+    "firstname": "Josh",
+    "lastname": "Mick",
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2026-03-11",
+        "checkout": "2026-03-12"
+    }
+}
+  When User retrieves booking details using stored booking ID via API                  # com.booking.stepDefinitions.E2EHotelBooking.User_retrieves_booking_details_using_stored_booking_ID_via_API()
+  Then API response should contain updated booking details with status code 200        # com.booking.stepDefinitions.E2EHotelBooking.API_response_should_contain_updated_booking_details_with_status_code(int)
+Request method:	DELETE
+Request URI:	https://automationintesting.online/api/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer vjuLmjXJWet7l9LX
+				Cookie=token=vjuLmjXJWet7l9LX
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:56 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: xBpRrLaBQsKXr-w6oB_USg
+x-railway-cdn-edge: fastly/cache-sin-wsat1880085-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880085-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fisGI8WDTc%2FvELHoAikd7sXTQbNie5Wm7alApeHsKjvEhisqYJ6DUst%2F0Lv9wYC16LSjrlvy5rXmhmDMvjUahqC3MkgZQpPq7pXGmJ6MGxrSEMYboVfAacuhMjr9KVyEjTSlEZ2juxaLONiJ8g%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab7ea9fcfd30-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true
+}
+  When User attempts to cancel booking with ID via API                                 # com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_cancel_booking_with_ID_via_API()
+  Then Booking cancellation should be successful with status 200                       # com.booking.stepDefinitions.E2EHotelBooking.Booking_cancellation_should_be_successful_with_status(int)
+Request method:	GET
+Request URI:	https://automationintesting.online/api/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer vjuLmjXJWet7l9LX
+				Cookie=token=vjuLmjXJWet7l9LX
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Sun, 29 Mar 2026 08:57:57 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: 2l6N_YzLRqyOl-OuipRofQ
+x-railway-cdn-edge: fastly/cache-sin-wsat1880072-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880072-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tErGqq208rPeOMf4EqaKOg9rRJTIaEivHjtnxMFXlkU0Herb2WVenqTpAOQ%2FtfbmP6ElHAop41EHxn8ky9vE4xWcJlCPkKDwfcV3Yq652NLtN38E%2FkLWeEUTcLhlQWFX0fHsOyrWUlyOkdaRvA%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab825c3a40d4-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Failed to fetch booking: 404"
+}
+  And API response should return 404 when retrieving cancelled booking details         # com.booking.stepDefinitions.E2EHotelBooking.API_response_should_return_when_retrieving_cancelled_booking_details(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Complete happy path - Search, Book, and Receive Confirmation&quot;, &quot;Optional[End-to-End Booking System Flow - Shady Meadows B&amp;B]&quot;](3)" classname="com.booking.runners.TestRunner" time="2.825">
+    <system-out><![CDATA[
+@E2E @HotelBookingAPI @e2e @smoke @regression @positive @E2E_1 @api
+Scenario Outline: Complete happy path - Search, Book, and Receive Confirmation         # src/test/resources/features/e2eHotelBooking.feature:57
+Request method:	POST
+Request URI:	https://automationintesting.online/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "password",
+    "username": "admin"
+}
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:57 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: AHfDoTecTg-Wjp-4acI7Nw
+x-railway-cdn-edge: fastly/cache-sin-wsat1880032-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880032-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mLwROw9b2pSJXfJD4ea7yG5hz7J69NIiz8DhfDSRNDlqH7tYproX9P6dFs%2BkncY5i4mb9Oww49KCSLBF6mJ%2BuxvpgHw%2FbwyPkxQLa60S8rulQ2QrZmnIJWVLLqBGHJUo2FZXID99YSawISFbTA%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab85eccb4b6d-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "token": "NQxnewf1iRFKRilh"
+}
+  When User authenticates as admin credentials:                                        # com.booking.stepDefinitions.E2EHotelBooking.User_authenticates_as_admin_credentials(io.cucumber.datatable.DataTable)
+  And User stores the authentication token                                             # com.booking.stepDefinitions.E2EHotelBooking.User_stores_the_authentication_token()
+  Then API response status code for E2E should be 200                                  # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_for_E_E_should_be(int)
+  When User enters search criteria with checkin "2025-12-10" and checkout "2025-12-12" # com.booking.stepDefinitions.E2EHotelBooking.User_enters_search_criteria_with_checkin_and_checkout(java.lang.String,java.lang.String)
+POST request to endpoint: /booking
+Request body: {firstname=Bob, bookingdates={checkin=2025-12-10, checkout=2025-12-12}, phone=07358480687, depositpaid=false, roomid=2639, email=bob@example.com, lastname=Johnson}
+Header: Cookie: token=NQxnewf1iRFKRilh
+Request method:	POST
+Request URI:	https://automationintesting.online/api/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer NQxnewf1iRFKRilh
+				Cookie=token=NQxnewf1iRFKRilh
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Bob",
+    "bookingdates": {
+        "checkin": "2025-12-10",
+        "checkout": "2025-12-12"
+    },
+    "phone": "07358480687",
+    "depositpaid": false,
+    "roomid": 2639,
+    "email": "bob@example.com",
+    "lastname": "Johnson"
+}
+HTTP/1.1 201 Created
+Date: Sun, 29 Mar 2026 08:57:58 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: J-l6pum-SempsKdHAXC71g
+x-railway-cdn-edge: fastly/cache-sin-wsat1880076-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880076-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ANMqq%2FTe93YoHh73RodaG%2Fkp4KT16mudUZwruXnFW20I0an%2B6mruMZQC4yPzVLFYp1nPLownpKOy94imZlHW0Kj7BQCcvsCiPYPpyVeZDwe1MQHAN84XDd7ASRc5QUM9KMhzzhD2SCr9%2Fmq2ZA%3D%3D"}]}
+CF-RAY: 9e3dab890b2844c7-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "bookingid": 10,
+    "roomid": 2639,
+    "firstname": "Bob",
+    "lastname": "Johnson",
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-12-10",
+        "checkout": "2025-12-12"
+    }
+}
+  And User creates a new booking with following details and submits the booking:       # com.booking.stepDefinitions.E2EHotelBooking.User_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable)
+  Then API response status code should be 201 for booking creation                     # com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_booking_creation(int)
+  And User should see booking confirmation page with booking ID displayed              # com.booking.stepDefinitions.E2EHotelBooking.User_should_see_booking_confirmation_page_with_booking_ID_displayed()
+{firstname=Josh, depositpaid=false, bookingid=10, roomid=6, lastname=Mick}
+Spec: io.restassured.internal.RequestSpecificationImpl@4618e03d
+Request method:	PUT
+Request URI:	https://automationintesting.online/api/booking/10
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Cookie=token=NQxnewf1iRFKRilh
+				Authorization=automationintesting.online
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Josh",
+    "bookingdates": {
+        "checkin": "2026-03-11",
+        "checkout": "2026-03-12"
+    },
+    "depositpaid": false,
+    "bookingid": 10,
+    "roomid": 6,
+    "lastname": "Mick"
+}
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:58 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: g3y7mtv7TaOaPokFmrpb1w
+x-railway-cdn-edge: fastly/cache-sin-wsat1880032-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880032-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BqB3KOthIZweBCBIHkzq1jMYdvAfxBNGfXpakHZO6nuNftpwTReiPXTWCFmlo26u%2BsdwGBq6T5r1YFr1ei6hxiPA2lIJRxgSEUt4SXc5TDvgyPg8xumbs8PrMUA7QKi5qQxJPzP8dAHq9xQwkQ%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab8c4fbfa146-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true
+}
+  When User attempts to update booking ID with following details:                      # com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_update_booking_ID_with_following_details(io.cucumber.datatable.DataTable)
+  Then Booking update should be successful with status 200                             # com.booking.stepDefinitions.E2EHotelBooking.Booking_update_should_be_successful_with_status(int)
+{"success":true}
+  And Updated booking details should be reflected in system                            # com.booking.stepDefinitions.E2EHotelBooking.Updated_booking_details_should_be_reflected_in_system()
+Request method:	GET
+Request URI:	https://automationintesting.online/api/booking/10
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer NQxnewf1iRFKRilh
+				Cookie=token=NQxnewf1iRFKRilh
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:59 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: UQhShIwyRmuWTR9JV7rehQ
+x-railway-cdn-edge: fastly/cache-sin-wsap440027-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsap440027-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9kAubmhMtt2br%2BZyUS4LPjAaX%2F%2BI3On7yE0Bn2vXIZwJzpTtMNyNR%2BhGyMNDh%2FBtPH27a5KBbRguxsKBCeuEGZ%2FY816iCRMO%2BRFrbOAQyN2LZuoKNWv%2B5rSY3txwNtML3tsQyVtBMQcVfNZVaQ%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab8e7ba29c14-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "bookingid": 10,
+    "roomid": 2639,
+    "firstname": "Josh",
+    "lastname": "Mick",
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2026-03-11",
+        "checkout": "2026-03-12"
+    }
+}
+  When User retrieves booking details using stored booking ID via API                  # com.booking.stepDefinitions.E2EHotelBooking.User_retrieves_booking_details_using_stored_booking_ID_via_API()
+  Then API response should contain updated booking details with status code 200        # com.booking.stepDefinitions.E2EHotelBooking.API_response_should_contain_updated_booking_details_with_status_code(int)
+Request method:	DELETE
+Request URI:	https://automationintesting.online/api/booking/10
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer NQxnewf1iRFKRilh
+				Cookie=token=NQxnewf1iRFKRilh
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 29 Mar 2026 08:57:59 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: qvq9ZWAJTzS0c4K8acI7Nw
+x-railway-cdn-edge: fastly/cache-sin-wsap440085-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsap440085-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EMBViS36IinAZ9SdXUeCcMXSKSoEnClnEHY1IC18UeDIJjjWYneuTRYY5N7OnNS%2B7cqa5ZLnWKDR3uzxDOZR%2B6yu7Q6IcrHuCVTppnrFZzwJyhOfHvM2hraHdrW5%2FOfEKBvHrlYx%2FO%2BCRT4%2BMg%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab917e950550-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true
+}
+  When User attempts to cancel booking with ID via API                                 # com.booking.stepDefinitions.E2EHotelBooking.User_attempts_to_cancel_booking_with_ID_via_API()
+  Then Booking cancellation should be successful with status 200                       # com.booking.stepDefinitions.E2EHotelBooking.Booking_cancellation_should_be_successful_with_status(int)
+Request method:	GET
+Request URI:	https://automationintesting.online/api/booking/10
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer NQxnewf1iRFKRilh
+				Cookie=token=NQxnewf1iRFKRilh
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Sun, 29 Mar 2026 08:58:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-railway-edge: railway/asia-southeast1-eqsg3a
+x-railway-request-id: 6V251CAkT5C9SjfGV7rehQ
+x-railway-cdn-edge: fastly/cache-sin-wsat1880096-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-served-by: cache-sin-wsat1880096-SIN
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=XSt%2FsTwNnfDA7bXgh9JoXXdV5kjk90JK08V3iGQpu86l7bLKBokAF5%2FlvCtBxWq5kJA20tTNDiAqYt2DhxGSU%2FEiHdl%2Bny0O0xJ5iG7mpY1JM6ErTpYxCr%2F7CBMmlZwpKGcddmtPARkJbZymkQ%3D%3D"}]}
+Content-Encoding: gzip
+CF-RAY: 9e3dab950a7a3104-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "error": "Failed to fetch booking: 404"
+}
+  And API response should return 404 when retrieving cancelled booking details         # com.booking.stepDefinitions.E2EHotelBooking.API_response_should_return_when_retrieving_cancelled_booking_details(int)
 ]]></system-out>
   </testcase>
 </testsuite>

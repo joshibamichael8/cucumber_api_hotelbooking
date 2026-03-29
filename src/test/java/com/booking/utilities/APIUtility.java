@@ -247,4 +247,28 @@ public class APIUtility {
         return actualStatusCode;
     }
 
+    /**
+     * Perform DELETE request with custom headers
+     */
+    public Response deleteWithHeader(String endpoint, String headerName, String headerValue) {
+        LOGGER.info("Performing DELETE request with custom header to endpoint: " + endpoint);
+        try {
+            Response response = buildRequestSpec()
+                .header(headerName, headerValue)
+                .when()
+                .delete(endpoint)
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("DELETE request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing DELETE request with header: " + e.getMessage());
+            throw e;
+        }
+    
+    }
+
 }
