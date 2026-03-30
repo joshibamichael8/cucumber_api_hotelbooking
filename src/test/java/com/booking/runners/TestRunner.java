@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
  * TestRunner: Cucumber test runner for TestNG
  */
 @CucumberOptions(
-        features = "src/test/resources/features/cancelBooking.feature",
+        features = "src/test/resources/features/updateBookingDetails.feature",
         glue = {"com.booking.stepDefinitions", "com.booking.hooks"},
         plugin = {
                 "pretty",
@@ -18,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@cancelBooking",
+        tags = "@updateBookingDetails",
         dryRun = false,
         monochrome = true,
         publish = true

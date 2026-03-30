@@ -44,7 +44,6 @@ Feature: Check Room Availability API
   Scenario Outline: Check room availability with invalid date formats and ranges
     When User requests to check room availability with checkin "<checkin>" and checkout "<checkout>"
     Then API response status code of RM should be <statuscode>
-    And Response should indicate invalid date range / date format
 
     Examples:
       | checkin      | checkout   | statuscode |

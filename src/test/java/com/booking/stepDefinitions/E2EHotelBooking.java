@@ -860,6 +860,15 @@ public class E2EHotelBooking {
         }
     }
 
+    @Then("API response status code should be {int} for not found")
+    public void API_response_status_code_should_be_for_not_found(int expStatusCode) {
+        int actualStatus = response.getStatusCode();
+        Assert.assertEquals(actualStatus, expStatusCode, 
+            "Response status code mismatch. Expected: " + expStatusCode + 
+            " Actual: " + actualStatus + 
+            " Body: " + response.getBody().asString());
+    }
+
 
 }
     
