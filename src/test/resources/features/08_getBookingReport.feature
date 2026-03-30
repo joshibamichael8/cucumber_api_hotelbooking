@@ -11,6 +11,7 @@ Feature: Get Booking Report
     When User authenticates as user with username "admin" and password "password"
     Then API response status code should be 200
     And Response should contain a valid authentication token
+  
   # ==================== POSITIVE SCENARIOS ====================
 
   @smoke @api @regression @positive @getBookingReportAPI

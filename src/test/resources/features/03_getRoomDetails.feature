@@ -17,6 +17,7 @@ Feature: Get Room Details API
     Examples:
       | username | password | statusCode |
       | admin    | password |        200 |
+
   # ==================== POSITIVE SCENARIOS ====================
 
   @smoke @api @regression @positive @getListOfAllRooms
@@ -40,6 +41,7 @@ Feature: Get Room Details API
     Examples:
       | roomid | statuscode |
       |      1 |        200 |
+  
 # ==================== NEGATIVE SCENARIOS ====================
 
   @negative @api @regression @getRoomDetailsWithInvalidId

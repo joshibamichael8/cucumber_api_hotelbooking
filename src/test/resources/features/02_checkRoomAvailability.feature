@@ -18,6 +18,7 @@ Description:
     Examples:
       | username | password | statusCode |
       | admin    | password |        200 |
+      
 # ==================== POSITIVE SCENARIOS ====================
 
   @api @regression @positive @roomAvailabilityWithValidDates

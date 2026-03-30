@@ -7,6 +7,7 @@ Feature: Update Booking Details - Shady Meadows B&B
     
     Description: This feature tests the Update Booking API which allows users to update their existing bookings. 
         The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.
+  
   # ==================== POSITIVE FLOWS ====================
 
   @smoke @regression @positive @updateBooking @api

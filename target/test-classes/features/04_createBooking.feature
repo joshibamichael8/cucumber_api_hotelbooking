@@ -16,6 +16,7 @@ Feature: Create Booking
     Examples:
       | username | password | statusCode |
       | admin    | password |        200 |
+
 # ==================== POSITIVE FLOWS ====================
 
   @smoke @regression @positive @CreateBookingWithValidDetails @api
@@ -37,6 +38,7 @@ Feature: Create Booking
       | firstname | lastname | email                | phone        | checkin    | checkout   | depositpaid |
       | Krishnan  | Krishnan | suresh1@gmail.com    |  07358480685 | 2025-07-17 | 2025-07-18 | false       |
       | John      | Doe      | john.doe@example.com | +44123456789 | 2025-08-01 | 2025-08-05 | true        |
+
 # ==================== NEGATIVE FLOWS ====================
 
   @regression @negative @CreateBookingWithMissingOrInvalidFields @api

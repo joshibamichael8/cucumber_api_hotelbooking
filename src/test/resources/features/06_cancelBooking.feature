@@ -6,6 +6,7 @@ Feature: Cancel Booking
     
     Description: This feature tests the Cancel Booking API which allows users to cancel their existing bookings. 
         The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.
+
 # ==================== POSITIVE SCENARIOS ====================
 
   @smoke @api @regression @positive @cancelBookingAPI
@@ -39,6 +40,7 @@ Feature: Cancel Booking
     Examples:
       | firstname | lastname | email            | phone       | roomId | checkin    | checkout   | depositpaid |
       | Josh      | Mike     | josh@example.com | 07358480685 |      1 | 2025-12-19 | 2025-12-21 | false       |
+
    # ==================== NEGATIVE SCENARIOS ====================
 
   @regression @negative @cancelNonExistentBookingAPI

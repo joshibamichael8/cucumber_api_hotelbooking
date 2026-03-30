@@ -5,6 +5,7 @@ I want to be able to log in with valid credentials
 So that I can access protected resources and perform authorized actions.
 
 Description: Test suite for the user authentication functionality of the Hotel Booking API.
+
 # ==================== POSITIVE SCENARIOS ====================
 
   @api @positive @regression @authenticationWithValidCredentials
@@ -17,6 +18,7 @@ Description: Test suite for the user authentication functionality of the Hotel B
     Examples:
       | username | password | statusCode |
       | admin    | password |        200 |
+
 # ==================== NEGATIVE SCENARIOS ====================
 
   @api @negative @regression @authenticationWithInvalidCredentials
