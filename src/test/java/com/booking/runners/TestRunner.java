@@ -18,7 +18,8 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@Login or @checkRoomAvailability or @getRoomDetails or @createBooking or @updateBookingDetails or @cancelBooking or @getBookingDetails or @getBookingReport",
+        tags = "@HotelBookingAPI",
+        
         //@Login or @checkRoomAvailability or @getRoomDetails or @createBooking or @updateBookingDetails or @cancelBooking or @getBookingDetails or @getBookingReport
         dryRun = false,
         monochrome = true,

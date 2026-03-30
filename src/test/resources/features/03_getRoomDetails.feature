@@ -1,6 +1,5 @@
 @RoomManagement @getRoomDetails @HotelBookingAPI
 Feature: Get Room Details API
-
   As an user of the Hotel Booking API,
   I want to retrieve details of rooms
   So that I can manage room information effectively 
@@ -9,7 +8,7 @@ Feature: Get Room Details API
     This feature tests the Get Room Details API which allows users to retrieve information about rooms. 
     The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.  
 
-@Background
+  @Background
   Scenario Outline: User authentication with valid credentials
     When User authenticates as user with username "<username>" and password "<password>"
     Then API response status code should be <statusCode>
@@ -17,7 +16,7 @@ Feature: Get Room Details API
 
     Examples:
       | username | password | statusCode |
-      | admin    | password | 200        |
+      | admin    | password |        200 |
   # ==================== POSITIVE SCENARIOS ====================
 
   @smoke @api @regression @positive @RM_1
@@ -29,7 +28,7 @@ Feature: Get Room Details API
 
     Examples:
       | statuscode |
-      | 200        |
+      |        200 |
 
   @smoke @api @regression @positive @RM_2
   Scenario Outline: Get room details by room ID
@@ -40,8 +39,7 @@ Feature: Get Room Details API
 
     Examples:
       | roomid | statuscode |
-      | 1      | 200        |
-
+      |      1 |        200 |
 # ==================== NEGATIVE SCENARIOS ====================
 
   @negative @api @regression @RM_3
@@ -51,8 +49,8 @@ Feature: Get Room Details API
     And Response should indicate room not found "<errorMessage>"
 
     Examples:
-      | roomid | statuscode | errorMessage         |
-      | 99999  | 503        | Service Unavailable  |
+      | roomid | statuscode | errorMessage        |
+      |  99999 |        503 | Service Unavailable |
 
   @SchemaValidation @api @regression @RM_4
   Scenario Outline: Validate room details response structure against schema
@@ -63,5 +61,5 @@ Feature: Get Room Details API
 
     Examples:
       | roomid | statuscode |
-      | 1      | 200        |
-      | 2      | 200        |
+      |      1 |        200 |
+      |      2 |        200 |

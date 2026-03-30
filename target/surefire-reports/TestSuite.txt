@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 46, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 138.927 s <<< FAILURE! - in TestSuite
-com.booking.runners.TestRunner.runScenario["Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"](18)  Time elapsed: 0.539 s  <<< FAILURE!
+Tests run: 49, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 180.218 s <<< FAILURE! - in TestSuite
+com.booking.runners.TestRunner.runScenario["Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"](18)  Time elapsed: 0.415 s  <<< FAILURE!
 java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
@@ -10,9 +10,9 @@ java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 2
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
 	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:48)
 
-com.booking.runners.TestRunner.runScenario["Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"](19)  Time elapsed: 32.579 s  <<< FAILURE!
+com.booking.runners.TestRunner.runScenario["Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"](19)  Time elapsed: 33.25 s  <<< FAILURE!
 java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
@@ -20,9 +20,9 @@ java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 5
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
 	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:48)
 
-com.booking.runners.TestRunner.runScenario["Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"](20)  Time elapsed: 0.964 s  <<< FAILURE!
+com.booking.runners.TestRunner.runScenario["Check room availability with invalid date formats and ranges", "Optional[Check Room Availability API]"](20)  Time elapsed: 0.8 s  <<< FAILURE!
 java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
@@ -30,40 +30,40 @@ java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 2
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
 	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:48)
 
-com.booking.runners.TestRunner.runScenario["Get room details with invalid room ID", "Optional[Get Room Details API]"](24)  Time elapsed: 32.952 s  <<< FAILURE!
-java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: {"timestamp":"2026-03-30T02:24:27.527+00:00","status":500,"error":"Internal Server Error","path":"/room/99999"} expected [503] but found [500]
+com.booking.runners.TestRunner.runScenario["Get room details with invalid room ID", "Optional[Get Room Details API]"](24)  Time elapsed: 32.756 s  <<< FAILURE!
+java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: {"timestamp":"2026-03-30T07:47:27.126+00:00","status":500,"error":"Internal Server Error","path":"/room/99999"} expected [503] but found [500]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
 	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/03_getRoomDetails.feature:50)
+	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/03_getRoomDetails.feature:48)
 
-com.booking.runners.TestRunner.runScenario["Attempt to create a booking with missing/invalid required fields", "Optional[Create Booking]"](32)  Time elapsed: 0.385 s  <<< FAILURE!
-java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":7,"roomid":2122,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
+com.booking.runners.TestRunner.runScenario["Attempt to create a booking with missing/invalid required fields", "Optional[Create Booking]"](32)  Time elapsed: 0.893 s  <<< FAILURE!
+java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":7,"roomid":2834,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
 	at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(E2EHotelBooking.java:437)
-	at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:58)
+	at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:53)
 
-com.booking.runners.TestRunner.runScenario["Attempt to create a booking with missing/invalid required fields", "Optional[Create Booking]"](33)  Time elapsed: 0.601 s  <<< FAILURE!
-java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":8,"roomid":2396,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
+com.booking.runners.TestRunner.runScenario["Attempt to create a booking with missing/invalid required fields", "Optional[Create Booking]"](33)  Time elapsed: 0.849 s  <<< FAILURE!
+java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":8,"roomid":2858,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
 	at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(E2EHotelBooking.java:437)
-	at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:58)
+	at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:53)
 
-com.booking.runners.TestRunner.runScenario["Attempt to retrieve room information with invalid ID", "Optional[Room Information Retrieval]"](42)  Time elapsed: 33.154 s  <<< FAILURE!
-java.lang.AssertionError: Response status code mismatch. Expected: 404 Actual: 500 Body: {"timestamp":"2026-03-30T02:25:15.115+00:00","status":500,"error":"Internal Server Error","path":"/room/999"} expected [404] but found [500]
+com.booking.runners.TestRunner.runScenario["Attempt to retrieve room information with invalid ID", "Optional[Room Information Retrieval]"](42)  Time elapsed: 32.998 s  <<< FAILURE!
+java.lang.AssertionError: Response status code mismatch. Expected: 404 Actual: 500 Body: {"timestamp":"2026-03-30T07:48:16.881+00:00","status":500,"error":"Internal Server Error","path":"/room/999"} expected [404] but found [500]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)

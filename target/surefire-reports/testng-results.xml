@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="46" passed="39" failed="7" skipped="0">
+<testng-results ignored="0" total="49" passed="42" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-30T07:53:04 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-30T07:55:23 IST" duration-ms="138268">
+  <suite started-at="2026-03-30T13:15:40 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-30T13:18:38 IST" duration-ms="178021">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-30T07:53:04 IST" name="API Booking Tests" finished-at="2026-03-30T07:55:23 IST" duration-ms="138268">
+    <test started-at="2026-03-30T13:15:40 IST" name="API Booking Tests" finished-at="2026-03-30T13:18:38 IST" duration-ms="178021">
       <class name="com.booking.runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:04 IST" name="setUpClass" finished-at="2026-03-30T07:53:05 IST" duration-ms="635" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:15:40 IST" name="setUpClass" finished-at="2026-03-30T13:15:41 IST" duration-ms="958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:09 IST" duration-ms="4374" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:15:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:07 IST" duration-ms="26650" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:10 IST" duration-ms="579" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:08 IST" duration-ms="959" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:10 IST" duration-ms="519" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:09 IST" duration-ms="618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:11 IST" duration-ms="349" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:10 IST" duration-ms="602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:12 IST" duration-ms="704" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:10 IST" duration-ms="817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:12 IST" duration-ms="548" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:11 IST" duration-ms="418" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:13 IST" duration-ms="563" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:11 IST" duration-ms="450" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,7 +126,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:13 IST" duration-ms="766" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:12 IST" duration-ms="574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,7 +142,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:14 IST" duration-ms="392" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:13 IST" duration-ms="659" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,7 +158,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:14 IST" duration-ms="392" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:13 IST" duration-ms="537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,7 +174,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:15 IST" duration-ms="420" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:14 IST" duration-ms="449" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,7 +190,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:15 IST" duration-ms="399" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:14 IST" duration-ms="586" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,7 +206,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:16 IST" duration-ms="1363" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:15 IST" duration-ms="915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -222,7 +222,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:17 IST" duration-ms="621" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:15 IST" duration-ms="405" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,7 +238,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:18 IST" duration-ms="576" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:16 IST" duration-ms="713" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -254,7 +254,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:18 IST" duration-ms="333" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:17 IST" duration-ms="608" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -270,7 +270,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:18 IST" duration-ms="484" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:18 IST" duration-ms="934" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -286,7 +286,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:19 IST" duration-ms="537" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:18 IST" duration-ms="413" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -311,14 +311,14 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:48)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:52 IST" duration-ms="32581" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:51 IST" duration-ms="33249" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -343,14 +343,14 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:48)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:52 IST" duration-ms="963" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:52 IST" duration-ms="801" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -375,14 +375,14 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:48)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:53 IST" duration-ms="509" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:53 IST" duration-ms="849" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -398,7 +398,7 @@ at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:54 IST" duration-ms="515" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:54 IST" duration-ms="630" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -414,7 +414,7 @@ at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:53:54 IST" duration-ms="736" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:16:54 IST" duration-ms="702" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -430,7 +430,7 @@ at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:53:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:27 IST" duration-ms="32951" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:16:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:27 IST" duration-ms="32758" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -445,24 +445,24 @@ at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucu
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Response status code mismatch. Expected: 503 Actual: 500 Body: {"timestamp":"2026-03-30T02:24:27.527+00:00","status":500,"error":"Internal Server Error","path":"/room/99999"} expected [503] but found [500]]]>
+              <![CDATA[Response status code mismatch. Expected: 503 Actual: 500 Body: {"timestamp":"2026-03-30T07:47:27.126+00:00","status":500,"error":"Internal Server Error","path":"/room/99999"} expected [503] but found [500]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: {"timestamp":"2026-03-30T02:24:27.527+00:00","status":500,"error":"Internal Server Error","path":"/room/99999"} expected [503] but found [500]
+              <![CDATA[java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: {"timestamp":"2026-03-30T07:47:27.126+00:00","status":500,"error":"Internal Server Error","path":"/room/99999"} expected [503] but found [500]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
-at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/03_getRoomDetails.feature:50)
+at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/03_getRoomDetails.feature:48)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:29 IST" duration-ms="1355" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:28 IST" duration-ms="950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -478,7 +478,7 @@ at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:29 IST" duration-ms="487" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:29 IST" duration-ms="601" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -494,7 +494,7 @@ at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:30 IST" duration-ms="497" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:29 IST" duration-ms="598" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -510,7 +510,7 @@ at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:30 IST" duration-ms="554" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:31 IST" duration-ms="1240" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -526,7 +526,7 @@ at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:31 IST" duration-ms="530" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:31 IST" duration-ms="579" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -542,7 +542,7 @@ at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:31 IST" duration-ms="320" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:32 IST" duration-ms="434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -558,7 +558,7 @@ at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:32 IST" duration-ms="841" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:32 IST" duration-ms="505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -574,39 +574,7 @@ at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:32 IST" duration-ms="384" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to create a booking with missing/invalid required fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Create Booking]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected status code 400 for bad request, but got: 201 Body: {"bookingid":7,"roomid":2122,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":7,"roomid":2122,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(E2EHotelBooking.java:437)
-at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:33 IST" duration-ms="600" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:33 IST" duration-ms="896" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -621,24 +589,56 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected status code 400 for bad request, but got: 201 Body: {"bookingid":8,"roomid":2396,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]]]>
+              <![CDATA[Expected status code 400 for bad request, but got: 201 Body: {"bookingid":7,"roomid":2834,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":8,"roomid":2396,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
+              <![CDATA[java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":7,"roomid":2834,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(E2EHotelBooking.java:437)
-at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:58)
+at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:53)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:33 IST" duration-ms="467" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:34 IST" duration-ms="842" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Attempt to create a booking with missing/invalid required fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Create Booking]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 400 for bad request, but got: 201 Body: {"bookingid":8,"roomid":2858,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":8,"roomid":2858,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(E2EHotelBooking.java:437)
+at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:34 IST" duration-ms="408" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -654,7 +654,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:34 IST" duration-ms="747" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:35 IST" duration-ms="409" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -670,7 +670,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:37 IST" duration-ms="2712" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:38 IST" duration-ms="2900" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -686,7 +686,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:39 IST" duration-ms="2443" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:41 IST" duration-ms="3343" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -702,7 +702,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:40 IST" duration-ms="1001" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:42 IST" duration-ms="1230" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -718,7 +718,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:41 IST" duration-ms="638" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:43 IST" duration-ms="543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -734,7 +734,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:41 IST" duration-ms="530" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:43 IST" duration-ms="726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -750,7 +750,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:54:42 IST" duration-ms="327" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:17:44 IST" duration-ms="514" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -766,7 +766,7 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:54:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:55:15 IST" duration-ms="33152" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:17:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:17 IST" duration-ms="32994" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -781,10 +781,10 @@ at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Response status code mismatch. Expected: 404 Actual: 500 Body: {"timestamp":"2026-03-30T02:25:15.115+00:00","status":500,"error":"Internal Server Error","path":"/room/999"} expected [404] but found [500]]]>
+              <![CDATA[Response status code mismatch. Expected: 404 Actual: 500 Body: {"timestamp":"2026-03-30T07:48:16.881+00:00","status":500,"error":"Internal Server Error","path":"/room/999"} expected [404] but found [500]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Response status code mismatch. Expected: 404 Actual: 500 Body: {"timestamp":"2026-03-30T02:25:15.115+00:00","status":500,"error":"Internal Server Error","path":"/room/999"} expected [404] but found [500]
+              <![CDATA[java.lang.AssertionError: Response status code mismatch. Expected: 404 Actual: 500 Body: {"timestamp":"2026-03-30T07:48:16.881+00:00","status":500,"error":"Internal Server Error","path":"/room/999"} expected [404] but found [500]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -798,7 +798,7 @@ at ✽.API response status code should be 404 for not found(file:///D:/Joshiba/K
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:55:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:55:16 IST" duration-ms="740" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:18 IST" duration-ms="862" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -814,7 +814,7 @@ at ✽.API response status code should be 404 for not found(file:///D:/Joshiba/K
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:55:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:55:16 IST" duration-ms="311" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:18 IST" duration-ms="505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -830,7 +830,7 @@ at ✽.API response status code should be 404 for not found(file:///D:/Joshiba/K
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:55:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:55:16 IST" duration-ms="515" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:19 IST" duration-ms="1128" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -846,7 +846,7 @@ at ✽.API response status code should be 404 for not found(file:///D:/Joshiba/K
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:55:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T07:55:19 IST" duration-ms="2156" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:21 IST" duration-ms="1859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -862,7 +862,55 @@ at ✽.API response status code should be 404 for not found(file:///D:/Joshiba/K
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T07:55:19 IST" name="tearDownClass" finished-at="2026-03-30T07:55:23 IST" duration-ms="4102" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:26 IST" duration-ms="4591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete happy path - Create, Book, and Receive Confirmation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[End-to-End Booking System Flow - Shady Meadows B&B]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:30 IST" duration-ms="3906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete happy path - Create, Book, and Receive Confirmation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[End-to-End Booking System Flow - Shady Meadows B&B]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T13:18:34 IST" duration-ms="3772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete happy path - Create, Book, and Receive Confirmation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[End-to-End Booking System Flow - Shady Meadows B&B]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T13:18:34 IST" name="tearDownClass" finished-at="2026-03-30T13:18:38 IST" duration-ms="4342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
