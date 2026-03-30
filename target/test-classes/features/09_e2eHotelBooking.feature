@@ -11,7 +11,7 @@ Feature: End-to-End Booking System Flow - Shady Meadows B&B
 
   # ==================== POSITIVE E2E FLOWS ====================
 
-  @e2e @smoke @regression @positive @E2E_1 @api
+  @e2e @smoke @regression @positive @E2EBooking @api
   Scenario Outline: Complete happy path - Create, Book, and Receive Confirmation
     # Login and generate token  
     When User authenticates as user credentials:

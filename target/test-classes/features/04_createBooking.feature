@@ -18,7 +18,7 @@ Feature: Create Booking
       | admin    | password |        200 |
 # ==================== POSITIVE FLOWS ====================
 
-  @smoke @regression @positive @CreateBooking_1 @api
+  @smoke @regression @positive @CreateBookingWithValidDetails @api
   Scenario Outline: Create a booking with valid details
     When User enters search criteria with checkin "<checkin>" and checkout "<checkout>"
     And User creates a new booking with following details and submits the booking:
@@ -39,7 +39,7 @@ Feature: Create Booking
       | John      | Doe      | john.doe@example.com | +44123456789 | 2025-08-01 | 2025-08-05 | true        |
 # ==================== NEGATIVE FLOWS ====================
 
-  @regression @negative @CreateBooking_2 @api
+  @regression @negative @CreateBookingWithMissingOrInvalidFields @api
   Scenario Outline: Attempt to create a booking with missing/invalid required fields
     When User enters search criteria with checkin "<checkin>" and checkout "<checkout>"
     And User attempts to create a new booking with missing required fields:

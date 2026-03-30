@@ -1,9 +1,9 @@
-@getBookingDetails @schema-validation @HotelBookingAPI
+@getBookingDetails @schemaValidation @HotelBookingAPI
 Feature: Room Information Retrieval
   As a hotel customer, I want to retrieve comprehensive room information
   And ensure the response structure validates against the defined schema
 
-  @room-details @schema-validation
+  @getRoomDetailsById @schema-validation
   Scenario Outline: Retrieve and validate room information by ID
     Given user want to retrieve room information for a specific room ID
     When user request room details for the following ID:
@@ -19,7 +19,7 @@ Feature: Room Information Retrieval
       |      2 |
       |      3 |
 
-  @room-details @schema-validation
+  @getRoomDetailsByInvalidId @schema-validation
   Scenario: Attempt to retrieve room information with invalid ID
     Given user want to retrieve room information for a specific room ID
     When user request room details for the following ID:

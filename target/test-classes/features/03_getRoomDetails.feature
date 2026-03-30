@@ -19,7 +19,7 @@ Feature: Get Room Details API
       | admin    | password |        200 |
   # ==================== POSITIVE SCENARIOS ====================
 
-  @smoke @api @regression @positive @RM_1
+  @smoke @api @regression @positive @getListOfAllRooms
   Scenario Outline: Get list of all available rooms
     When User requests to get list of all rooms
     Then API response status code of RM should be <statuscode>
@@ -30,7 +30,7 @@ Feature: Get Room Details API
       | statuscode |
       |        200 |
 
-  @smoke @api @regression @positive @RM_2
+  @smoke @api @regression @positive @getRoomDetailsById
   Scenario Outline: Get room details by room ID
     When User requests to get room details for roomid "<roomid>"
     Then API response status code of RM should be <statuscode>
@@ -42,7 +42,7 @@ Feature: Get Room Details API
       |      1 |        200 |
 # ==================== NEGATIVE SCENARIOS ====================
 
-  @negative @api @regression @RM_3
+  @negative @api @regression @getRoomDetailsWithInvalidId
   Scenario Outline: Get room details with invalid room ID
     When User requests to get room details for roomid "<roomid>"
     Then API response status code of RM should be <statuscode>
@@ -52,7 +52,7 @@ Feature: Get Room Details API
       | roomid | statuscode | errorMessage        |
       |  99999 |        503 | Service Unavailable |
 
-  @SchemaValidation @api @regression @RM_4
+  @SchemaValidation @api @regression @getRoomDetailsResponseSchemaValidation
   Scenario Outline: Validate room details response structure against schema
     When User requests to get room details for roomid "<roomid>"
     Then API response status code of RM should be <statuscode>

@@ -7,7 +7,7 @@ So that I can access protected resources and perform authorized actions.
 Description: Test suite for the user authentication functionality of the Hotel Booking API.
 # ==================== POSITIVE SCENARIOS ====================
 
-  @api @positive @regression @authReg1
+  @api @positive @regression @authenticationWithValidCredentials
   Scenario Outline: User authentication with valid credentials
     When User authenticates as user with username "<username>" and password "<password>"
     Then API response status code should be <statusCode>
@@ -19,7 +19,7 @@ Description: Test suite for the user authentication functionality of the Hotel B
       | admin    | password |        200 |
 # ==================== NEGATIVE SCENARIOS ====================
 
-  @api @negative @regression @authReg2
+  @api @negative @regression @authenticationWithInvalidCredentials
   Scenario Outline: User authentication with invalid credentials
     When User authenticates as user with username "<username>" and password "<password>"
     Then API response status code should be <statusCode>
@@ -37,7 +37,7 @@ Description: Test suite for the user authentication functionality of the Hotel B
       | admin            | ' OR '1'='1   |        401 | Invalid credentials |
       | admin            | PASSWORD      |        401 | Invalid credentials |
 
-  @api @negative @authReg3
+  @api @negative @authenticationWithoutValidToken
   Scenario Outline: Access protected resources without valid authentication
     When User "<action>"
     Then API response status code should be <statusCode>
@@ -47,7 +47,7 @@ Description: Test suite for the user authentication functionality of the Hotel B
       | action                                               | statusCode | errorMessage            |
       | requests booking report without authentication token |        401 | Authentication required |
 
-  @api @negative @authReg4
+  @api @negative @authenticationWithExpiredToken
   Scenario Outline: Verify token expiration time is set correctly
     When User authenticates as user with username "<username>" and password "<password>"
     Then API response should contain token expiration time

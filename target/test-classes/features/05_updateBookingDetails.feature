@@ -9,7 +9,7 @@ Feature: Update Booking Details - Shady Meadows B&B
         The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.
   # ==================== POSITIVE FLOWS ====================
 
-  @e2e @smoke @regression @positive @E2E_1 @api
+  @smoke @regression @positive @updateBooking @api
   Scenario Outline: Complete happy path - Create, Update, and Verify Booking Details
     # Login and generate token  
     When User authenticates as user credentials:

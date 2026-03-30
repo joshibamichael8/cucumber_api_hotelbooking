@@ -8,7 +8,7 @@ Feature: Cancel Booking
         The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.
 # ==================== POSITIVE SCENARIOS ====================
 
-  @smoke @api @regression @positive @CB_1
+  @smoke @api @regression @positive @cancelBookingAPI
   Scenario Outline: Complete happy path - Create, Book, and Receive Confirmation
     # Login and generate token  
     When User authenticates as user credentials:
@@ -41,7 +41,7 @@ Feature: Cancel Booking
       | Josh      | Mike     | josh@example.com | 07358480685 |      1 | 2025-12-19 | 2025-12-21 | false       |
    # ==================== NEGATIVE SCENARIOS ====================
 
-  @regression @negative @CB_2
+  @regression @negative @cancelNonExistentBookingAPI
   Scenario Outline: Attempt to cancel a non-existent booking
     # Login and generate token  
     When User authenticates as user credentials:
