@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  */
 
 @CucumberOptions(
-        features = "src/test/resources/features/getBookingReport.feature",
+        features = "src/test/resources/features/",
         glue = {"com.booking.stepDefinitions", "com.booking.hooks"},
         plugin = {
                 "pretty",
@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@GBR or @BR_1",
+        tags = "@HotelBookingAPI",
         dryRun = false,
         monochrome = true,
         publish = true

@@ -52,7 +52,7 @@ Feature: Get Room Details API
 
     Examples:
       | roomid | statuscode | errorMessage         |
-      | 9999   | 503        | Service Unavailable  |
+      | 99999  | 503        | Service Unavailable  |
 
   @SchemaValidation @api @regression @RM_4
   Scenario Outline: Validate room details response structure against schema

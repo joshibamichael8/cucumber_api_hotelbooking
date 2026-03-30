@@ -1,4 +1,4 @@
-
+@createBooking
 Feature: Create Booking
 
     As a user of the Hotel Booking API,

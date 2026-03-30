@@ -1,4 +1,4 @@
-@room-details @schema-validation @api
+@getBookingDetails @schema-validation @api
 Feature: Room Information Retrieval
   As a hotel customer, I want to retrieve comprehensive room information
   And ensure the response structure validates against the defined schema

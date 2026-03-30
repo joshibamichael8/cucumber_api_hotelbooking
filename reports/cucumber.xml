@@ -1,5 +1,300 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.089">
-<testcase classname="Update Booking Details - Shady Meadows B&amp;B" name="Complete happy path - Create, Update, and Verify Booking Details" time="5.892">
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="46" time="133.649">
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with valid credentials" time="4.154">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
+Then API response status code should be 200.................................passed
+And Response should contain a valid authentication token....................passed
+And Token should not be empty...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials" time="0.526">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "wrongpassword".passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 2" time="0.501">
+<system-out><![CDATA[When User authenticates as user with username "invaliduser" and password "password".passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 3" time="0.339">
+<system-out><![CDATA[When User authenticates as user with username "" and password "password"....passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 4" time="0.689">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "".......passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 5" time="0.539">
+<system-out><![CDATA[When User authenticates as user with username "" and password ""............passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 6" time="0.556">
+<system-out><![CDATA[When User authenticates as user with username "admin' OR '1'='1" and password "password".passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 7" time="0.759">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "' OR '1'='1".passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="User authentication with invalid credentials 8" time="0.383">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "PASSWORD".passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Invalid credentials"..........................passed
+And Response should not contain authentication token........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="Access protected resources without valid authentication" time="0.383">
+<system-out><![CDATA[When User "requests booking report without authentication token"............passed
+Then API response status code should be 401.................................passed
+And Response should indicate "Authentication required"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Hotel Booking API -Shady Meadows B&amp;B API" name="Verify token expiration time is set correctly" time="0.412">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
+Then API response should contain token expiration time......................passed
+And Token expiration should be in the future................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Room Availability API" name="User authentication with valid credentials" time="0.381">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
+Then API response status code should be 200.................................passed
+And Response should contain a valid authentication token....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability for specific dates" time="1.354">
+<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-17" and checkout "2026-07-18".passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain available rooms.................................passed
+And Available rooms list should not be empty................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability for specific dates 2" time="0.616">
+<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-20" and checkout "2026-07-21".passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain available rooms.................................passed
+And Available rooms list should not be empty................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability for specific dates 3" time="0.571">
+<system-out><![CDATA[When User requests to check room availability with checkin "2026-12-15" and checkout "2026-12-20".passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain available rooms.................................passed
+And Available rooms list should not be empty................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability for specific dates 4" time="0.324">
+<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-01" and checkout "2026-08-05".passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain available rooms.................................passed
+And Available rooms list should not be empty................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability for specific dates 5" time="0.478">
+<system-out><![CDATA[When User requests to check room availability with checkin "2026-07-17" and checkout "2026-07-17".passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain available rooms.................................passed
+And Available rooms list should not be empty................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability with invalid date formats and ranges" time="0.531">
+<failure message="Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]" type="java.lang.AssertionError"><![CDATA[When User requests to check room availability with checkin "2025-07-25" and checkout "2025-07-20".passed
+Then API response status code of RM should be 400...........................failed
+
+StackTrace:
+java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
+	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+]]></failure>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability with invalid date formats and ranges 2" time="32.57">
+<failure message="Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]" type="java.lang.AssertionError"><![CDATA[When User requests to check room availability with checkin "invalid-date" and checkout "2025-07-21".passed
+Then API response status code of RM should be 503...........................failed
+
+StackTrace:
+java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: [] expected [503] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
+	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+]]></failure>
+</testcase>
+<testcase classname="Check Room Availability API" name="Check room availability with invalid date formats and ranges 3" time="0.954">
+<failure message="Response status code mismatch. Expected: 400 Actual: 200 Body: {&quot;rooms&quot;:[{&quot;roomid&quot;:1,&quot;roomName&quot;:&quot;101&quot;,&quot;type&quot;:&quot;Single&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room1.jpg&quot;,&quot;description&quot;:&quot;Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.&quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:100},{&quot;roomid&quot;:2,&quot;roomName&quot;:&quot;102&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room2.jpg&quot;,&quot;description&quot;:&quot;Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. &quot;,&quot;features&quot;:[&quot;TV&quot;,&quot;Radio&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:150},{&quot;roomid&quot;:3,&quot;roomName&quot;:&quot;103&quot;,&quot;type&quot;:&quot;Suite&quot;,&quot;accessible&quot;:true,&quot;image&quot;:&quot;/images/room3.jpg&quot;,&quot;description&quot;:&quot;Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. &quot;,&quot;features&quot;:[&quot;Radio&quot;,&quot;WiFi&quot;,&quot;Safe&quot;],&quot;roomPrice&quot;:225}]} expected [400] but found [200]" type="java.lang.AssertionError"><![CDATA[When User requests to check room availability with checkin "2020-01-01" and checkout "2020-01-02".passed
+Then API response status code of RM should be 400...........................failed
+
+StackTrace:
+java.lang.AssertionError: Response status code mismatch. Expected: 400 Actual: 200 Body: {"rooms":[{"roomid":1,"roomName":"101","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.","features":["TV","WiFi","Safe"],"roomPrice":100},{"roomid":2,"roomName":"102","type":"Double","accessible":true,"image":"/images/room2.jpg","description":"Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl. ","features":["TV","Radio","Safe"],"roomPrice":150},{"roomid":3,"roomName":"103","type":"Suite","accessible":true,"image":"/images/room3.jpg","description":"Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex. ","features":["Radio","WiFi","Safe"],"roomPrice":225}]} expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
+	at ✽.API response status code of RM should be 400(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/02_checkRoomAvailability.feature:46)
+]]></failure>
+</testcase>
+<testcase classname="Get Room Details API" name="User authentication with valid credentials" time="0.5">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
+Then API response status code should be 200.................................passed
+And Response should contain a valid authentication token....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Room Details API" name="Get list of all available rooms" time="0.51">
+<system-out><![CDATA[When User requests to get list of all rooms.................................passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain list of rooms...................................passed
+And Each room should have room details......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Room Details API" name="Get room details by room ID" time="0.73">
+<system-out><![CDATA[When User requests to get room details for roomid "1".......................passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain room information................................passed
+And Room details should contain "roomid"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Room Details API" name="Get room details with invalid room ID" time="32.944">
+<failure message="Response status code mismatch. Expected: 503 Actual: 500 Body: {&quot;timestamp&quot;:&quot;2026-03-30T02:24:27.527+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/room/99999&quot;} expected [503] but found [500]" type="java.lang.AssertionError"><![CDATA[When User requests to get room details for roomid "99999"...................passed
+Then API response status code of RM should be 503...........................failed
+And Response should indicate room not found "Service Unavailable"...........skipped
+
+StackTrace:
+java.lang.AssertionError: Response status code mismatch. Expected: 503 Actual: 500 Body: {"timestamp":"2026-03-30T02:24:27.527+00:00","status":500,"error":"Internal Server Error","path":"/room/99999"} expected [503] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(RoomManagementAPI.java:90)
+	at ✽.API response status code of RM should be 503(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/03_getRoomDetails.feature:50)
+]]></failure>
+</testcase>
+<testcase classname="Get Room Details API" name="Validate room details response structure against schema" time="1.35">
+<system-out><![CDATA[When User requests to get room details for roomid "1".......................passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain room information................................passed
+And Room details should conform to the room schema..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Room Details API" name="Validate room details response structure against schema 2" time="0.481">
+<system-out><![CDATA[When User requests to get room details for roomid "2".......................passed
+Then API response status code of RM should be 200...........................passed
+And Response should contain room information................................passed
+And Room details should conform to the room schema..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Booking" name="User authentication with valid credentials" time="0.491">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
+Then API response status code should be 200.................................passed
+And Response should contain a valid authentication token....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Booking" name="Create a booking with valid details" time="0.548">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-07-17" and checkout "2025-07-18".passed
+And User creates a new booking with following details and submits the booking:.passed
+Then API response status code should be 201 for booking creation............passed
+And User should see booking confirmation page with booking ID displayed.....passed
+And Booking should contain all submitted details............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Booking" name="Create a booking with valid details 2" time="0.525">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User creates a new booking with following details and submits the booking:.passed
+Then API response status code should be 201 for booking creation............passed
+And User should see booking confirmation page with booking ID displayed.....passed
+And Booking should contain all submitted details............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields" time="0.314">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................passed
+And User gets "Firstname should not be blank" error message for missing or invalid input fields.passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields 2" time="0.834">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................passed
+And User gets "Lastname should not be blank" error message for missing or invalid input fields.passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields 3" time="0.378">
+<failure message="Expected status code 400 for bad request, but got: 201 Body: {&quot;bookingid&quot;:7,&quot;roomid&quot;:2122,&quot;firstname&quot;:&quot;John&quot;,&quot;lastname&quot;:&quot;Doe&quot;,&quot;depositpaid&quot;:false,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2025-08-01&quot;,&quot;checkout&quot;:&quot;2025-08-05&quot;}} expected [400] but found [201]" type="java.lang.AssertionError"><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................failed
+And User gets "must be a well-formed email address" error message for missing or invalid input fields.skipped
+
+StackTrace:
+java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":7,"roomid":2122,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(E2EHotelBooking.java:437)
+	at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:58)
+]]></failure>
+</testcase>
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields 4" time="0.589">
+<failure message="Expected status code 400 for bad request, but got: 201 Body: {&quot;bookingid&quot;:8,&quot;roomid&quot;:2396,&quot;firstname&quot;:&quot;John&quot;,&quot;lastname&quot;:&quot;Doe&quot;,&quot;depositpaid&quot;:false,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2025-08-01&quot;,&quot;checkout&quot;:&quot;2025-08-05&quot;}} expected [400] but found [201]" type="java.lang.AssertionError"><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................failed
+And User gets "must not be empty" error message for missing or invalid input fields.skipped
+
+StackTrace:
+java.lang.AssertionError: Expected status code 400 for bad request, but got: 201 Body: {"bookingid":8,"roomid":2396,"firstname":"John","lastname":"Doe","depositpaid":false,"bookingdates":{"checkin":"2025-08-01","checkout":"2025-08-05"}} expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_bad_request(E2EHotelBooking.java:437)
+	at ✽.API response status code should be 400 for bad request(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/04_createBooking.feature:58)
+]]></failure>
+</testcase>
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields 5" time="0.458">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................passed
+And User gets "size must be between 11 and 21" error message for missing or invalid input fields.passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Booking" name="Attempt to create a booking with missing/invalid required fields 6" time="0.743">
+<system-out><![CDATA[When User enters search criteria with checkin "2025-08-01" and checkout "2025-08-05".passed
+And User attempts to create a new booking with missing required fields:.....passed
+Then API response status code should be 400 for bad request.................passed
+And User gets "must be a well-formed email address" error message for missing or invalid input fields.passed
+]]></system-out>
+</testcase>
+<testcase classname="Update Booking Details - Shady Meadows B&amp;B" name="Complete happy path - Create, Update, and Verify Booking Details" time="2.707">
 <system-out><![CDATA[When User authenticates as user credentials:................................passed
 And User stores the authentication token....................................passed
 Then API response status code for E2E should be 200.........................passed
@@ -12,6 +307,98 @@ Then Booking update should be successful with status 200....................pass
 And Updated booking details should be reflected in system...................passed
 When User retrieves booking details using stored booking ID via API.........passed
 Then API response should contain updated booking details with status code 200.passed
+]]></system-out>
+</testcase>
+<testcase classname="Cancel Booking" name="Complete happy path - Create, Book, and Receive Confirmation" time="2.432">
+<system-out><![CDATA[When User authenticates as user credentials:................................passed
+And User stores the authentication token....................................passed
+Then API response status code for E2E should be 200.........................passed
+When User enters search criteria with checkin "2025-12-19" and checkout "2025-12-21".passed
+And User creates a new booking with following details and submits the booking:.passed
+Then API response status code should be 201 for booking creation............passed
+And User should see booking confirmation page with booking ID displayed.....passed
+When User retrieves booking details using stored booking ID via API.........passed
+Then API response should contain booking details with status code 200.......passed
+When User attempts to cancel booking with ID via API........................passed
+Then Booking cancellation should be successful with status 200..............passed
+And API response should return 404 when retrieving cancelled booking details.passed
+]]></system-out>
+</testcase>
+<testcase classname="Cancel Booking" name="Attempt to cancel a non-existent booking" time="0.995">
+<system-out><![CDATA[When User authenticates as user credentials:................................passed
+And User stores the authentication token....................................passed
+Then API response status code for E2E should be 200.........................passed
+When User attempts to cancel booking with non-existent ID "9999" via API....passed
+Then Response should indicate an error message "Failed to delete booking"...passed
+]]></system-out>
+</testcase>
+<testcase classname="Room Information Retrieval" name="Retrieve and validate room information by ID" time="0.631">
+<system-out><![CDATA[Given user want to retrieve room information for a specific room ID.........passed
+When user request room details for the following ID:........................passed
+Then the room information should contain:...................................passed
+And the API response conforms to "roomDetails.json" schema..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Room Information Retrieval" name="Retrieve and validate room information by ID 2" time="0.524">
+<system-out><![CDATA[Given user want to retrieve room information for a specific room ID.........passed
+When user request room details for the following ID:........................passed
+Then the room information should contain:...................................passed
+And the API response conforms to "roomDetails.json" schema..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Room Information Retrieval" name="Retrieve and validate room information by ID 3" time="0.321">
+<system-out><![CDATA[Given user want to retrieve room information for a specific room ID.........passed
+When user request room details for the following ID:........................passed
+Then the room information should contain:...................................passed
+And the API response conforms to "roomDetails.json" schema..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Room Information Retrieval" name="Attempt to retrieve room information with invalid ID" time="33.148">
+<failure message="Response status code mismatch. Expected: 404 Actual: 500 Body: {&quot;timestamp&quot;:&quot;2026-03-30T02:25:15.115+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/room/999&quot;} expected [404] but found [500]" type="java.lang.AssertionError"><![CDATA[Given user want to retrieve room information for a specific room ID.........passed
+When user request room details for the following ID:........................passed
+Then API response status code should be 404 for not found...................failed
+And User gets "Room not found" error message................................skipped
+
+StackTrace:
+java.lang.AssertionError: Response status code mismatch. Expected: 404 Actual: 500 Body: {"timestamp":"2026-03-30T02:25:15.115+00:00","status":500,"error":"Internal Server Error","path":"/room/999"} expected [404] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_should_be_for_not_found(E2EHotelBooking.java:866)
+	at ✽.API response status code should be 404 for not found(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/07_getBookingDetail.feature:27)
+]]></failure>
+</testcase>
+<testcase classname="Room Information Retrieval" name="Attempt to retrieve room information with invalid ID 2" time="0.734">
+<system-out><![CDATA[Given user want to retrieve room information for a specific room ID.........passed
+When user request room details for the following ID:........................passed
+Then API response status code should be 404 for not found...................passed
+And User gets "Room not found" error message................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Room Information Retrieval" name="Attempt to retrieve room information with invalid ID 3" time="0.305">
+<system-out><![CDATA[Given user want to retrieve room information for a specific room ID.........passed
+When user request room details for the following ID:........................passed
+Then API response status code should be 404 for not found...................passed
+And User gets "Room not found" error message................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Room Information Retrieval" name="Attempt to retrieve room information with invalid ID 4" time="0.51">
+<system-out><![CDATA[Given user want to retrieve room information for a specific room ID.........passed
+When user request room details for the following ID:........................passed
+Then API response status code should be 404 for not found...................passed
+And User gets "Room not found" error message................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Booking Report" name="Get booking report for a specific date range" time="2.15">
+<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
+Then API response status code should be 200.................................passed
+And Response should contain a valid authentication token....................passed
+When User requests to get booking report for data available.................passed
+Then API response status code of BR should be 200...........................passed
+And Response should contain booking report data.............................passed
+And Each booking in the report should have valid details....................passed
 ]]></system-out>
 </testcase>
 </testsuite>
