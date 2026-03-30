@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-29T17:35:17 IST" name="CucumberSuite" finished-at="2026-03-29T17:35:20 IST" duration-ms="3804">
+  <suite started-at="2026-03-30T05:05:10 IST" name="CucumberSuite" finished-at="2026-03-30T05:05:18 IST" duration-ms="8344">
     <groups>
     </groups>
-    <test started-at="2026-03-29T17:35:17 IST" name="CucumberTests" finished-at="2026-03-29T17:35:20 IST" duration-ms="3804">
+    <test started-at="2026-03-30T05:05:10 IST" name="CucumberTests" finished-at="2026-03-30T05:05:18 IST" duration-ms="8344">
       <class name="com.booking.runners.DirectTestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T17:35:17 IST" name="setUpClass" finished-at="2026-03-29T17:35:17 IST" duration-ms="624" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.DirectTestRunner@2f490758]" started-at="2026-03-30T05:05:10 IST" name="setUpClass" finished-at="2026-03-30T05:05:10 IST" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T17:35:17 IST" name="runScenario" data-provider="scenarios" finished-at="2026-03-29T17:35:17 IST" duration-ms="159" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.DirectTestRunner@2f490758]" started-at="2026-03-30T05:05:10 IST" name="runScenario" data-provider="scenarios" finished-at="2026-03-30T05:05:14 IST" duration-ms="4068" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,204 +20,44 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Create Booking]"]]>
+                <![CDATA["Optional[Get Booking Report]"]]>
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'User authenticates as user with username "admin" and password "password"' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("User authenticates as user with username {string} and password {string}")
-public void user_authenticates_as_user_with_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("API response status code should be {int}")
-public void api_response_status_code_should_be(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Response should contain a valid authentication token")
-public void response_should_contain_a_valid_authentication_token() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'User authenticates as user with username "admin" and password "password"' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("User authenticates as user with username {string} and password {string}")
-public void user_authenticates_as_user_with_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("API response status code should be {int}")
-public void api_response_status_code_should_be(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Response should contain a valid authentication token")
-public void response_should_contain_a_valid_authentication_token() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at com.booking.runners.DirectTestRunner.runScenario(DirectTestRunner.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at com.booking.runners.DirectTestRunner.main(DirectTestRunner.java:47)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T17:35:17 IST" name="runScenario" data-provider="scenarios" finished-at="2026-03-29T17:35:17 IST" duration-ms="18" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.DirectTestRunner@2f490758]" started-at="2026-03-30T05:05:14 IST" name="runScenario" data-provider="scenarios" finished-at="2026-03-30T05:05:16 IST" duration-ms="1594" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search for available rooms with specific date range and Create a booking with valid details"]]>
+                <![CDATA["Get booking report for a specific date range"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Create Booking]"]]>
+                <![CDATA["Optional[Get Booking Report]"]]>
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The step 'User enters search criteria with checkin "2023-10-01" and checkout "2023-10-05"' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("User enters search criteria with checkin {string} and checkout {string}")
-public void user_enters_search_criteria_with_checkin_and_checkout(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("User creates a new booking with following details and submits the booking:")
-public void user_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@Then("API response status code should be {int} for booking creation")
-public void api_response_status_code_should_be_for_booking_creation(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("User should see booking confirmation page with booking ID displayed")
-public void user_should_see_booking_confirmation_page_with_booking_id_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
+              <![CDATA[Response should contain 'totalBookings' field expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'User enters search criteria with checkin "2023-10-01" and checkout "2023-10-05"' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("User enters search criteria with checkin {string} and checkout {string}")
-public void user_enters_search_criteria_with_checkin_and_checkout(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("User creates a new booking with following details and submits the booking:")
-public void user_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@Then("API response status code should be {int} for booking creation")
-public void api_response_status_code_should_be_for_booking_creation(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("User should see booking confirmation page with booking ID displayed")
-public void user_should_see_booking_confirmation_page_with_booking_id_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at com.booking.runners.DirectTestRunner.runScenario(DirectTestRunner.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at com.booking.runners.DirectTestRunner.main(DirectTestRunner.java:47)
+              <![CDATA[java.lang.AssertionError: Response should contain 'totalBookings' field expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.booking.stepDefinitions.E2EHotelBooking.Response_should_contain_booking_report_data(E2EHotelBooking.java:810)
+at ✽.Response should contain booking report data(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/getBookingReport.feature:27)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.DirectTestRunner@5aa9e4eb]" started-at="2026-03-29T17:35:17 IST" name="tearDownClass" finished-at="2026-03-29T17:35:20 IST" duration-ms="2949" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.DirectTestRunner@2f490758]" started-at="2026-03-30T05:05:16 IST" name="tearDownClass" finished-at="2026-03-30T05:05:18 IST" duration-ms="2256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

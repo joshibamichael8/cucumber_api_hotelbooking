@@ -772,5 +772,61 @@ public class E2EHotelBooking {
         }
     }
 
-}
+    @When("User requests to get booking report for data available")
+    public void User_requests_to_get_booking_report_for_date_range_from_to() {
+        LOGGER.info("Step: User requests booking report for available data");
+        try {
+            String endpoint = "/report";
+            response = apiUtility.getWithContentTypeAuthSetUp(endpoint, "Cookie", "token=" + TokenManager.getAuthToken(),"Authorization", "automationintesting.online");
+            apiUtility.setResponse(response);
+            apiUtility.setStatusCode(response.getStatusCode());
+            
+            LOGGER.info("Booking report request completed with status: " + response.getStatusCode());
+            LOGGER.info("Response received: " + response.getBody().asString());
+        } catch (Exception e) {
+            LOGGER.error("Error fetching booking report: " + e.getMessage());
+        }
+    }
 
+    @Then("API response status code of BR should be {int}")
+    public void API_response_status_code_of_BR_should_be_lt_statuscode_gt(int expStatusCode) {
+        LOGGER.info("Step: Validating booking report response status code is " + expStatusCode);
+        int actualStatusCode = response.getStatusCode();
+        Assert.assertEquals(actualStatusCode, expStatusCode, "Booking report response status code mismatch. Expected: " + expStatusCode + " Actual: " + actualStatusCode);  
+        
+    }
+
+    @Then("Response should contain booking report data")
+    public void Response_should_contain_booking_report_data() {
+        LOGGER.info("Step: Validating booking report data in response");
+        try {
+            String responseBody = response.getBody().asString();
+            LOGGER.info("Response body: " + responseBody);
+            
+            // Basic validation to check if response contains expected fields for booking report
+            Assert.assertTrue(responseBody.contains("report"), "Response should contain 'report' field");
+    
+            LOGGER.info("Booking report data validated successfully in response");
+        } catch (Exception e) {
+            LOGGER.error("Error validating booking report data: " + e.getMessage());
+            Assert.fail("Could not validate booking report data: " + e.getMessage());
+        }
+    }
+
+    @Then("Each booking in the report should have valid details")
+    public void Each_booking_in_the_report_should_have_valid_details() {
+        LOGGER.info("Step: Validating details of each booking in the report");
+        try {
+            List<Map<String, Object>> bookings = response.jsonPath().getList("report");
+            Assert.assertFalse(bookings.isEmpty(), "Bookings list should not be empty in report");
+                    
+            LOGGER.info("All bookings in the report have valid details");
+        } catch (Exception e) {
+            LOGGER.error("Error validating booking details in report: " + e.getMessage());
+            Assert.fail("Could not validate booking details in report: " + e.getMessage());
+        }
+    }
+
+
+}
+    

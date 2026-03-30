@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,15 +104,24 @@
                     <div class="method-list-content failed suite-CucumberSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CucumberSuite" title="com.booking.runners.DirectTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for available rooms with specific date range and Create a booking with valid details&quot;, &quot;Opti...)">runScenario("Search for available rooms with specific date range and Create a booking with valid details", "Opti...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CucumberSuite" title="com.booking.runners.DirectTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User authentication with valid credentials&quot;, &quot;Optional[Create Booking]&quot;)">runScenario("User authentication with valid credentials", "Optional[Create Booking]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.booking.runners.DirectTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Get booking report for a specific date range&quot;, &quot;Optional[Get Booking Report]&quot;)">runScenario("Get booking report for a specific date range", "Optional[Get Booking Report]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-CucumberSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CucumberSuite" class="hide-methods passed suite-CucumberSuite"> (hide)</a> <!-- hide-methods passed suite-CucumberSuite -->
+                      <a href="#" panel-name="suite-CucumberSuite" class="show-methods passed suite-CucumberSuite"> (show)</a> <!-- show-methods passed suite-CucumberSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-CucumberSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.booking.runners.DirectTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User authentication with valid credentials&quot;, &quot;Optional[Get Booking Report]&quot;)">runScenario("User authentication with valid credentials", "Optional[Get Booking Report]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CucumberSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,93 +141,35 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search for available rooms with specific date range and Create a booking with valid details&quot;, &quot;Opti...)">
-                  </a> <!-- runScenario("Search for available rooms with specific date range and Create a booking with valid details", "Opti...) -->
+                  <a name="runScenario(&quot;Get booking report for a specific date range&quot;, &quot;Optional[Get Booking Report]&quot;)">
+                  </a> <!-- runScenario("Get booking report for a specific date range", "Optional[Get Booking Report]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search for available rooms with specific date range and Create a booking with valid details", "Optional[Create Booking]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User enters search criteria with checkin &quot;2023-10-01&quot; and checkout &quot;2023-10-05&quot;&apos; and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;User enters search criteria with checkin {string} and checkout {string}&quot;)
-public void user_enters_search_criteria_with_checkin_and_checkout(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;User creates a new booking with following details and submits the booking:&quot;)
-public void user_creates_a_new_booking_with_following_details_and_submits_the_booking(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
-    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;API response status code should be {int} for booking creation&quot;)
-public void api_response_status_code_should_be_for_booking_creation(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;User should see booking confirmation page with booking ID displayed&quot;)
-public void user_should_see_booking_confirmation_page_with_booking_id_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at com.booking.runners.DirectTestRunner.runScenario(DirectTestRunner.java:39)
-	at java.base/java.util.ArrayList.forEach(Unknown Source)
-	at com.booking.runners.DirectTestRunner.main(DirectTestRunner.java:47)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User authentication with valid credentials&quot;, &quot;Optional[Create Booking]&quot;)">
-                  </a> <!-- runScenario("User authentication with valid credentials", "Optional[Create Booking]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User authentication with valid credentials", "Optional[Create Booking]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User authenticates as user with username &quot;admin&quot; and password &quot;password&quot;&apos; and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;User authenticates as user with username {string} and password {string}&quot;)
-public void user_authenticates_as_user_with_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;API response status code should be {int}&quot;)
-public void api_response_status_code_should_be(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;Response should contain a valid authentication token&quot;)
-public void response_should_contain_a_valid_authentication_token() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at com.booking.runners.DirectTestRunner.runScenario(DirectTestRunner.java:39)
-	at java.base/java.util.ArrayList.forEach(Unknown Source)
-	at com.booking.runners.DirectTestRunner.main(DirectTestRunner.java:47)
-... Removed 22 stack frames
+                  <span class="parameters">("Get booking report for a specific date range", "Optional[Get Booking Report]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Response should contain &apos;totalBookings&apos; field expected [true] but found [false]
+	at com.booking.stepDefinitions.E2EHotelBooking.Response_should_contain_booking_report_data(E2EHotelBooking.java:810)
+	at ✽.Response should contain booking report data(file:///D:/Joshiba/Kata_Cucumber_Project/api_hotel_booking/src/test/resources/features/getBookingReport.feature:27)
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CucumberSuite-class-failed -->
+          <div class="suite-CucumberSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.booking.runners.DirectTestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User authentication with valid credentials&quot;, &quot;Optional[Get Booking Report]&quot;)">
+                  </a> <!-- runScenario("User authentication with valid credentials", "Optional[Get Booking Report]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User authentication with valid credentials", "Optional[Get Booking Report]")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-passed -->
         </div> <!-- panel CucumberSuite -->
         <div panel-name="test-xml-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -274,16 +225,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.booking.runners.DirectTestRunner')
-data.setCell(0, 3, 159);
+data.setCell(0, 3, 4068);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.booking.runners.DirectTestRunner')
-data.setCell(1, 3, 18);
+data.setCell(1, 3, 1594);
 window.suiteTableData['CucumberSuite']= { tableData: data, tableDiv: 'times-div-CucumberSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 177 ms</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-CucumberSuite">
               </div> <!-- times-div-CucumberSuite -->
             </div> <!-- times-div -->
@@ -315,20 +266,18 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("User authentication with valid credentials", "Optional[Create Booking]")</span>
-                <span class="method-start">646 ms</span>
+                <span class="method-name">runScenario("User authentication with valid credentials", "Optional[Get Booking Report]")</span>
+                <span class="method-start">405 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Search for available rooms with specific date range and Create a booking with valid details", "Opti...)</span>
-                <span class="method-start">808 ms</span>
+                <span class="method-name">runScenario("Get booking report for a specific date range", "Optional[Get Booking Report]")</span>
+                <span class="method-start">4476 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">826 ms</span>
+                <span class="method-start">6071 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

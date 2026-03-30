@@ -3,131 +3,94 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2026-03-29T18:34:32.214Z",
-        "line": 66,
-        "name": "Validate room details response structure against schema",
+        "line": 11,
+        "name": "User authentication with valid credentials",
         "description": "",
-        "id": "get-room-details-api;validate-room-details-response-structure-against-schema;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 4213001400,
+              "duration": 3579820200,
               "status": "passed"
             },
-            "line": 59,
-            "name": "User requests to get room details for roomid \"1\"",
+            "line": 12,
+            "name": "User authenticates as user with username \"admin\" and password \"password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"1\"",
-                  "offset": 45
+                  "val": "\"admin\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 62
                 }
               ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_get_room_details_for_roomid(java.lang.String)"
+              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.user_authenticates_as_user(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4366300,
+              "duration": 10478600,
               "status": "passed"
             },
-            "line": 60,
-            "name": "API response status code of RM should be 200",
+            "line": 13,
+            "name": "API response status code should be 200",
             "match": {
               "arguments": [
                 {
                   "val": "200",
-                  "offset": 41
+                  "offset": 35
                 }
               ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
+              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.API_response_status_code_should_be(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
+              "duration": 520418300,
               "status": "passed"
             },
-            "line": 61,
-            "name": "Response should contain room information",
+            "line": 14,
+            "name": "Response should contain a valid authentication token",
             "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_room_information()"
+              "location": "com.booking.stepDefinitions.LoginAPIStepDefinition.Response_should_contain_a_valid_authentication_token()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 684162600,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "Room details should conform to the room schema",
-            "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.room_details_should_conform_to_the_room_schema()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RoomManagement"
-          },
-          {
-            "name": "@getRoomDetails"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@SchemaValidation"
-          },
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@RM_4"
           }
         ]
       },
       {
-        "start_timestamp": "2026-03-29T18:34:37.175Z",
-        "line": 67,
-        "name": "Validate room details response structure against schema",
+        "start_timestamp": "2026-03-30T00:24:30.040Z",
+        "line": 19,
+        "name": "Get booking report for a specific date range",
         "description": "",
-        "id": "get-room-details-api;validate-room-details-response-structure-against-schema;;3",
+        "id": "get-booking-report;get-booking-report-for-a-specific-date-range",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 548106600,
+              "duration": 1486776900,
               "status": "passed"
             },
-            "line": 59,
-            "name": "User requests to get room details for roomid \"2\"",
+            "line": 20,
+            "name": "User requests to get booking report for data available",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"2\"",
-                  "offset": 45
-                }
-              ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.User_requests_to_get_room_details_for_roomid(java.lang.String)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.User_requests_to_get_booking_report_for_date_range_from_to()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 1001100,
               "status": "passed"
             },
-            "line": 60,
-            "name": "API response status code of RM should be 200",
+            "line": 21,
+            "name": "API response status code of BR should be 200",
             "match": {
               "arguments": [
                 {
@@ -135,47 +98,40 @@
                   "offset": 41
                 }
               ],
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.API_response_status_code_should_be(int)"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.API_response_status_code_of_BR_should_be_lt_statuscode_gt(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1000200,
               "status": "passed"
             },
-            "line": 61,
-            "name": "Response should contain room information",
+            "line": 22,
+            "name": "Response should contain booking report data",
             "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.Response_should_contain_room_information()"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.Response_should_contain_booking_report_data()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 11795200,
+              "duration": 8001400,
               "status": "passed"
             },
-            "line": 62,
-            "name": "Room details should conform to the room schema",
+            "line": 23,
+            "name": "Each booking in the report should have valid details",
             "match": {
-              "location": "com.booking.stepDefinitions.RoomManagementAPI.room_details_should_conform_to_the_room_schema()"
+              "location": "com.booking.stepDefinitions.E2EHotelBooking.Each_booking_in_the_report_should_have_valid_details()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@RoomManagement"
+            "name": "@getBookingReport"
           },
           {
-            "name": "@getRoomDetails"
-          },
-          {
-            "name": "@HotelBookingAPI"
-          },
-          {
-            "name": "@SchemaValidation"
+            "name": "@smoke"
           },
           {
             "name": "@api"
@@ -184,39 +140,26 @@
             "name": "@regression"
           },
           {
-            "name": "@RM_4"
+            "name": "@positive"
+          },
+          {
+            "name": "@BR_1"
           }
         ]
       }
     ],
-    "name": "Get Room Details API",
-    "description": "  As an user of the Hotel Booking API,\n  I want to retrieve details of rooms\n  So that I can manage room information effectively \n\n  Description:\n    This feature tests the Get Room Details API which allows users to retrieve information about rooms. \n    The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.  ",
-    "id": "get-room-details-api",
+    "name": "Get Booking Report",
+    "description": "    As a user of the Hotel Booking API,\n    I want to retrieve booking reports\n    So that I can analyze booking data and trends\n    \n    Description: This feature tests the Get Booking Report API which allows users to retrieve reports on bookings. \n        The scenarios cover both positive and negative cases to ensure the API functions correctly under various conditions.",
+    "id": "get-booking-report",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/getRoomDetails.feature",
+    "uri": "file:src/test/resources/features/getBookingReport.feature",
     "tags": [
       {
-        "name": "@RoomManagement",
+        "name": "@getBookingReport",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
-        }
-      },
-      {
-        "name": "@getRoomDetails",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 17
-        }
-      },
-      {
-        "name": "@HotelBookingAPI",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 33
         }
       }
     ]

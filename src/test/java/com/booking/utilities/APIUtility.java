@@ -54,6 +54,31 @@ public class APIUtility {
         return spec;
     }
 
+    public Response getWithContentTypeAuthSetUp(String endpoint, String headerName, String headerValue,String headerName1, String headerValue1) {
+       try{            
+            RequestSpecification spec = RestAssured.given()
+            .contentType(ContentType.JSON)
+            .accept(ContentType.JSON)
+            .log().all();
+                    System.out.println("Spec: " + spec);
+            Response response = spec
+                .header(headerName, headerValue)
+                .header(headerName1, headerValue1)
+                .when()
+                .get(endpoint)
+                .then()
+                .log().all()
+                .extract()
+                .response();
+            
+            LOGGER.info("PUT request completed. Status Code: " + response.getStatusCode());
+            return response;
+        } catch (Exception e) {
+            LOGGER.error("Error performing PUT request with multiple headers: " + e.getMessage());
+            throw e;
+        }
+    }
+
      /**
      * Perform GET request
      */
@@ -219,8 +244,7 @@ public class APIUtility {
     public Response putWithContentTypeAuthSetUp(String endpoint, Object body, String headerName, String headerValue,String headerName1, String headerValue1) {
         LOGGER.info("Performing PUT request with multiple custom headers to endpoint: " + endpoint);
         try {
-            // RequestSpecification spec = commonUtilities.requestGetSetup();
-            
+                      
             RequestSpecification spec = RestAssured.given()
             .contentType(ContentType.JSON)
             .accept(ContentType.JSON)
@@ -324,5 +348,6 @@ public class APIUtility {
         }
         return this.authToken;
     }
+
 
 }

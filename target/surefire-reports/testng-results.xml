@@ -1,52 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-30T00:04:31 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-30T00:04:41 IST" duration-ms="9999">
+  <suite started-at="2026-03-30T05:54:29 IST" name="Cucumber Automation Test Suite" finished-at="2026-03-30T05:54:37 IST" duration-ms="8176">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-30T00:04:31 IST" name="API Booking Tests" finished-at="2026-03-30T00:04:41 IST" duration-ms="9999">
+    <test started-at="2026-03-30T05:54:29 IST" name="API Booking Tests" finished-at="2026-03-30T05:54:37 IST" duration-ms="8176">
       <class name="com.booking.runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T00:04:31 IST" name="setUpClass" finished-at="2026-03-30T00:04:31 IST" duration-ms="874" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T05:54:29 IST" name="setUpClass" finished-at="2026-03-30T05:54:29 IST" duration-ms="494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T00:04:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T00:04:37 IST" duration-ms="5200" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T05:54:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T05:54:35 IST" duration-ms="5813" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validate room details response structure against schema"]]>
+                <![CDATA["Get booking report for a specific date range"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Get Room Details API]"]]>
+                <![CDATA["Optional[Get Booking Report]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T00:04:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-30T00:04:37 IST" duration-ms="597" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate room details response structure against schema"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Get Room Details API]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T00:04:37 IST" name="tearDownClass" finished-at="2026-03-30T00:04:41 IST" duration-ms="3282" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.booking.runners.TestRunner@2145b572]" started-at="2026-03-30T05:54:35 IST" name="tearDownClass" finished-at="2026-03-30T05:54:37 IST" duration-ms="1847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

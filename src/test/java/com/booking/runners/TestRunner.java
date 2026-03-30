@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
  * TestRunner: Cucumber test runner for TestNG
  */
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/getBookingReport.feature",
         glue = {"com.booking.stepDefinitions", "com.booking.hooks"},
         plugin = {
                 "pretty",
@@ -18,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"
         },
-        tags = "@SchemaValidation",
+        tags = "@BR_1",
         dryRun = false,
         monochrome = true,
         publish = true
