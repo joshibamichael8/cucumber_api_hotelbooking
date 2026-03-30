@@ -1,12 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.85">
-<testcase classname="Get Booking Report" name="Get booking report for a specific date range" time="5.62">
-<system-out><![CDATA[When User authenticates as user with username "admin" and password "password".passed
-Then API response status code should be 200.................................passed
-And Response should contain a valid authentication token....................passed
-When User requests to get booking report for data available.................passed
-Then API response status code of BR should be 200...........................passed
-And Response should contain booking report data.............................passed
-And Each booking in the report should have valid details....................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="8.903">
+<testcase classname="Cancel Booking" name="Complete happy path - Create, Book, and Receive Confirmation" time="7.505">
+<system-out><![CDATA[When User authenticates as user credentials:................................passed
+And User stores the authentication token....................................passed
+Then API response status code for E2E should be 200.........................passed
+When User enters search criteria with checkin "2025-12-19" and checkout "2025-12-21".passed
+And User creates a new booking with following details and submits the booking:.passed
+Then API response status code should be 201 for booking creation............passed
+And User should see booking confirmation page with booking ID displayed.....passed
+When User retrieves booking details using stored booking ID via API.........passed
+Then API response should contain booking details with status code 200.......passed
+When User attempts to cancel booking with ID via API........................passed
+Then Booking cancellation should be successful with status 200..............passed
+And API response should return 404 when retrieving cancelled booking details.passed
+]]></system-out>
+</testcase>
+<testcase classname="Cancel Booking" name="Attempt to cancel a non-existent booking" time="1.105">
+<system-out><![CDATA[When User authenticates as user credentials:................................passed
+And User stores the authentication token....................................passed
+Then API response status code for E2E should be 200.........................passed
+When User attempts to cancel booking with non-existent ID "9999" via API....passed
+Then Response should indicate an error message "Failed to delete booking"...passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -746,14 +746,6 @@ public class E2EHotelBooking {
         }
     }
 
-    @Then("API response status code should be {int} for not found")
-    public void api_response_status_code_should_be_for_not_found(int expectedStatusCode) {
-        LOGGER.info("Step: Validating API response status code is " + expectedStatusCode + " for not found");
-        int actualStatusCode = response.getStatusCode();
-        LOGGER.info("Expected Status Code: " + expectedStatusCode + ", Actual: " + actualStatusCode);
-        Assert.assertEquals(actualStatusCode, expectedStatusCode, "API response status code mismatch. Expected: " + expectedStatusCode + " Actual: " + actualStatusCode);
-    }
-
     @Then("User gets {string} error message")
     public void user_gets_error_message(String expectedErrorMessage) {
         LOGGER.info("Step: Validating error message for: " + expectedErrorMessage);
@@ -824,6 +816,47 @@ public class E2EHotelBooking {
         } catch (Exception e) {
             LOGGER.error("Error validating booking details in report: " + e.getMessage());
             Assert.fail("Could not validate booking details in report: " + e.getMessage());
+        }
+    }
+
+    @Then("API response should contain booking details with status code {int}")
+    public void API_response_should_contain_booking_details_with_status_code(int statusCode) {
+    LOGGER.info("Step: Verifying API response contains created booking details with status code " + statusCode);
+        int actualStatus = response.getStatusCode();
+        Assert.assertEquals(actualStatus, statusCode, 
+            "Response status code mismatch. Expected: " + statusCode + 
+            " Actual: " + actualStatus + 
+            " Body: " + response.getBody().asString());
+    }
+
+    @When("User attempts to cancel booking with non-existent ID {string} via API")
+    public void User_attempts_to_cancel_booking_with_non_existent_ID_via_API(String s) {
+        LOGGER.info("Step: Attempting to cancel booking with non-existent ID: " + s);
+        try {
+            response = apiUtility.deleteWithHeader("/booking/" + s, "Cookie", "token=" + TokenManager.getAuthToken());
+            LOGGER.info("Cancel booking response status: " + response.getStatusCode());
+        } catch (Exception e) {
+            LOGGER.error("Error attempting to cancel booking with non-existent ID: " + e.getMessage());
+            Assert.fail("Could not attempt to cancel booking with non-existent ID: " + e.getMessage());
+        }
+    }
+
+    @Then("Response should indicate an error message {string}")
+    public void Response_should_indicate_an_error_message(String expErrorMsg) {
+        LOGGER.info("Step: Verifying response indicates booking not found for ID: " + expErrorMsg);
+        try {
+            String responseBody = response.getBody().asString();
+            LOGGER.info("Response body: " + responseBody);
+            
+            // Check if response contains expected message for not found booking
+            boolean errorMessagePresent = responseBody.toLowerCase().contains(expErrorMsg.toLowerCase());
+            
+            Assert.assertTrue(errorMessagePresent, 
+                "Response should indicate an error message '" + expErrorMsg + "'. Actual response: " + responseBody);
+            LOGGER.info("Verified that response indicates an error message for non-existent ID");
+        } catch (Exception e) {
+            LOGGER.error("Error verifying booking not found message in response: " + e.getMessage());
+            Assert.fail("Could not verify booking not found message in response: " + e.getMessage());
         }
     }
 
